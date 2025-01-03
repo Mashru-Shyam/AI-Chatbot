@@ -1,0 +1,346 @@
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\appsettings.Development.json
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\appsettings.json
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.staticwebassets.endpoints.json
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.exe
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.deps.json
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.runtimeconfig.json
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.pdb
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Azure.Core.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Azure.Identity.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Humanizer.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.ClientModel.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.CodeDom.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Text.Json.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.csproj.AssemblyReference.cache
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.AssemblyInfoInputs.cache
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.AssemblyInfo.cs
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.csproj.CoreCompileInputs.cache
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.MvcApplicationPartsAssemblyInfo.cs
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.MvcApplicationPartsAssemblyInfo.cache
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\scopedcss\bundle\AI_Chatbot.styles.css
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.build.json
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.development.json
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.AI_Chatbot.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.AI_Chatbot.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.build.AI_Chatbot.props
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AI_Chatbot.props
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AI_Chatbot.props
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.csproj.Up2Date
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\refint\AI_Chatbot.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.pdb
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.genruntimeconfig.cache
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\ref\AI_Chatbot.dll
+D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\appsettings.Development.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\appsettings.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.staticwebassets.endpoints.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.exe
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.deps.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.runtimeconfig.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.pdb
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Azure.Core.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Azure.Identity.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Humanizer.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.ClientModel.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.CodeDom.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Text.Json.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.csproj.AssemblyReference.cache
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.GeneratedMSBuildEditorConfig.editorconfig
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.AssemblyInfoInputs.cache
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.AssemblyInfo.cs
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.csproj.CoreCompileInputs.cache
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.MvcApplicationPartsAssemblyInfo.cs
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.MvcApplicationPartsAssemblyInfo.cache
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\scopedcss\bundle\AI_Chatbot.styles.css
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.build.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.development.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.AI_Chatbot.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.AI_Chatbot.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.build.AI_Chatbot.props
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.AI_Chatbot.props
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.AI_Chatbot.props
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.csproj.Up2Date
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\refint\AI_Chatbot.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.pdb
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.genruntimeconfig.cache
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\ref\AI_Chatbot.dll

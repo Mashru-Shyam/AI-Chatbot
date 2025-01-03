@@ -1,0 +1,13 @@
+﻿using AI_Chatbot.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace AI_Chatbot.Datas
+{
+    public class AiChatbotDbContext : DbContext
+    {
+        public AiChatbotDbContext(DbContextOptions<AiChatbotDbContext> options) : base(options)
+        { }
+        public DbSet<Otp> Otps { get; set; }
+        public DbSet<User> Users { get; set; }
+    }
+}
