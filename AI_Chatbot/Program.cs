@@ -81,6 +81,8 @@ builder.Services.AddScoped<IOtpService, OtpService>();
 
 builder.Services.AddScoped<IAppointmentService, AppointmentService>();
 
+builder.Services.AddScoped<IPaymentService, PaymentService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

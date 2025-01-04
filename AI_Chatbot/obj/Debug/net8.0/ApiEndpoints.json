@@ -26,6 +26,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AI_Chatbot.Controllers.PaymentController",
+    "Method": "GetDuePayments",
+    "RelativePath": "api/Payment/get-due-payments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AI_Chatbot.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/User/login",

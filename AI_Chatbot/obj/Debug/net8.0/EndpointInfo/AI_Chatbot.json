@@ -48,6 +48,18 @@
         }
       }
     },
+    "/api/Payment/get-due-payments": {
+      "get": {
+        "tags": [
+          "Payment"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/User/register": {
       "post": {
         "tags": [
