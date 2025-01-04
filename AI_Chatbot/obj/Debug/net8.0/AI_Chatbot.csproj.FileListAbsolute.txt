@@ -344,3 +344,4 @@ D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\refint\AI_Chatbo
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.pdb
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.genruntimeconfig.cache
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\ref\AI_Chatbot.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.sourcelink.json
