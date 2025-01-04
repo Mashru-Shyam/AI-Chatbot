@@ -48,6 +48,18 @@
         }
       }
     },
+    "/api/Insurance/get-insurance-details": {
+      "get": {
+        "tags": [
+          "Insurance"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Payment/get-due-payments": {
       "get": {
         "tags": [
