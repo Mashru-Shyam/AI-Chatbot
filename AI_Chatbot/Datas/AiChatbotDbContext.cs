@@ -12,5 +12,6 @@ namespace AI_Chatbot.Datas
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Payment> Payment { get; set; }
         public DbSet<Insurance> Insurances { get; set; }
+        public DbSet<Prescription> Prescriptions { get; set; }
     }
 }

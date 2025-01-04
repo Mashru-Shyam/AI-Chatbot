@@ -72,6 +72,18 @@
         }
       }
     },
+    "/api/Prescription/get-prescriptions": {
+      "get": {
+        "tags": [
+          "Prescription"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/User/register": {
       "post": {
         "tags": [

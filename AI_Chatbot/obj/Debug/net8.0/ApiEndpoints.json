@@ -46,6 +46,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AI_Chatbot.Controllers.PrescriptionController",
+    "Method": "GetPrescriptions",
+    "RelativePath": "api/Prescription/get-prescriptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AI_Chatbot.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/User/login",
