@@ -1,12 +1,331 @@
 {
   "Version": 1,
-  "Hash": "u8z6/YhUjvOFNcsNQI9xBCHYtCNp6FlPWDGml0thABo=",
+  "Hash": "O12KhaAC9FD+bgHoSMNLuLHS0ZK6fpNqHuxdNFBpCJc=",
   "Source": "AI_Chatbot",
   "BasePath": "_content/AI_Chatbot",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "AI_Chatbot\\wwwroot",
+      "Source": "AI_Chatbot",
+      "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
+      "BasePath": "_content/AI_Chatbot",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\Chat.html",
+      "SourceId": "AI_Chatbot",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
+      "BasePath": "_content/AI_Chatbot",
+      "RelativePath": "Chat#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "889qkixiig",
+      "Integrity": "OF32boNmsAJbT5Y5ivd8lQSzbaIEw444rjW/G6p/cgs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Chat.html"
+    },
+    {
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
+      "SourceId": "AI_Chatbot",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
+      "BasePath": "_content/AI_Chatbot",
+      "RelativePath": "css/Chat#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v3zx9f83tr",
+      "Integrity": "+7Tqglxjb4EUKzVQttGVIMvcyWHw4djMkcXYMllAiZw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Chat.css"
+    },
+    {
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
+      "SourceId": "AI_Chatbot",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
+      "BasePath": "_content/AI_Chatbot",
+      "RelativePath": "js/Chat#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u0uecte4og",
+      "Integrity": "gnBpXiEWNtPm08JqZPANk7/Jsm3Oir2QlaCuoJy47ww=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Chat.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "Chat.889qkixiig.html",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\Chat.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OF32boNmsAJbT5Y5ivd8lQSzbaIEw444rjW/G6p/cgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 11:15:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "889qkixiig"
+        },
+        {
+          "Name": "label",
+          "Value": "Chat.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OF32boNmsAJbT5Y5ivd8lQSzbaIEw444rjW/G6p/cgs="
+        }
+      ]
+    },
+    {
+      "Route": "Chat.html",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\Chat.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1423"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OF32boNmsAJbT5Y5ivd8lQSzbaIEw444rjW/G6p/cgs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 11:15:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OF32boNmsAJbT5Y5ivd8lQSzbaIEw444rjW/G6p/cgs="
+        }
+      ]
+    },
+    {
+      "Route": "css/Chat.css",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+7Tqglxjb4EUKzVQttGVIMvcyWHw4djMkcXYMllAiZw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 11:09:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7Tqglxjb4EUKzVQttGVIMvcyWHw4djMkcXYMllAiZw="
+        }
+      ]
+    },
+    {
+      "Route": "css/Chat.v3zx9f83tr.css",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6766"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+7Tqglxjb4EUKzVQttGVIMvcyWHw4djMkcXYMllAiZw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 11:09:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v3zx9f83tr"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Chat.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+7Tqglxjb4EUKzVQttGVIMvcyWHw4djMkcXYMllAiZw="
+        }
+      ]
+    },
+    {
+      "Route": "js/Chat.js",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1793"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gnBpXiEWNtPm08JqZPANk7/Jsm3Oir2QlaCuoJy47ww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 11:10:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gnBpXiEWNtPm08JqZPANk7/Jsm3Oir2QlaCuoJy47ww="
+        }
+      ]
+    },
+    {
+      "Route": "js/Chat.u0uecte4og.js",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1793"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gnBpXiEWNtPm08JqZPANk7/Jsm3Oir2QlaCuoJy47ww=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 06 Jan 2025 11:10:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u0uecte4og"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Chat.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gnBpXiEWNtPm08JqZPANk7/Jsm3Oir2QlaCuoJy47ww="
+        }
+      ]
+    }
+  ]
 }

@@ -1,0 +1,258 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #223243;
+}
+
+.chat-header h2 i {
+    color: #00dfc4; /* Change to your desired color */
+    margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+.container.chatbot {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    max-width: 90%;
+    height: 450px; /* Reduced height */
+    border-radius: 20px;
+    padding: 20px;
+    background: #223243;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.chat-header {
+    text-align: center;
+    margin-bottom: 15px; /* Adjusted spacing */
+}
+
+    .chat-header h2 {
+        color: #fff;
+        font-weight: 500;
+    }
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scroll */
+    padding: 10px;
+    background: #1c2933;
+    border-radius: 15px;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+    .chat-messages::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    .chat-messages::-webkit-scrollbar-thumb {
+        background-color: #00dfc4;
+        border-radius: 4px;
+    }
+
+    .chat-messages::-webkit-scrollbar-track {
+        background: #1c2933;
+    }
+
+    .chat-messages .message {
+        margin: 10px 0;
+        padding: 12px 15px;
+        border-radius: 10px;
+        font-size: 0.9em;
+        font-weight: 300;
+        max-width: 70%;
+        word-wrap: break-word;
+    }
+
+    .chat-messages .user {
+        background: #00dfc4;
+        color: #223243;
+        align-self: flex-end;
+    }
+
+    .chat-messages .bot {
+        background: #dfe6e9;
+        color: #223243;
+        align-self: flex-start;
+    }
+
+.chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: 15px; /* Adjusted spacing */
+}
+
+    .chat-input .inputBox {
+        position: relative;
+        flex: 1;
+    }
+
+        .chat-input .inputBox input {
+            padding: 12px 16px; /* Adjusted padding */
+            border: none;
+            width: 100%;
+            background: #223243;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            color: #fff;
+            font-weight: 300;
+            border-radius: 25px;
+            font-size: 1em;
+            box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+            outline: none;
+        }
+
+        .chat-input .inputBox span {
+            position: absolute;
+            left: 45px; /* Adjusted for better alignment */
+            top: 50%;
+            transform: translateY(-50%);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9em;
+        }
+
+        .chat-input .inputBox i {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #00dfc4;
+        }
+
+    .chat-input button {
+        margin-left: 10px;
+        padding: 12px;
+        background: #00dfc4;
+        color: #223243;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+    }
+
+        .chat-input button:hover {
+            background: #1cbea3;
+        }
+
+#viewHistoryBtn {
+    background-color: #00dfc4; /* Button color */
+    color: #fff; /* Text color */
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    margin-top: 20px;
+    display: block; /* Center button */
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    /* Hover effect */
+    #viewHistoryBtn:hover {
+        background-color: #00b49a; /* Darker shade of the button color */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+    }
+
+    /* Focus effect */
+    #viewHistoryBtn:focus {
+        outline: none; /* Remove outline */
+        border: 2px solid #fff; /* Optional white border */
+    }
+
+#viewProfileBtn {
+    background-color: #00dfc4; /* Button color */
+    color: #fff; /* Text color */
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Smooth hover effect */
+    margin-top: 20px;
+    display: block; /* Center button */
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    /* Hover effect */
+    #viewProfileBtn:hover {
+        background-color: #00b49a; /* Darker shade of the button color */
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+    }
+
+    /* Focus effect */
+    #viewProfileBtn:focus {
+        outline: none; /* Remove outline */
+        border: 2px solid #fff; /* Optional white border */
+    }
+
+#viewAppointmentsBtn {
+    background-color: #00dfc4;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    #viewAppointmentsBtn:hover {
+        background-color: #00b49a;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    #viewAppointmentsBtn:focus {
+        outline: none;
+        border: 2px solid #fff;
+    }
+/* Additional styles for toggle button */
+.chat-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #00dfc4;
+    color: #223243;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+    .chat-toggle-btn:hover {
+        background: #1cbea3;
+    }
+
+.chat-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: none;
+    z-index: 9999;
+}
