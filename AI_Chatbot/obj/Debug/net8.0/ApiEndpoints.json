@@ -26,6 +26,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AI_Chatbot.Controllers.ChatController",
+    "Method": "GetLlama3Response",
+    "RelativePath": "api/Chat/chat",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chatRequest",
+        "Type": "AI_Chatbot.DTOs.ChatRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AI_Chatbot.Controllers.InsuranceController",
     "Method": "GetInsuranceDetails",
     "RelativePath": "api/Insurance/get-insurance-details",

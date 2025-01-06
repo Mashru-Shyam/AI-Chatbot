@@ -8,7 +8,7 @@ document.getElementById('toggleChatBtn').addEventListener('click', function () {
 $(document).ready(function () {
     const chatMessages = $('#chatMessages');
     const userMessageInput = $('#userMessage');
-    const apiBaseUrl = "https://localhost:7237/api";
+    //const apiBaseUrl = "https://localhost:7048/api";
 
     function addMessage(message, sender) {
         const messageClass = sender === 'user' ? 'user' : 'bot';
@@ -19,10 +19,10 @@ $(document).ready(function () {
 
     function processUserInput(input) {
         $.ajax({
-            url: `${apiBaseUrl}/Chat/processMessage`,
+            url: `https://localhost:7048/api/Chat/chat`,
             method: "POST",
             contentType: "application/json",
-            data: JSON.stringify({ text: input }),
+            data: JSON.stringify({ message: input }),
             success: function (response) {
                 addMessage(`${response}`, 'bot');
             },
