@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "9.0.0",
           "Swashbuckle.AspNetCore": "6.6.2",
-          "System.IdentityModel.Tokens.Jwt": "8.3.0"
+          "System.IdentityModel.Tokens.Jwt": "8.3.0",
+          "System.Text.Json": "9.0.0"
         },
         "runtime": {
           "AI_Chatbot.dll": {}

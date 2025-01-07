@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     function processUserInput(input) {
         $.ajax({
-            url: `https://localhost:7048/api/Chat/chat`,
+            url: `https://localhost:7048/api/Chat/send-message`,
             method: "POST",
             contentType: "application/json",
             data: JSON.stringify({ message: input }),

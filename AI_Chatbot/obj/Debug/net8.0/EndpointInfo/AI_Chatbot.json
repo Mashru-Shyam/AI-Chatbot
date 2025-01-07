@@ -48,7 +48,7 @@
         }
       }
     },
-    "/api/Chat/chat": {
+    "/api/Chat/send-message": {
       "post": {
         "tags": [
           "Chat"

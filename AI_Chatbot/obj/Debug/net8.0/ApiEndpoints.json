@@ -27,8 +27,8 @@
   },
   {
     "ContainingType": "AI_Chatbot.Controllers.ChatController",
-    "Method": "GetLlama3Response",
-    "RelativePath": "api/Chat/chat",
+    "Method": "SendMessage",
+    "RelativePath": "api/Chat/send-message",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
