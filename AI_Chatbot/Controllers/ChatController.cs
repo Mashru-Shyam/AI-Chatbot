@@ -24,7 +24,7 @@ namespace AI_Chatbot.Controllers
                 return BadRequest("Invalid request...");
             }
 
-            var response = await service.Chatting(chatRequest.Message);
+            var response = await service.Chatting(chatRequest);
             return Ok(response);
         }
     }

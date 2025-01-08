@@ -1,4 +1,5 @@
 ﻿using AI_Chatbot.Datas;
+using AI_Chatbot.DTOs;
 using AI_Chatbot.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,9 +13,9 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
-        public async Task<bool> CheckUser(string email)
+        public async Task<bool> CheckUser(LoginDto login)
         {
-            var user = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == email);
+            var user = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == login.Email);
             if (user == null)
             {
                 return false;

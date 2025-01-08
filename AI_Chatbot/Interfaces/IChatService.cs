@@ -1,7 +1,9 @@
-﻿namespace AI_Chatbot.Interfaces
+﻿using AI_Chatbot.DTOs;
+
+namespace AI_Chatbot.Interfaces
 {
     public interface IChatService
     {
-        Task<string> Chatting (string query);
+        Task<string> Chatting (ChatRequestDto chatRequest);
     }
 }

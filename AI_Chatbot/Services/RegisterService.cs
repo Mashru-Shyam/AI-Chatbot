@@ -1,4 +1,5 @@
 ﻿using AI_Chatbot.Datas;
+using AI_Chatbot.DTOs;
 using AI_Chatbot.Interfaces;
 using AI_Chatbot.Models;
 using Microsoft.EntityFrameworkCore;
@@ -13,21 +14,19 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
-        public async Task<string> Register(string email)
+        public async Task Register(LoginDto login)
         {
-            var existUser = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == email);
-            if (existUser != null)
-            {
-                return "User already exists...";
-            }
+            //var existUser = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == login.Email);
+            //if (existUser != null)
+            //{
+            //    return "User already exists...";
+            //}
             var user = new User
             {
-                UserEmail = email
+                UserEmail = login.Email,
             };
             await context.Users.AddAsync(user);
             await context.SaveChangesAsync();
-
-            return "Registration Successful...";
         }
     }
 }

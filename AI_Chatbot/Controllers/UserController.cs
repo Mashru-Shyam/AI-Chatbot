@@ -1,6 +1,8 @@
-﻿using AI_Chatbot.Interfaces;
+﻿using AI_Chatbot.DTOs;
+using AI_Chatbot.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Win32;
 
 namespace AI_Chatbot.Controllers
 {
@@ -19,29 +21,30 @@ namespace AI_Chatbot.Controllers
             this.loginService = loginService;
         }
 
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] string email)
-        {
-            var message = await registerService.Register(email);
-            return Ok(message);
-        }
+        //[HttpPost("register")]
+        //public async Task<IActionResult> Register([FromBody] RegiserDto regiser)
+        //{
+        //    var message = await registerService.Register(regiser);
+        //    return Ok(message);
+        //}
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] string email)
+        public async Task<IActionResult> Login([FromBody] LoginDto login)
         {
-            var user = await loginService.CheckUser(email);
+            var user = await loginService.CheckUser(login);
             if (!user)
             {
-                return BadRequest("User not found, Please register yourself...");
+                await registerService.Register(login);
+                await Task.Delay(1000);
             }
             var otp = otpService.GenerateOtp();
-            await otpService.StoreOtp(email, otp);
-            await otpService.SendOtpViaMail(email, "OTP for Login", $"Your OTP is {otp}");
+            await otpService.StoreOtp(login, otp);
+            await otpService.SendOtpViaMail(login.Email, "OTP for Login", $"Your OTP is {otp}");
             return Ok("OTP sent to your email...");
         }
 
         [HttpPost("verify")]
-        public async Task<IActionResult> Verify([FromBody] string otp)
+        public async Task<IActionResult> Verify([FromBody] OtpDto otp)
         {
             var result = await otpService.CheckOtp(otp);
             if (result == null)

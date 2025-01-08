@@ -80,24 +80,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "AI_Chatbot.Controllers.UserController",
-    "Method": "Register",
-    "RelativePath": "api/User/register",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
+        "Name": "login",
+        "Type": "AI_Chatbot.DTOs.LoginDto",
         "IsRequired": true
       }
     ],
@@ -113,7 +97,7 @@
     "Parameters": [
       {
         "Name": "otp",
-        "Type": "System.String",
+        "Type": "AI_Chatbot.DTOs.OtpDto",
         "IsRequired": true
       }
     ],

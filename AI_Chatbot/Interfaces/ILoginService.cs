@@ -1,7 +1,9 @@
-﻿namespace AI_Chatbot.Interfaces
+﻿using AI_Chatbot.DTOs;
+
+namespace AI_Chatbot.Interfaces
 {
     public interface ILoginService
     {
-        Task<bool> CheckUser(string email);
+        Task<bool> CheckUser(LoginDto login);
     }
 }

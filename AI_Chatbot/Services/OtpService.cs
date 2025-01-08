@@ -50,18 +50,18 @@ namespace AI_Chatbot.Services
             await _smtpClient.SendMailAsync(mail);
         }
 
-        public async Task StoreOtp(string email, string code)
+        public async Task StoreOtp(LoginDto login, string otp)
         {
             var userId = await context.Users
-                .Where(u => u.UserEmail == email)
+                .Where(u => u.UserEmail == login.Email)
                 .Select(u => u.UserId)
                 .FirstOrDefaultAsync();
 
             var otpEntity = new Otp
             {
                 UserId = userId,
-                OtpEmail = email,
-                OtpCode = code,
+                OtpEmail = login.Email,
+                OtpCode = otp,
                 OtpExpirationTime = DateTime.UtcNow.AddMinutes(5)
             };
 
@@ -69,19 +69,19 @@ namespace AI_Chatbot.Services
             await context.SaveChangesAsync();
         }
 
-        public async Task<string> CheckOtp(string code)
+        public async Task<string> CheckOtp(OtpDto otp)
         {
-            var otp = await context.Otps
-                .Where(o=>o.OtpCode == code && o.OtpExpirationTime > DateTime.UtcNow)
+            var validotp = await context.Otps
+                .Where(o=>o.OtpCode == otp.Code && o.OtpExpirationTime > DateTime.UtcNow)
                 .OrderByDescending(o => o.OtpExpirationTime)
                 .FirstOrDefaultAsync();
 
-            if(otp == null)
+            if(validotp == null)
             {
                 return null;
             }
 
-            return jwtService.GetToken(otp.UserId);
+            return jwtService.GetToken(validotp.UserId);
         }
     }
 }

@@ -1,7 +1,9 @@
-﻿namespace AI_Chatbot.Interfaces
+﻿using AI_Chatbot.DTOs;
+
+namespace AI_Chatbot.Interfaces
 {
     public interface IRegisterService
     {
-        Task<string> Register(string email);
+        Task Register(LoginDto login);
     }
 }

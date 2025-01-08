@@ -15,7 +15,7 @@ namespace AI_Chatbot.Services
             this.httpClient = httpClient;
         }
 
-        public async Task<string> Chatting(string query)
+        public async Task<string> Chatting(ChatRequestDto chatRequest)
         {
             var prompt = $"""
         You are an intelligent assistant designed to classify and handle user queries. Your task is to:
@@ -49,7 +49,7 @@ namespace AI_Chatbot.Services
              Classification: General Query
              Answer: [Provide answer].
              ```
-        Query: {query}
+        Query: {chatRequest.Message}
         """;
 
             var requestBody = new
