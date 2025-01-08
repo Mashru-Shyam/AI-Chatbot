@@ -2,6 +2,7 @@ using AI_Chatbot.Datas;
 using AI_Chatbot.DTOs;
 using AI_Chatbot.Interfaces;
 using AI_Chatbot.Services;
+using MailKit.Net.Smtp;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -90,6 +91,8 @@ builder.Services.AddScoped<IInsuranceService, InsuranceService>();
 builder.Services.AddScoped<IPrescriptionService, PrescriptionService>();
 
 builder.Services.AddScoped<IChatService, ChatService>();
+
+builder.Services.AddScoped<ISmtpClient, SmtpClient>();
 
 var app = builder.Build();
 

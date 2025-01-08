@@ -4,8 +4,10 @@ using AI_Chatbot.Interfaces;
 using AI_Chatbot.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using MimeKit;
 using System.Net;
 using System.Net.Mail;
+using MailKit.Net.Smtp;
 
 namespace AI_Chatbot.Services
 {
@@ -13,21 +15,16 @@ namespace AI_Chatbot.Services
     {
         private static Random _random = new Random();
         private readonly AiChatbotDbContext context;
+        private readonly IOptions<EmailSettings> options;
         private readonly IJwtService jwtService;
-        private readonly SmtpClient _smtpClient;
+        private readonly ISmtpClient smtpClient;
         private readonly string _username;
-        public OtpService(AiChatbotDbContext context, IOptions<EmailSettings> options, IJwtService jwtService)
+        public OtpService(AiChatbotDbContext context, IOptions<EmailSettings> options, IJwtService jwtService, ISmtpClient smtpClient)
         {
             this.context = context;
+            this.options = options;
             this.jwtService = jwtService;
-            var settings = options.Value;
-            _username = settings.Username;
-
-            _smtpClient = new SmtpClient(settings.Host, settings.Port)
-            {
-                Credentials = new NetworkCredential(settings.Username, settings.Password),
-                EnableSsl = true
-            };
+            this.smtpClient = smtpClient;
         }
         public string GenerateOtp(int length = 6)
         {
@@ -42,12 +39,19 @@ namespace AI_Chatbot.Services
 
         public async Task SendOtpViaMail(string to, string subject, string body)
         {
-            var mail = new MailMessage(_username, to)
+            var mail = new MimeMessage();
+            mail.From.Add(new MailboxAddress("AI Chatbot", options.Value.Username));
+            mail.To.Add(new MailboxAddress("", to));
+            mail.Subject = subject;
+            mail.Body = new TextPart("plain")
             {
-                Subject = subject,
-                Body = body
+                Text = body
             };
-            await _smtpClient.SendMailAsync(mail);
+
+            smtpClient.Connect(options.Value.Host, options.Value.Port, MailKit.Security.SecureSocketOptions.StartTls);
+            smtpClient.Authenticate(options.Value.Username, options.Value.Password);
+            await smtpClient.SendAsync(mail);
+            smtpClient.Disconnect(true);
         }
 
         public async Task StoreOtp(LoginDto login, string otp)

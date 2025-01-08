@@ -88,7 +88,7 @@ namespace AI_Chatbot.Services
                         }
                         catch (JsonException)
                         {
-                            continue; // Skip invalid JSON
+                            continue;
                         }
                     }
                 }
