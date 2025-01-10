@@ -51,7 +51,17 @@ namespace AI_Chatbot.Controllers
             {
                 return BadRequest("Invalid OTP...");
             }
+
             return Ok(result);
+
+            //    Response.Cookies.Append("AuthToken", result, new CookieOptions
+            //    {
+            //        HttpOnly = true,
+            //        SameSite = SameSiteMode.None,
+            //        Secure = true
+            //    });
+
+            //    return Ok("OTP verified...");
+            }
         }
-    }
 }
