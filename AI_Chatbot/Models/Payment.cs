@@ -1,4 +1,6 @@
-﻿namespace AI_Chatbot.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace AI_Chatbot.Models
 {
     public class Payment
     {
@@ -7,5 +9,8 @@
         public DateTime PaymentDue { get; set; }
         public double PaymentAmount { get; set; }
         public string PaymentStatus { get; set; }
+        
+        [ForeignKey("UserId")]
+        public User User { get; set; }  
     }
 }

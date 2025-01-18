@@ -3,6 +3,58 @@
   "WorkspaceRootPath": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118201230_UpdatedTablesWithReferenceForeign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250118201230_UpdatedTablesWithReferenceForeign.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118201051_UpdatedTablesWithReferenceKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250118201051_UpdatedTablesWithReferenceKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118200626_UpdatedTablesWithReferenceForeignKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250118200626_UpdatedTablesWithReferenceForeignKey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118200009_UpdatedTablesWithReference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250118200009_UpdatedTablesWithReference.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\datas\\aichatbotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:datas\\aichatbotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,16 +91,8 @@
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:dtos\\chatrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\dtos\\appointmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -95,10 +139,6 @@
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\registerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -131,10 +171,6 @@
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:interfaces\\iprescriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\otp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\prescriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\prescriptionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -159,22 +195,6 @@
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:interfaces\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\insurance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\wwwroot\\css\\chat.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:wwwroot\\css\\chat.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -191,10 +211,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/SHYAM_MASHRU/AIChatbot/True/SqlTable/dbo.Prescriptions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\datas\\aichatbotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:datas\\aichatbotdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/SHYAM_MASHRU/ChatbotDb/True/SqlTable/dbo.Otps.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -231,7 +247,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -239,44 +255,176 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PaymentController.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\PaymentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\PaymentController.cs",
-              "RelativeToolTip": "Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBUAAABKAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "20250118201230_UpdatedTablesWithReferenceForeign.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118201230_UpdatedTablesWithReferenceForeign.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250118201230_UpdatedTablesWithReferenceForeign.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118201230_UpdatedTablesWithReferenceForeign.cs",
+              "RelativeToolTip": "Migrations\\20250118201230_UpdatedTablesWithReferenceForeign.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:38:40.661Z"
+              "WhenOpened": "2025-01-18T20:12:30.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250118201051_UpdatedTablesWithReferenceKey.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118201051_UpdatedTablesWithReferenceKey.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250118201051_UpdatedTablesWithReferenceKey.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118201051_UpdatedTablesWithReferenceKey.cs",
+              "RelativeToolTip": "Migrations\\20250118201051_UpdatedTablesWithReferenceKey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T20:10:51.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Otp.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Otp.cs",
+              "RelativeDocumentMoniker": "Models\\Otp.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Otp.cs",
+              "RelativeToolTip": "Models\\Otp.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T14:46:20.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "Models\\Payment.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Payment.cs",
+              "RelativeToolTip": "Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T15:28:27.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PrescriptionController.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\PrescriptionController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PrescriptionController.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\PrescriptionController.cs",
-              "RelativeToolTip": "Controllers\\PrescriptionController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAYAAAABAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T17:40:42.983Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAEwEIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T18:14:10.412Z",
+              "WhenOpened": "2025-01-03T14:51:15.02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-03T14:51:16.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250118200626_UpdatedTablesWithReferenceForeignKey.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118200626_UpdatedTablesWithReferenceForeignKey.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250118200626_UpdatedTablesWithReferenceForeignKey.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118200626_UpdatedTablesWithReferenceForeignKey.cs",
+              "RelativeToolTip": "Migrations\\20250118200626_UpdatedTablesWithReferenceForeignKey.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T20:06:26.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Insurance.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Insurance.cs",
+              "RelativeDocumentMoniker": "Models\\Insurance.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Insurance.cs",
+              "RelativeToolTip": "Models\\Insurance.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T15:51:51.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T14:43:12.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Prescription.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Prescription.cs",
+              "RelativeDocumentMoniker": "Models\\Prescription.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Prescription.cs",
+              "RelativeToolTip": "Models\\Prescription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T17:12:52.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Models\\Appointment.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Appointment.cs",
+              "RelativeToolTip": "Models\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T12:59:33.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250118200009_UpdatedTablesWithReference.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118200009_UpdatedTablesWithReference.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250118200009_UpdatedTablesWithReference.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250118200009_UpdatedTablesWithReference.cs",
+              "RelativeToolTip": "Migrations\\20250118200009_UpdatedTablesWithReference.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T20:00:09.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AiChatbotDbContext.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Datas\\AiChatbotDbContext.cs",
+              "RelativeDocumentMoniker": "Datas\\AiChatbotDbContext.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Datas\\AiChatbotDbContext.cs",
+              "RelativeToolTip": "Datas\\AiChatbotDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAuwA4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T14:47:52.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "OtpService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\OtpService.cs",
               "RelativeDocumentMoniker": "Services\\OtpService.cs",
@@ -289,7 +437,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAEwEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-03T18:14:10.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PrescriptionController.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\PrescriptionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PrescriptionController.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\PrescriptionController.cs",
+              "RelativeToolTip": "Controllers\\PrescriptionController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T17:40:42.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PaymentController.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwBUAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-04T15:38:40.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AppointmentController.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\AppointmentController.cs",
               "RelativeDocumentMoniker": "Controllers\\AppointmentController.cs",
@@ -297,11 +484,12 @@
               "RelativeToolTip": "Controllers\\AppointmentController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAIwCIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T13:22:47.413Z"
+              "WhenOpened": "2025-01-04T13:22:47.413Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 18,
               "Title": "ChatController.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\ChatController.cs",
               "RelativeDocumentMoniker": "Controllers\\ChatController.cs",
@@ -309,11 +497,12 @@
               "RelativeToolTip": "Controllers\\ChatController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBUAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T17:31:29.134Z"
+              "WhenOpened": "2025-01-07T17:31:29.134Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 19,
               "Title": "InsuranceController.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\InsuranceController.cs",
               "RelativeDocumentMoniker": "Controllers\\InsuranceController.cs",
@@ -321,11 +510,12 @@
               "RelativeToolTip": "Controllers\\InsuranceController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:59:40.053Z"
+              "WhenOpened": "2025-01-04T15:59:40.053Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 20,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\EmailSettings.cs",
               "RelativeDocumentMoniker": "DTOs\\EmailSettings.cs",
@@ -333,11 +523,12 @@
               "RelativeToolTip": "DTOs\\EmailSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T17:09:11.198Z"
+              "WhenOpened": "2025-01-03T17:09:11.198Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 21,
               "Title": "ChatRequestDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\ChatRequestDto.cs",
               "RelativeDocumentMoniker": "DTOs\\ChatRequestDto.cs",
@@ -345,11 +536,12 @@
               "RelativeToolTip": "DTOs\\ChatRequestDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T17:54:10.839Z"
+              "WhenOpened": "2025-01-07T17:54:10.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 22,
               "Title": "JwtService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "Services\\JwtService.cs",
@@ -357,35 +549,12 @@
               "RelativeToolTip": "Services\\JwtService.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAwCQAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:58:52.754Z"
+              "WhenOpened": "2025-01-03T14:58:52.754Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAiwEIAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:51:15.02Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Appointment.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Appointment.cs",
-              "RelativeDocumentMoniker": "Models\\Appointment.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Appointment.cs",
-              "RelativeToolTip": "Models\\Appointment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T12:59:33.04Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "AppointmentDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\AppointmentDto.cs",
               "RelativeDocumentMoniker": "DTOs\\AppointmentDto.cs",
@@ -393,11 +562,12 @@
               "RelativeToolTip": "DTOs\\AppointmentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T13:39:19.433Z"
+              "WhenOpened": "2025-01-04T13:39:19.433Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "Chat.js",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\Chat.js",
@@ -405,11 +575,12 @@
               "RelativeToolTip": "wwwroot\\js\\Chat.js",
               "ViewState": "AgIAACIAAAAAAAAAAAAQwCQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-06T11:09:45.172Z"
+              "WhenOpened": "2025-01-06T11:09:45.172Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "ChatService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\ChatService.cs",
               "RelativeDocumentMoniker": "Services\\ChatService.cs",
@@ -417,11 +588,12 @@
               "RelativeToolTip": "Services\\ChatService.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAcwFIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T17:35:16.854Z"
+              "WhenOpened": "2025-01-07T17:35:16.854Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "InsuranceService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\InsuranceService.cs",
               "RelativeDocumentMoniker": "Services\\InsuranceService.cs",
@@ -429,11 +601,12 @@
               "RelativeToolTip": "Services\\InsuranceService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwB4AAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:56:47.358Z"
+              "WhenOpened": "2025-01-04T15:56:47.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "AppointmentService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\AppointmentService.cs",
               "RelativeDocumentMoniker": "Services\\AppointmentService.cs",
@@ -441,11 +614,12 @@
               "RelativeToolTip": "Services\\AppointmentService.cs",
               "ViewState": "AgIAABgAAAAAAAAAAAAYwB4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T13:12:29.256Z"
+              "WhenOpened": "2025-01-04T13:12:29.256Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "IChatService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IChatService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IChatService.cs",
@@ -453,11 +627,12 @@
               "RelativeToolTip": "Interfaces\\IChatService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T17:34:08.547Z"
+              "WhenOpened": "2025-01-07T17:34:08.547Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "LoginDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\LoginDto.cs",
               "RelativeDocumentMoniker": "DTOs\\LoginDto.cs",
@@ -465,11 +640,12 @@
               "RelativeToolTip": "DTOs\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T07:54:46.82Z"
+              "WhenOpened": "2025-01-08T07:54:46.82Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 30,
               "Title": "InsuranceDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\InsuranceDto.cs",
               "RelativeDocumentMoniker": "DTOs\\InsuranceDto.cs",
@@ -477,11 +653,12 @@
               "RelativeToolTip": "DTOs\\InsuranceDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:56:05.752Z"
+              "WhenOpened": "2025-01-04T15:56:05.752Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "ChatResponseDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\ChatResponseDto.cs",
               "RelativeDocumentMoniker": "DTOs\\ChatResponseDto.cs",
@@ -489,11 +666,12 @@
               "RelativeToolTip": "DTOs\\ChatResponseDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T17:50:33.009Z"
+              "WhenOpened": "2025-01-07T17:50:33.009Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "ChatMessageDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\ChatMessageDto.cs",
               "RelativeDocumentMoniker": "DTOs\\ChatMessageDto.cs",
@@ -501,11 +679,12 @@
               "RelativeToolTip": "DTOs\\ChatMessageDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T17:51:02.359Z"
+              "WhenOpened": "2025-01-07T17:51:02.359Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 33,
               "Title": "LoginService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\LoginService.cs",
               "RelativeDocumentMoniker": "Services\\LoginService.cs",
@@ -513,23 +692,12 @@
               "RelativeToolTip": "Services\\LoginService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T18:20:18.73Z"
+              "WhenOpened": "2025-01-03T18:20:18.73Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswBUAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-03T14:51:16.177Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 34,
               "Title": "RegisterService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\RegisterService.cs",
               "RelativeDocumentMoniker": "Services\\RegisterService.cs",
@@ -537,11 +705,12 @@
               "RelativeToolTip": "Services\\RegisterService.cs",
               "ViewState": "AgIAABUAAAAAAAAAAADgvx0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T16:41:46.817Z"
+              "WhenOpened": "2025-01-03T16:41:46.817Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 35,
               "Title": "IRegisterService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IRegisterService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IRegisterService.cs",
@@ -549,11 +718,12 @@
               "RelativeToolTip": "Interfaces\\IRegisterService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:18:23.688Z"
+              "WhenOpened": "2025-01-03T15:18:23.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 36,
               "Title": "PrescriptionDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\PrescriptionDto.cs",
               "RelativeDocumentMoniker": "DTOs\\PrescriptionDto.cs",
@@ -561,11 +731,12 @@
               "RelativeToolTip": "DTOs\\PrescriptionDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T17:21:54.083Z"
+              "WhenOpened": "2025-01-04T17:21:54.083Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 37,
               "Title": "PaymentDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\PaymentDto.cs",
               "RelativeDocumentMoniker": "DTOs\\PaymentDto.cs",
@@ -573,11 +744,12 @@
               "RelativeToolTip": "DTOs\\PaymentDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:32:47.485Z"
+              "WhenOpened": "2025-01-04T15:32:47.485Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 38,
               "Title": "OtpDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\OtpDto.cs",
               "RelativeDocumentMoniker": "DTOs\\OtpDto.cs",
@@ -585,11 +757,12 @@
               "RelativeToolTip": "DTOs\\OtpDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T08:14:59.461Z"
+              "WhenOpened": "2025-01-08T08:14:59.461Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 39,
               "Title": "IOtpService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IOtpService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IOtpService.cs",
@@ -597,11 +770,12 @@
               "RelativeToolTip": "Interfaces\\IOtpService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T15:09:20.162Z"
+              "WhenOpened": "2025-01-03T15:09:20.162Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 40,
               "Title": "IPaymentService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IPaymentService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IPaymentService.cs",
@@ -609,11 +783,12 @@
               "RelativeToolTip": "Interfaces\\IPaymentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:31:29.041Z"
+              "WhenOpened": "2025-01-04T15:31:29.041Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 41,
               "Title": "IPrescriptionService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IPrescriptionService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IPrescriptionService.cs",
@@ -621,23 +796,12 @@
               "RelativeToolTip": "Interfaces\\IPrescriptionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T17:21:19.888Z"
+              "WhenOpened": "2025-01-04T17:21:19.888Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Otp.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Otp.cs",
-              "RelativeDocumentMoniker": "Models\\Otp.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Otp.cs",
-              "RelativeToolTip": "Models\\Otp.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA8wAgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:46:20.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 42,
               "Title": "PrescriptionService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\PrescriptionService.cs",
               "RelativeDocumentMoniker": "Services\\PrescriptionService.cs",
@@ -645,11 +809,12 @@
               "RelativeToolTip": "Services\\PrescriptionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T17:23:54.286Z"
+              "WhenOpened": "2025-01-04T17:23:54.286Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 43,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\PaymentService.cs",
               "RelativeDocumentMoniker": "Services\\PaymentService.cs",
@@ -657,11 +822,12 @@
               "RelativeToolTip": "Services\\PaymentService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAIwBEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:34:33.877Z"
+              "WhenOpened": "2025-01-04T15:34:33.877Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 44,
               "Title": "IAppointmentService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IAppointmentService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IAppointmentService.cs",
@@ -669,11 +835,12 @@
               "RelativeToolTip": "Interfaces\\IAppointmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T13:04:04.002Z"
+              "WhenOpened": "2025-01-04T13:04:04.002Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 45,
               "Title": "IInsuranceService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IInsuranceService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IInsuranceService.cs",
@@ -681,11 +848,12 @@
               "RelativeToolTip": "Interfaces\\IInsuranceService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:54:50.876Z"
+              "WhenOpened": "2025-01-04T15:54:50.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 46,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IJwtService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IJwtService.cs",
@@ -693,11 +861,12 @@
               "RelativeToolTip": "Interfaces\\IJwtService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:57:22.938Z"
+              "WhenOpened": "2025-01-03T14:57:22.938Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 47,
               "Title": "ILoginService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\ILoginService.cs",
               "RelativeDocumentMoniker": "Interfaces\\ILoginService.cs",
@@ -705,59 +874,12 @@
               "RelativeToolTip": "Interfaces\\ILoginService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T18:20:03.063Z"
+              "WhenOpened": "2025-01-03T18:20:03.063Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:43:12.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Prescription.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Prescription.cs",
-              "RelativeDocumentMoniker": "Models\\Prescription.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Prescription.cs",
-              "RelativeToolTip": "Models\\Prescription.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T17:12:52.332Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "Models\\Payment.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Payment.cs",
-              "RelativeToolTip": "Models\\Payment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:28:27.46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Insurance.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Insurance.cs",
-              "RelativeDocumentMoniker": "Models\\Insurance.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Insurance.cs",
-              "RelativeToolTip": "Models\\Insurance.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:51:51.508Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "Chat.html",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\Chat.html",
               "RelativeDocumentMoniker": "wwwroot\\Chat.html",
@@ -765,11 +887,12 @@
               "RelativeToolTip": "wwwroot\\Chat.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-06T11:07:17.477Z"
+              "WhenOpened": "2025-01-06T11:07:17.477Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "Chat.css",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\Chat.css",
@@ -777,11 +900,12 @@
               "RelativeToolTip": "wwwroot\\css\\Chat.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-06T11:09:12.413Z"
+              "WhenOpened": "2025-01-06T11:09:12.413Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -789,11 +913,12 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAIBpwBoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-06T11:02:10.023Z"
+              "WhenOpened": "2025-01-06T11:02:10.023Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 51,
               "Title": "dbo.Prescriptions.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/SHYAM_MASHRU/ChatbotDb/True/SqlTable/dbo.Prescriptions.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/SHYAM_MASHRU/ChatbotDb/True/SqlTable/dbo.Prescriptions.sql",
@@ -802,7 +927,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "dbo.Prescriptions.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/SHYAM_MASHRU/AIChatbot/True/SqlTable/dbo.Prescriptions.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/SHYAM_MASHRU/AIChatbot/True/SqlTable/dbo.Prescriptions.sql",
@@ -811,7 +936,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 59,
               "Title": "20250104171838_PrescriptionDatabase.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250104171838_PrescriptionDatabase.cs",
               "RelativeDocumentMoniker": "Migrations\\20250104171838_PrescriptionDatabase.cs",
@@ -819,23 +944,12 @@
               "RelativeToolTip": "Migrations\\20250104171838_PrescriptionDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T17:18:38.591Z"
+              "WhenOpened": "2025-01-04T17:18:38.591Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "AiChatbotDbContext.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Datas\\AiChatbotDbContext.cs",
-              "RelativeDocumentMoniker": "Datas\\AiChatbotDbContext.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Datas\\AiChatbotDbContext.cs",
-              "RelativeToolTip": "Datas\\AiChatbotDbContext.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA4AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:47:52.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 56,
               "Title": "20250104155410_InsuranceDatabase.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250104155410_InsuranceDatabase.cs",
               "RelativeDocumentMoniker": "Migrations\\20250104155410_InsuranceDatabase.cs",
@@ -843,11 +957,12 @@
               "RelativeToolTip": "Migrations\\20250104155410_InsuranceDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:54:10.427Z"
+              "WhenOpened": "2025-01-04T15:54:10.427Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 57,
               "Title": "20250104153042_PaymentDatabase.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250104153042_PaymentDatabase.cs",
               "RelativeDocumentMoniker": "Migrations\\20250104153042_PaymentDatabase.cs",
@@ -855,11 +970,12 @@
               "RelativeToolTip": "Migrations\\20250104153042_PaymentDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T15:30:42.14Z"
+              "WhenOpened": "2025-01-04T15:30:42.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 58,
               "Title": "20250104130321_AppointmentDatabase.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250104130321_AppointmentDatabase.cs",
               "RelativeDocumentMoniker": "Migrations\\20250104130321_AppointmentDatabase.cs",
@@ -867,11 +983,12 @@
               "RelativeToolTip": "Migrations\\20250104130321_AppointmentDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T13:03:21.864Z"
+              "WhenOpened": "2025-01-04T13:03:21.864Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "dbo.Otps.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/SHYAM_MASHRU/ChatbotDb/True/SqlTable/dbo.Otps.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/SHYAM_MASHRU/ChatbotDb/True/SqlTable/dbo.Otps.sql",
@@ -880,7 +997,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "20250103184341_UserIdColumnAddToOtp.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250103184341_UserIdColumnAddToOtp.cs",
               "RelativeDocumentMoniker": "Migrations\\20250103184341_UserIdColumnAddToOtp.cs",
@@ -888,11 +1005,12 @@
               "RelativeToolTip": "Migrations\\20250103184341_UserIdColumnAddToOtp.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T18:43:41.204Z"
+              "WhenOpened": "2025-01-03T18:43:41.204Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "20250103145501_UserAndOtpDatabase.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250103145501_UserAndOtpDatabase.cs",
               "RelativeDocumentMoniker": "Migrations\\20250103145501_UserAndOtpDatabase.cs",
@@ -900,7 +1018,8 @@
               "RelativeToolTip": "Migrations\\20250103145501_UserAndOtpDatabase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-03T14:55:01.974Z"
+              "WhenOpened": "2025-01-03T14:55:01.974Z",
+              "EditorCaption": ""
             }
           ]
         }
