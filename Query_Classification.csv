@@ -1,0 +1,1001 @@
+query,intent
+What medicines have been prescribed to me?,get-prescriptions
+Mujhe fever ka ilaj batao,General
+Check my appointment status,get-appointment
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+How can I take care of my health?,General
+Show the medicines I was given,get-prescriptions
+Tell me about healthy eating habits,General
+How can I prevent flu?,General
+How can I prevent flu?,General
+Can I sign in with my email?,login
+Log me in,login
+What is my policy limit?,get-insurance
+Tell me about healthy eating habits,General
+I need to fix a doctor visit,set-appointment
+Can I see my medical bills?,get-payment
+Can I see my medical coverage?,get-insurance
+Can you reserve a time slot with the doctor?,set-appointment
+I need to check my payment history,get-payment
+How to manage high blood pressure?,General
+Mujhe fever ka ilaj batao,General
+Mujhe login karna hai,login
+I need to see my health insurance,get-insurance
+How can I login to my account?,login
+How can I prevent flu?,General
+Tell me about healthy eating habits,General
+Fetch my prescribed medicines,get-prescriptions
+Can I sign in with my email?,login
+Open my account page,login
+Can you fetch my appointment details?,get-appointment
+How can I take care of my health?,General
+Tell me about healthy eating habits,General
+I need to fix a doctor visit,set-appointment
+Can you reserve a time slot with the doctor?,set-appointment
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+Fetch my insurance policy details,get-insurance
+I need to check my payment history,get-payment
+Open my account page,login
+General tips for good health,General
+Fetch my prescribed medicines,get-prescriptions
+Show the medicines I was given,get-prescriptions
+Do I have any pending payments?,get-payment
+How to manage high blood pressure?,General
+Show my payment details,get-payment
+Can you fetch my appointment details?,get-appointment
+I need to check my payment history,get-payment
+Mujhe fever ka ilaj batao,General
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+I need access to my profile,login
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+Fetch my insurance policy details,get-insurance
+Mujhe apna insurance dekhna hai,get-insurance
+What precautions should I take for heart health?,General
+Can you reserve a time slot with the doctor?,set-appointment
+I need to check my payment history,get-payment
+Mujhe fever ka ilaj batao,General
+Login using my credentials,login
+Schedule a visit on Monday,set-appointment
+Show me all my paid bills,get-payment
+What is a balanced diet?,General
+What is my policy limit?,get-insurance
+What is a balanced diet?,General
+What are my current prescriptions?,get-prescriptions
+I need to fix a doctor visit,set-appointment
+What are the symptoms of diabetes?,General
+Show me all my paid bills,get-payment
+How can I login to my account?,login
+Show my payment details,get-payment
+What are my current prescriptions?,get-prescriptions
+Mujhe fever ka ilaj batao,General
+Can you set an appointment for me next week?,set-appointment
+Schedule an appointment for next Friday,set-appointment
+Schedule an appointment for next Friday,set-appointment
+Show my insurance details,get-insurance
+Fetch my payment records,get-payment
+Do I have any pending payments?,get-payment
+I need to check my payment history,get-payment
+Mujhe login karna hai,login
+Can you fetch my policy information?,get-insurance
+Tell me about my policy coverage,get-insurance
+Login using my credentials,login
+Can I see my medicine list?,get-prescriptions
+Mera agla appointment kab hai?,get-appointment
+What are my current prescriptions?,get-prescriptions
+Mera agla appointment kab hai?,get-appointment
+Mujhe apna insurance dekhna hai,get-insurance
+Show me my appointment details,get-appointment
+Schedule a visit on Monday,set-appointment
+I need my prescription details,get-prescriptions
+Show my prescriptions,get-prescriptions
+Tell me about healthy eating habits,General
+Do I have any appointments this week?,get-appointment
+Show me my appointment details,get-appointment
+Show the medicines I was given,get-prescriptions
+Fetch my prescribed medicines,get-prescriptions
+Show me my appointment details,get-appointment
+Can you reserve a time slot with the doctor?,set-appointment
+Show my prescriptions,get-prescriptions
+How can I take care of my health?,General
+Fetch my insurance policy details,get-insurance
+Do I have any appointments this week?,get-appointment
+When is my next appointment?,get-appointment
+Mujhe fever ka ilaj batao,General
+What precautions should I take for heart health?,General
+Can you reserve a time slot with the doctor?,set-appointment
+Tell me about healthy eating habits,General
+What are my scheduled visits?,get-appointment
+I need to fix a doctor visit,set-appointment
+Can you set an appointment for me next week?,set-appointment
+What medicines have been prescribed to me?,get-prescriptions
+I want to see my appointments,get-appointment
+Book an appointment for tomorrow at 5 PM,set-appointment
+Do I have any pending payments?,get-payment
+Check my appointment status,get-appointment
+Can I see my medical bills?,get-payment
+What medicines have been prescribed to me?,get-prescriptions
+What precautions should I take for heart health?,General
+What medicines have been prescribed to me?,get-prescriptions
+Log me in,login
+Check my health insurance,get-insurance
+Fetch my insurance policy details,get-insurance
+Book an appointment for tomorrow at 5 PM,set-appointment
+Open my account page,login
+Mujhe fever ka ilaj batao,General
+Show my insurance details,get-insurance
+Do I have any appointments this week?,get-appointment
+Tell me about my due payments,get-payment
+Book an appointment for tomorrow at 5 PM,set-appointment
+Do I have any pending payments?,get-payment
+Set my appointment at 3 PM tomorrow,set-appointment
+Log me in,login
+Set my appointment at 3 PM tomorrow,set-appointment
+Open my account page,login
+Tell me about healthy eating habits,General
+Can I sign in with my email?,login
+Can you set an appointment for me next week?,set-appointment
+Tell me about my doctor visits,get-appointment
+Schedule an appointment for next Friday,set-appointment
+What is my policy limit?,get-insurance
+Can I sign in with my email?,login
+What medicines have been prescribed to me?,get-prescriptions
+Can I see my medicine list?,get-prescriptions
+Upcoming appointments details please,get-appointment
+How can I login to my account?,login
+General tips for good health,General
+I want to login,login
+Fetch my prescribed medicines,get-prescriptions
+Set my appointment at 3 PM tomorrow,set-appointment
+Check my insurance status,get-insurance
+Book an appointment for tomorrow at 5 PM,set-appointment
+Mere payment records kahan hain?,get-payment
+Check my insurance status,get-insurance
+Show my insurance details,get-insurance
+Login to my account,login
+Tell me about my due payments,get-payment
+Show my insurance details,get-insurance
+Check my appointment status,get-appointment
+Show my prescriptions,get-prescriptions
+I need to see my health insurance,get-insurance
+Mujhe apna insurance dekhna hai,get-insurance
+I want to login,login
+When is my next appointment?,get-appointment
+Schedule an appointment for next Friday,set-appointment
+How can I login to my account?,login
+Do I have any pending payments?,get-payment
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+I need to fix a doctor visit,set-appointment
+I want to login,login
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+What is my outstanding balance?,get-payment
+I need access to my profile,login
+Open my account page,login
+Can you set an appointment for me next week?,set-appointment
+Mujhe login karna hai,login
+Tell me about healthy eating habits,General
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+I need access to my profile,login
+Tell me about my due payments,get-payment
+Fix an appointment on Thursday afternoon,set-appointment
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+Mujhe login karna hai,login
+Can you fetch my policy information?,get-insurance
+Upcoming appointments details please,get-appointment
+Upcoming appointments details please,get-appointment
+Fetch my payment records,get-payment
+Upcoming appointments details please,get-appointment
+What precautions should I take for heart health?,General
+Login using my credentials,login
+Can you fetch my policy information?,get-insurance
+Schedule an appointment for next Friday,set-appointment
+Mujhe fever ka ilaj batao,General
+What are the symptoms of diabetes?,General
+How to manage high blood pressure?,General
+I need my prescription details,get-prescriptions
+Sign me into the portal,login
+What is a balanced diet?,General
+What is my policy limit?,get-insurance
+Fetch my prescribed medicines,get-prescriptions
+How can I take care of my health?,General
+I want to see my appointments,get-appointment
+Show the medicines I was given,get-prescriptions
+Schedule an appointment for next Friday,set-appointment
+I need to fix a doctor visit,set-appointment
+How can I take care of my health?,General
+What is the best way to treat a cold?,General
+Tell me about healthy eating habits,General
+Fetch my insurance policy details,get-insurance
+How can I login to my account?,login
+Schedule an appointment for next Friday,set-appointment
+Show the medicines I was given,get-prescriptions
+Book an appointment for tomorrow at 5 PM,set-appointment
+Can I see my medicine list?,get-prescriptions
+Can I see my medical bills?,get-payment
+What are my scheduled visits?,get-appointment
+What is a balanced diet?,General
+Mujhe apna insurance dekhna hai,get-insurance
+What is the best way to treat a cold?,General
+Book an appointment for tomorrow at 5 PM,set-appointment
+Log me in,login
+Log me in,login
+Log me in,login
+Mere payment records kahan hain?,get-payment
+Fix an appointment on Thursday afternoon,set-appointment
+I need my prescription details,get-prescriptions
+Can I sign in with my email?,login
+Tell me about my due payments,get-payment
+Tell me about healthy eating habits,General
+Tell me about my due payments,get-payment
+Tell me about healthy eating habits,General
+How can I login to my account?,login
+Do I have any appointments this week?,get-appointment
+What are the symptoms of diabetes?,General
+Fetch my payment records,get-payment
+I need to check my payment history,get-payment
+Check my health insurance,get-insurance
+Log me in,login
+What are my current prescriptions?,get-prescriptions
+Can I sign in with my email?,login
+Login using my credentials,login
+Do I have any pending payments?,get-payment
+What precautions should I take for heart health?,General
+Mujhe fever ka ilaj batao,General
+I need access to my profile,login
+Can I see my medical bills?,get-payment
+Mujhe login karna hai,login
+Tell me about my policy coverage,get-insurance
+How to manage high blood pressure?,General
+Login to my account,login
+Do I have any appointments this week?,get-appointment
+Mere payment records kahan hain?,get-payment
+How can I prevent flu?,General
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+What is my policy limit?,get-insurance
+General tips for good health,General
+I need to fix a doctor visit,set-appointment
+Mujhe fever ka ilaj batao,General
+I want to login,login
+Can I see my medical coverage?,get-insurance
+I want to login,login
+Book my doctor consultation,set-appointment
+Book my doctor consultation,set-appointment
+Show my payment details,get-payment
+What are my current prescriptions?,get-prescriptions
+General tips for good health,General
+Can I see my medical bills?,get-payment
+How can I prevent flu?,General
+Can you fetch my policy information?,get-insurance
+How to manage high blood pressure?,General
+Can I sign in with my email?,login
+Fetch my prescribed medicines,get-prescriptions
+Can I see my medical bills?,get-payment
+What is a balanced diet?,General
+Fix an appointment on Thursday afternoon,set-appointment
+Can you fetch my policy information?,get-insurance
+Can you set an appointment for me next week?,set-appointment
+Schedule a visit on Monday,set-appointment
+Fetch my prescribed medicines,get-prescriptions
+Tell me about healthy eating habits,General
+Can you set an appointment for me next week?,set-appointment
+How can I login to my account?,login
+Book my doctor consultation,set-appointment
+Check my health insurance,get-insurance
+Open my account page,login
+Can I see my medical coverage?,get-insurance
+Fetch my insurance policy details,get-insurance
+Login to my account,login
+Mujhe apna insurance dekhna hai,get-insurance
+Fetch my payment records,get-payment
+Show me my appointment details,get-appointment
+Login using my credentials,login
+What are the symptoms of diabetes?,General
+Sign me into the portal,login
+Book my doctor consultation,set-appointment
+How can I take care of my health?,General
+What medicines have been prescribed to me?,get-prescriptions
+What is a balanced diet?,General
+Can you reserve a time slot with the doctor?,set-appointment
+Check my insurance status,get-insurance
+I want to see my appointments,get-appointment
+How to manage high blood pressure?,General
+How can I take care of my health?,General
+Can I see my medicine list?,get-prescriptions
+Check my appointment status,get-appointment
+How can I take care of my health?,General
+Show me my appointment details,get-appointment
+How can I login to my account?,login
+Mujhe fever ka ilaj batao,General
+I need to check my payment history,get-payment
+Show my insurance details,get-insurance
+I want to check my prescriptions,get-prescriptions
+Check my financial transactions,get-payment
+Login to my account,login
+Mujhe fever ka ilaj batao,General
+Log me in,login
+I need to fix a doctor visit,set-appointment
+Book an appointment for tomorrow at 5 PM,set-appointment
+Mujhe apna insurance dekhna hai,get-insurance
+What is a balanced diet?,General
+Can you set an appointment for me next week?,set-appointment
+Book an appointment for tomorrow at 5 PM,set-appointment
+I need to fix a doctor visit,set-appointment
+Do I have any pending payments?,get-payment
+What is the best way to treat a cold?,General
+Tell me about my doctor visits,get-appointment
+What precautions should I take for heart health?,General
+Show me my appointment details,get-appointment
+Tell me about my doctor visits,get-appointment
+I need to see my health insurance,get-insurance
+I need my prescription details,get-prescriptions
+Tell me about healthy eating habits,General
+Can you fetch my policy information?,get-insurance
+What are the symptoms of diabetes?,General
+What are my current prescriptions?,get-prescriptions
+Show my insurance details,get-insurance
+What is a balanced diet?,General
+Tell me about healthy eating habits,General
+Check my financial transactions,get-payment
+Mujhe fever ka ilaj batao,General
+What is my policy limit?,get-insurance
+What is a balanced diet?,General
+Login to my account,login
+Tell me about my policy coverage,get-insurance
+Do I have any appointments this week?,get-appointment
+Mujhe apna insurance dekhna hai,get-insurance
+When is my next appointment?,get-appointment
+Check my insurance status,get-insurance
+Open my account page,login
+I need my prescription details,get-prescriptions
+When is my next appointment?,get-appointment
+How to manage high blood pressure?,General
+Can you fetch my policy information?,get-insurance
+Show me my appointment details,get-appointment
+Show my insurance details,get-insurance
+Schedule a visit on Monday,set-appointment
+What medicines have been prescribed to me?,get-prescriptions
+Do I have any pending payments?,get-payment
+Tell me about my due payments,get-payment
+Show my prescriptions,get-prescriptions
+What is a balanced diet?,General
+Can you fetch my appointment details?,get-appointment
+What medicines have been prescribed to me?,get-prescriptions
+How can I prevent flu?,General
+What are the symptoms of diabetes?,General
+Check my health insurance,get-insurance
+I need to see my health insurance,get-insurance
+Tell me about my doctor visits,get-appointment
+I need access to my profile,login
+Login to my account,login
+Tell me about my policy coverage,get-insurance
+Mujhe fever ka ilaj batao,General
+Open my account page,login
+Tell me about my policy coverage,get-insurance
+Can I see my medicine list?,get-prescriptions
+Can you fetch my policy information?,get-insurance
+How can I login to my account?,login
+Tell me about my due payments,get-payment
+When is my next appointment?,get-appointment
+How can I prevent flu?,General
+Show my insurance details,get-insurance
+What is my policy limit?,get-insurance
+Log me in,login
+Mere payment records kahan hain?,get-payment
+Upcoming appointments details please,get-appointment
+Check my prescription records,get-prescriptions
+Mera agla appointment kab hai?,get-appointment
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+Tell me about my due payments,get-payment
+Fix an appointment on Thursday afternoon,set-appointment
+Fetch my prescribed medicines,get-prescriptions
+Login using my credentials,login
+When is my next appointment?,get-appointment
+Do I have any pending payments?,get-payment
+Check my financial transactions,get-payment
+I need to fix a doctor visit,set-appointment
+What are my scheduled visits?,get-appointment
+I need to check my payment history,get-payment
+Tell me about healthy eating habits,General
+Tell me about my doctor visits,get-appointment
+Tell me about healthy eating habits,General
+General tips for good health,General
+What is the best way to treat a cold?,General
+Show the medicines I was given,get-prescriptions
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+Check my financial transactions,get-payment
+Can you fetch my policy information?,get-insurance
+General tips for good health,General
+Mere payment records kahan hain?,get-payment
+I want to check my prescriptions,get-prescriptions
+I need to see my health insurance,get-insurance
+Can I see my medical coverage?,get-insurance
+What precautions should I take for heart health?,General
+I need to fix a doctor visit,set-appointment
+Can you fetch my appointment details?,get-appointment
+Can I see my medicine list?,get-prescriptions
+Check my health insurance,get-insurance
+Show the medicines I was given,get-prescriptions
+General tips for good health,General
+Login using my credentials,login
+Tell me about my due payments,get-payment
+How can I take care of my health?,General
+I want to check my prescriptions,get-prescriptions
+Mere payment records kahan hain?,get-payment
+Mujhe apna insurance dekhna hai,get-insurance
+How can I take care of my health?,General
+What is the best way to treat a cold?,General
+I want to check my prescriptions,get-prescriptions
+Mujhe apna insurance dekhna hai,get-insurance
+Show my insurance details,get-insurance
+What is the best way to treat a cold?,General
+Log me in,login
+Set my appointment at 3 PM tomorrow,set-appointment
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+What are my scheduled visits?,get-appointment
+Check my health insurance,get-insurance
+Can you fetch my appointment details?,get-appointment
+Show my prescriptions,get-prescriptions
+Check my financial transactions,get-payment
+What are my scheduled visits?,get-appointment
+Fetch my payment records,get-payment
+How can I take care of my health?,General
+I need my prescription details,get-prescriptions
+I need my prescription details,get-prescriptions
+Mujhe apna insurance dekhna hai,get-insurance
+Fix an appointment on Thursday afternoon,set-appointment
+Open my account page,login
+How can I take care of my health?,General
+Can I sign in with my email?,login
+General tips for good health,General
+How can I login to my account?,login
+Tell me about my doctor visits,get-appointment
+Tell me about my doctor visits,get-appointment
+Tell me about my doctor visits,get-appointment
+Can you fetch my appointment details?,get-appointment
+Show my insurance details,get-insurance
+Log me in,login
+Show my prescriptions,get-prescriptions
+I need to check my payment history,get-payment
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+Upcoming appointments details please,get-appointment
+I want to see my appointments,get-appointment
+Can I see my medical bills?,get-payment
+Do I have any appointments this week?,get-appointment
+What are the symptoms of diabetes?,General
+I need to see my health insurance,get-insurance
+Login to my account,login
+Book an appointment for tomorrow at 5 PM,set-appointment
+Fetch my payment records,get-payment
+What is a balanced diet?,General
+Show the medicines I was given,get-prescriptions
+Can I see my medical bills?,get-payment
+Show me my appointment details,get-appointment
+I want to check my prescriptions,get-prescriptions
+Mere payment records kahan hain?,get-payment
+Tell me about healthy eating habits,General
+Login using my credentials,login
+Tell me about healthy eating habits,General
+Fetch my insurance policy details,get-insurance
+Tell me about my doctor visits,get-appointment
+Check my insurance status,get-insurance
+Check my insurance status,get-insurance
+Book my doctor consultation,set-appointment
+What medicines have been prescribed to me?,get-prescriptions
+Can I see my medicine list?,get-prescriptions
+What precautions should I take for heart health?,General
+Show the medicines I was given,get-prescriptions
+Set my appointment at 3 PM tomorrow,set-appointment
+Can I see my medical bills?,get-payment
+Check my insurance status,get-insurance
+Fetch my insurance policy details,get-insurance
+Do I have any appointments this week?,get-appointment
+How to manage high blood pressure?,General
+Tell me about healthy eating habits,General
+Show the medicines I was given,get-prescriptions
+Can I sign in with my email?,login
+Can I sign in with my email?,login
+Fetch my insurance policy details,get-insurance
+Upcoming appointments details please,get-appointment
+Can I see my medical coverage?,get-insurance
+Check my health insurance,get-insurance
+Do I have any appointments this week?,get-appointment
+Check my health insurance,get-insurance
+What medicines have been prescribed to me?,get-prescriptions
+I need to fix a doctor visit,set-appointment
+Mere payment records kahan hain?,get-payment
+How can I take care of my health?,General
+I need to see my health insurance,get-insurance
+Can you reserve a time slot with the doctor?,set-appointment
+How can I take care of my health?,General
+I need access to my profile,login
+I need to fix a doctor visit,set-appointment
+Mere payment records kahan hain?,get-payment
+What precautions should I take for heart health?,General
+I need to see my health insurance,get-insurance
+What is my outstanding balance?,get-payment
+What is the best way to treat a cold?,General
+When is my next appointment?,get-appointment
+Tell me about my policy coverage,get-insurance
+Mera agla appointment kab hai?,get-appointment
+Can I sign in with my email?,login
+Can I see my medicine list?,get-prescriptions
+What is my outstanding balance?,get-payment
+Check my insurance status,get-insurance
+I need access to my profile,login
+What is my policy limit?,get-insurance
+I need my prescription details,get-prescriptions
+When is my next appointment?,get-appointment
+How can I prevent flu?,General
+What is my policy limit?,get-insurance
+What is a balanced diet?,General
+Check my health insurance,get-insurance
+Can you reserve a time slot with the doctor?,set-appointment
+Check my health insurance,get-insurance
+I want to login,login
+Show my payment details,get-payment
+I need to fix a doctor visit,set-appointment
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+I need to fix a doctor visit,set-appointment
+Fix an appointment on Thursday afternoon,set-appointment
+Log me in,login
+How to manage high blood pressure?,General
+Check my insurance status,get-insurance
+Fetch my payment records,get-payment
+Fetch my insurance policy details,get-insurance
+Check my financial transactions,get-payment
+Show my prescriptions,get-prescriptions
+I want to see my appointments,get-appointment
+Open my account page,login
+Tell me about my policy coverage,get-insurance
+I want to login,login
+When is my next appointment?,get-appointment
+Can I see my medical bills?,get-payment
+What are my current prescriptions?,get-prescriptions
+General tips for good health,General
+Mera agla appointment kab hai?,get-appointment
+Can I see my medical coverage?,get-insurance
+Can you fetch my policy information?,get-insurance
+Tell me about my doctor visits,get-appointment
+How can I prevent flu?,General
+Check my prescription records,get-prescriptions
+Show my prescriptions,get-prescriptions
+What medicines have been prescribed to me?,get-prescriptions
+Check my insurance status,get-insurance
+Show the medicines I was given,get-prescriptions
+Open my account page,login
+Check my appointment status,get-appointment
+How can I take care of my health?,General
+Can you set an appointment for me next week?,set-appointment
+Mere payment records kahan hain?,get-payment
+What are my current prescriptions?,get-prescriptions
+Check my financial transactions,get-payment
+Login using my credentials,login
+I want to see my appointments,get-appointment
+Do I have any pending payments?,get-payment
+What is a balanced diet?,General
+Set my appointment at 3 PM tomorrow,set-appointment
+I want to see my appointments,get-appointment
+I need to see my health insurance,get-insurance
+Can I see my medical bills?,get-payment
+I want to check my prescriptions,get-prescriptions
+Do I have any pending payments?,get-payment
+How to manage high blood pressure?,General
+Show my payment details,get-payment
+Tell me about my policy coverage,get-insurance
+When is my next appointment?,get-appointment
+Fetch my prescribed medicines,get-prescriptions
+Set my appointment at 3 PM tomorrow,set-appointment
+Mujhe fever ka ilaj batao,General
+Check my prescription records,get-prescriptions
+Can you fetch my policy information?,get-insurance
+What precautions should I take for heart health?,General
+Book an appointment for tomorrow at 5 PM,set-appointment
+Can I see my medical coverage?,get-insurance
+Check my appointment status,get-appointment
+Show me my appointment details,get-appointment
+What medicines have been prescribed to me?,get-prescriptions
+What is the best way to treat a cold?,General
+Show my prescriptions,get-prescriptions
+What is a balanced diet?,General
+Book an appointment for tomorrow at 5 PM,set-appointment
+Login using my credentials,login
+Mujhe apna insurance dekhna hai,get-insurance
+What is my policy limit?,get-insurance
+Mujhe fever ka ilaj batao,General
+Fetch my insurance policy details,get-insurance
+What is my outstanding balance?,get-payment
+What is my policy limit?,get-insurance
+General tips for good health,General
+What precautions should I take for heart health?,General
+Check my health insurance,get-insurance
+Show my payment details,get-payment
+Check my health insurance,get-insurance
+Mujhe apna insurance dekhna hai,get-insurance
+Log me in,login
+Mujhe apna insurance dekhna hai,get-insurance
+Tell me about my doctor visits,get-appointment
+Open my account page,login
+Log me in,login
+Fix an appointment on Thursday afternoon,set-appointment
+Sign me into the portal,login
+Show me all my paid bills,get-payment
+Check my insurance status,get-insurance
+Show my payment details,get-payment
+Set my appointment at 3 PM tomorrow,set-appointment
+Tell me about my doctor visits,get-appointment
+Show my insurance details,get-insurance
+Check my health insurance,get-insurance
+How can I login to my account?,login
+What is my outstanding balance?,get-payment
+Can I see my medical bills?,get-payment
+When is my next appointment?,get-appointment
+What is my policy limit?,get-insurance
+I need to see my health insurance,get-insurance
+Can you reserve a time slot with the doctor?,set-appointment
+What are my current prescriptions?,get-prescriptions
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+Mera agla appointment kab hai?,get-appointment
+Fetch my payment records,get-payment
+Check my health insurance,get-insurance
+Mera agla appointment kab hai?,get-appointment
+How can I take care of my health?,General
+Tell me about my doctor visits,get-appointment
+What precautions should I take for heart health?,General
+Log me in,login
+Show me my appointment details,get-appointment
+I need my prescription details,get-prescriptions
+Book an appointment for tomorrow at 5 PM,set-appointment
+Can you reserve a time slot with the doctor?,set-appointment
+Tell me about my doctor visits,get-appointment
+Schedule an appointment for next Friday,set-appointment
+Do I have any appointments this week?,get-appointment
+Show the medicines I was given,get-prescriptions
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+Show my payment details,get-payment
+Fetch my insurance policy details,get-insurance
+Tell me about my due payments,get-payment
+Show me my appointment details,get-appointment
+Check my insurance status,get-insurance
+Show the medicines I was given,get-prescriptions
+Book an appointment for tomorrow at 5 PM,set-appointment
+Log me in,login
+How can I prevent flu?,General
+Do I have any appointments this week?,get-appointment
+Show the medicines I was given,get-prescriptions
+Login to my account,login
+Do I have any pending payments?,get-payment
+What is my policy limit?,get-insurance
+I want to login,login
+Tell me about my doctor visits,get-appointment
+What precautions should I take for heart health?,General
+Tell me about healthy eating habits,General
+Check my insurance status,get-insurance
+Set my appointment at 3 PM tomorrow,set-appointment
+Can I sign in with my email?,login
+Login to my account,login
+Show my prescriptions,get-prescriptions
+Mujhe apna insurance dekhna hai,get-insurance
+Set my appointment at 3 PM tomorrow,set-appointment
+Tell me about my due payments,get-payment
+I need access to my profile,login
+I want to check my prescriptions,get-prescriptions
+I need to see my health insurance,get-insurance
+Do I have any appointments this week?,get-appointment
+I need to see my health insurance,get-insurance
+Check my appointment status,get-appointment
+Can I see my medicine list?,get-prescriptions
+What is the best way to treat a cold?,General
+Do I have any pending payments?,get-payment
+Book an appointment for tomorrow at 5 PM,set-appointment
+General tips for good health,General
+What is a balanced diet?,General
+Show my insurance details,get-insurance
+How can I take care of my health?,General
+Login using my credentials,login
+What is a balanced diet?,General
+What medicines have been prescribed to me?,get-prescriptions
+What are the symptoms of diabetes?,General
+What are my scheduled visits?,get-appointment
+I want to see my appointments,get-appointment
+How to manage high blood pressure?,General
+I want to see my appointments,get-appointment
+Show my payment details,get-payment
+Can I see my medicine list?,get-prescriptions
+Can I see my medicine list?,get-prescriptions
+Show me my appointment details,get-appointment
+Set my appointment at 3 PM tomorrow,set-appointment
+Show my payment details,get-payment
+Show my prescriptions,get-prescriptions
+Check my financial transactions,get-payment
+General tips for good health,General
+Log me in,login
+Can you fetch my appointment details?,get-appointment
+Can you set an appointment for me next week?,set-appointment
+Tell me about healthy eating habits,General
+Can I sign in with my email?,login
+Book an appointment for tomorrow at 5 PM,set-appointment
+Fetch my prescribed medicines,get-prescriptions
+Can you fetch my appointment details?,get-appointment
+How can I prevent flu?,General
+Tell me about healthy eating habits,General
+I want to check my prescriptions,get-prescriptions
+Do I have any pending payments?,get-payment
+Can I see my medical bills?,get-payment
+I need my prescription details,get-prescriptions
+Tell me about my doctor visits,get-appointment
+Log me in,login
+How can I prevent flu?,General
+Do I have any pending payments?,get-payment
+I need access to my profile,login
+Set my appointment at 3 PM tomorrow,set-appointment
+Show my prescriptions,get-prescriptions
+I want to see my appointments,get-appointment
+Login to my account,login
+What are the symptoms of diabetes?,General
+Show my insurance details,get-insurance
+Check my appointment status,get-appointment
+What is a balanced diet?,General
+Set my appointment at 3 PM tomorrow,set-appointment
+Open my account page,login
+What is my policy limit?,get-insurance
+What is a balanced diet?,General
+Show the medicines I was given,get-prescriptions
+I need my prescription details,get-prescriptions
+Mere payment records kahan hain?,get-payment
+Can I see my medical bills?,get-payment
+What is the best way to treat a cold?,General
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+Tell me about healthy eating habits,General
+Show me all my paid bills,get-payment
+I want to see my appointments,get-appointment
+How can I login to my account?,login
+Can you reserve a time slot with the doctor?,set-appointment
+What is a balanced diet?,General
+Tell me about my policy coverage,get-insurance
+Fetch my insurance policy details,get-insurance
+What is my policy limit?,get-insurance
+I want to see my appointments,get-appointment
+Tell me about healthy eating habits,General
+Can I sign in with my email?,login
+Can I see my medical bills?,get-payment
+Can I see my medicine list?,get-prescriptions
+I want to check my prescriptions,get-prescriptions
+When is my next appointment?,get-appointment
+Mere payment records kahan hain?,get-payment
+Fetch my prescribed medicines,get-prescriptions
+Sign me into the portal,login
+Tell me about my policy coverage,get-insurance
+How to manage high blood pressure?,General
+Check my prescription records,get-prescriptions
+Show my prescriptions,get-prescriptions
+Can you reserve a time slot with the doctor?,set-appointment
+Mujhe fever ka ilaj batao,General
+Book my doctor consultation,set-appointment
+Show me all my paid bills,get-payment
+Show the medicines I was given,get-prescriptions
+Tell me about my doctor visits,get-appointment
+What are my current prescriptions?,get-prescriptions
+Set my appointment at 3 PM tomorrow,set-appointment
+Book my doctor consultation,set-appointment
+Tell me about my doctor visits,get-appointment
+What medicines have been prescribed to me?,get-prescriptions
+Check my health insurance,get-insurance
+I want to check my prescriptions,get-prescriptions
+Tell me about my doctor visits,get-appointment
+Can I see my medicine list?,get-prescriptions
+What is my outstanding balance?,get-payment
+Mujhe apna insurance dekhna hai,get-insurance
+Can I see my medical bills?,get-payment
+Do I have any appointments this week?,get-appointment
+Mujhe apna insurance dekhna hai,get-insurance
+What is the best way to treat a cold?,General
+How can I prevent flu?,General
+Show my insurance details,get-insurance
+I need my prescription details,get-prescriptions
+Login using my credentials,login
+How can I prevent flu?,General
+Mera agla appointment kab hai?,get-appointment
+Tell me about healthy eating habits,General
+Upcoming appointments details please,get-appointment
+Tell me about healthy eating habits,General
+Mujhe apna insurance dekhna hai,get-insurance
+I need my prescription details,get-prescriptions
+Schedule a visit on Monday,set-appointment
+Show the medicines I was given,get-prescriptions
+When is my next appointment?,get-appointment
+Log me in,login
+I want to check my prescriptions,get-prescriptions
+Mere payment records kahan hain?,get-payment
+General tips for good health,General
+Tell me about healthy eating habits,General
+Fetch my payment records,get-payment
+Tell me about my policy coverage,get-insurance
+Can I see my medicine list?,get-prescriptions
+Can you set an appointment for me next week?,set-appointment
+Check my health insurance,get-insurance
+Show me my appointment details,get-appointment
+Check my appointment status,get-appointment
+Show the medicines I was given,get-prescriptions
+Mujhe login karna hai,login
+What precautions should I take for heart health?,General
+Can you set an appointment for me next week?,set-appointment
+Show my insurance details,get-insurance
+Set my appointment at 3 PM tomorrow,set-appointment
+What are the symptoms of diabetes?,General
+Mujhe apna insurance dekhna hai,get-insurance
+What are my scheduled visits?,get-appointment
+What is my outstanding balance?,get-payment
+Mera agla appointment kab hai?,get-appointment
+Can I sign in with my email?,login
+What medicines have been prescribed to me?,get-prescriptions
+Check my prescription records,get-prescriptions
+How can I prevent flu?,General
+I need to check my payment history,get-payment
+What is my policy limit?,get-insurance
+What precautions should I take for heart health?,General
+How can I take care of my health?,General
+General tips for good health,General
+Can I see my medical coverage?,get-insurance
+Upcoming appointments details please,get-appointment
+Check my prescription records,get-prescriptions
+Check my financial transactions,get-payment
+Upcoming appointments details please,get-appointment
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+What medicines have been prescribed to me?,get-prescriptions
+Set my appointment at 3 PM tomorrow,set-appointment
+What is my policy limit?,get-insurance
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+What is my policy limit?,get-insurance
+Fetch my payment records,get-payment
+Schedule an appointment for next Friday,set-appointment
+Tell me about my due payments,get-payment
+Schedule a visit on Monday,set-appointment
+General tips for good health,General
+Check my appointment status,get-appointment
+Can I see my medicine list?,get-prescriptions
+Can I see my medicine list?,get-prescriptions
+Do I have any pending payments?,get-payment
+Tell me about healthy eating habits,General
+Show me my appointment details,get-appointment
+Log me in,login
+Can I sign in with my email?,login
+Mera agla appointment kab hai?,get-appointment
+How can I prevent flu?,General
+Show me all my paid bills,get-payment
+I need to check my payment history,get-payment
+Mujhe apna insurance dekhna hai,get-insurance
+What is my outstanding balance?,get-payment
+Login to my account,login
+Login to my account,login
+Schedule a visit on Monday,set-appointment
+Fetch my insurance policy details,get-insurance
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+Show my payment details,get-payment
+Log me in,login
+Mujhe apna insurance dekhna hai,get-insurance
+What are my current prescriptions?,get-prescriptions
+Tell me about my due payments,get-payment
+Can I see my medicine list?,get-prescriptions
+Tell me about my doctor visits,get-appointment
+Fetch my payment records,get-payment
+I need access to my profile,login
+What precautions should I take for heart health?,General
+Can I see my medicine list?,get-prescriptions
+I need my prescription details,get-prescriptions
+Can you set an appointment for me next week?,set-appointment
+Show my prescriptions,get-prescriptions
+Can I see my medical bills?,get-payment
+What is a balanced diet?,General
+Can I see my medicine list?,get-prescriptions
+What is the best way to treat a cold?,General
+Show me my appointment details,get-appointment
+Mujhe apna insurance dekhna hai,get-insurance
+Do I have any appointments this week?,get-appointment
+Open my account page,login
+I want to check my prescriptions,get-prescriptions
+I need to fix a doctor visit,set-appointment
+Check my financial transactions,get-payment
+Tell me about my policy coverage,get-insurance
+What is my outstanding balance?,get-payment
+I need to fix a doctor visit,set-appointment
+Mujhe apna insurance dekhna hai,get-insurance
+Check my prescription records,get-prescriptions
+Fetch my prescribed medicines,get-prescriptions
+How to manage high blood pressure?,General
+Check my insurance status,get-insurance
+How can I take care of my health?,General
+Can I see my medical coverage?,get-insurance
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+What is my policy limit?,get-insurance
+Can I see my medical bills?,get-payment
+I want to check my prescriptions,get-prescriptions
+How can I login to my account?,login
+Can I sign in with my email?,login
+Upcoming appointments details please,get-appointment
+Login to my account,login
+How to manage high blood pressure?,General
+Can I see my medical bills?,get-payment
+Schedule an appointment for next Friday,set-appointment
+Show my insurance details,get-insurance
+Sign me into the portal,login
+What are the symptoms of diabetes?,General
+Login using my credentials,login
+Show my prescriptions,get-prescriptions
+Tell me about my policy coverage,get-insurance
+Mera agla appointment kab hai?,get-appointment
+Tell me about my due payments,get-payment
+What medicines have been prescribed to me?,get-prescriptions
+Mujhe login karna hai,login
+Do I have any appointments this week?,get-appointment
+Tell me about my doctor visits,get-appointment
+Mere payment records kahan hain?,get-payment
+Show me all my paid bills,get-payment
+Check my appointment status,get-appointment
+Do I have any pending payments?,get-payment
+Book my doctor consultation,set-appointment
+Schedule an appointment for next Friday,set-appointment
+I want to login,login
+I need to fix a doctor visit,set-appointment
+General tips for good health,General
+What is my outstanding balance?,get-payment
+Fix an appointment on Thursday afternoon,set-appointment
+Can I see my medical coverage?,get-insurance
+What are the symptoms of diabetes?,General
+Check my health insurance,get-insurance
+I need to check my payment history,get-payment
+Show the medicines I was given,get-prescriptions
+Fix an appointment on Thursday afternoon,set-appointment
+Tell me about my policy coverage,get-insurance
+Show the medicines I was given,get-prescriptions
+Can I sign in with my email?,login
+Check my appointment status,get-appointment
+How can I login to my account?,login
+Show me all my paid bills,get-payment
+Check my health insurance,get-insurance
+General tips for good health,General
+Tell me about my due payments,get-payment
+Show my payment details,get-payment
+General tips for good health,General
+What is my policy limit?,get-insurance
+I need access to my profile,login
+Mujhe login karna hai,login
+Book my doctor consultation,set-appointment
+Book an appointment for tomorrow at 5 PM,set-appointment
+What is my outstanding balance?,get-payment
+Mera agla appointment kab hai?,get-appointment
+I need my prescription details,get-prescriptions
+I need my prescription details,get-prescriptions
+Check my health insurance,get-insurance
+Check my appointment status,get-appointment
+Can I see my medical coverage?,get-insurance
+Login using my credentials,login
+Can you fetch my policy information?,get-insurance
+Can I see my medical bills?,get-payment
+Mujhe ek appointment set karna hai kal ke liye,set-appointment
+I want to see my appointments,get-appointment
+Can I see my medical bills?,get-payment
+What is my outstanding balance?,get-payment
+Mujhe login karna hai,login
+I want to check my prescriptions,get-prescriptions
+Mujhe apna insurance dekhna hai,get-insurance
+Mujhe apna insurance dekhna hai,get-insurance
+Do I have any appointments this week?,get-appointment
+What are the symptoms of diabetes?,General
+How to manage high blood pressure?,General
+Mujhe mere prescriptions dikhaiye,get-prescriptions
+Check my insurance status,get-insurance
+How can I login to my account?,login
+How can I login to my account?,login
+General tips for good health,General
+Tell me about my doctor visits,get-appointment
+Can you fetch my appointment details?,get-appointment
+Mera agla appointment kab hai?,get-appointment
+Schedule an appointment for next Friday,set-appointment
+Can you fetch my policy information?,get-insurance
+What precautions should I take for heart health?,General
+How can I login to my account?,login
+Show me all my paid bills,get-payment
+I need my prescription details,get-prescriptions
+Check my insurance status,get-insurance
+Do I have any appointments this week?,get-appointment
+How can I take care of my health?,General

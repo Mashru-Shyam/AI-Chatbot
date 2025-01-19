@@ -351,3 +351,4 @@ D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\MailKit.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\MimeKit.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Newtonsoft.Json.dll

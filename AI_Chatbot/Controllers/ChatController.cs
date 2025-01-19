@@ -10,10 +10,12 @@ namespace AI_Chatbot.Controllers
     public class ChatController : ControllerBase
     {
         private readonly IChatService service;
+        private readonly IGeneralQueryService queryService;
 
-        public ChatController(IChatService service)
+        public ChatController(IChatService service, IGeneralQueryService queryService)
         {
             this.service = service;
+            this.queryService = queryService;
         }
 
         [HttpPost("send-message")]
@@ -25,7 +27,27 @@ namespace AI_Chatbot.Controllers
             }
 
             var response = await service.Chatting(chatRequest);
-            return Ok(response);
+
+            switch (response.ToString())
+            {
+                case "0":
+                    return Ok("get-prescription");
+                case "1":
+                    var answer = await queryService.GeneralQuery(chatRequest);
+                    return Ok(new { answer});
+                case "2":
+                    return Ok("get-appointment");
+                case "3":
+                    return Ok("set-appointment");
+                case "4":
+                    return Ok("login");
+                case "5":
+                    return Ok("get-insurance");
+                case "6":
+                    return Ok("get-payment");
+                default:
+                    return Ok(response);
+            }
         }
     }
 }

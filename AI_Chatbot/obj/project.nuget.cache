@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DXB444B1X0Y=",
+  "dgSpecHash": "ZlTtNWpx34M=",
   "success": true,
   "projectFilePath": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\AI_Chatbot.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "C:\\Users\\Shyam Mashru\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Shyam Mashru\\.nuget\\packages\\mimekit\\4.9.0\\mimekit.4.9.0.nupkg.sha512",
     "C:\\Users\\Shyam Mashru\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
+    "C:\\Users\\Shyam Mashru\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Shyam Mashru\\.nuget\\packages\\swashbuckle.aspnetcore\\6.6.2\\swashbuckle.aspnetcore.6.6.2.nupkg.sha512",
     "C:\\Users\\Shyam Mashru\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.6.2\\swashbuckle.aspnetcore.swagger.6.6.2.nupkg.sha512",
     "C:\\Users\\Shyam Mashru\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.6.2\\swashbuckle.aspnetcore.swaggergen.6.6.2.nupkg.sha512",

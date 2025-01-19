@@ -401,3 +401,9 @@ FodyWeavers.xsd
 
 # appsettings.json
 appsettings.json
+
+# Ignore Folders
+results/
+fine_tuned_bert/
+
+.ipynb_checkpoints/

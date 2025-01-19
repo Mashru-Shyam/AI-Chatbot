@@ -94,6 +94,8 @@ builder.Services.AddScoped<IChatService, ChatService>();
 
 builder.Services.AddScoped<ISmtpClient, SmtpClient>();
 
+builder.Services.AddScoped<IGeneralQueryService, GeneralQueryService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
