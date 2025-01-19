@@ -96,6 +96,8 @@ builder.Services.AddScoped<ISmtpClient, SmtpClient>();
 
 builder.Services.AddScoped<IGeneralQueryService, GeneralQueryService>();
 
+builder.Services.AddScoped<IEntityExtractionService, EntityExtractionService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
