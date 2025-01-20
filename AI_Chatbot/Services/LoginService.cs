@@ -13,14 +13,14 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
-        public async Task<bool> CheckUser(string email)
+        public async Task<Int32> CheckUser(string email)
         {
             var user = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == email);
             if (user == null)
             {
-                return false;
+                return 0;
             }
-            return true;
+            return user.UserId;
         }
     }
 }

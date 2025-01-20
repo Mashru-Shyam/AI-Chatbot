@@ -21,18 +21,11 @@ namespace AI_Chatbot.Controllers
             this.loginService = loginService;
         }
 
-        //[HttpPost("register")]
-        //public async Task<IActionResult> Register([FromBody] RegiserDto regiser)
-        //{
-        //    var message = await registerService.Register(regiser);
-        //    return Ok(message);
-        //}
-
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] string email)
         {
             var user = await loginService.CheckUser(email);
-            if (!user)
+            if (user == 0)
             {
                 await registerService.Register(email);
                 await Task.Delay(1000);
@@ -44,7 +37,7 @@ namespace AI_Chatbot.Controllers
         }
 
         [HttpPost("verify")]
-        public async Task<IActionResult> Verify([FromBody] OtpDto otp)
+        public async Task<IActionResult> Verify([FromBody] string otp)
         {
             var result = await otpService.CheckOtp(otp);
             if (result == null)
@@ -53,15 +46,6 @@ namespace AI_Chatbot.Controllers
             }
 
             return Ok(new { token = result });
-
-            //    Response.Cookies.Append("AuthToken", result, new CookieOptions
-            //    {
-            //        HttpOnly = true,
-            //        SameSite = SameSiteMode.None,
-            //        Secure = true
-            //    });
-
-            //    return Ok("OTP verified...");
             }
         }
 }

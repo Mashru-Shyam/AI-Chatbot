@@ -4,6 +4,6 @@ namespace AI_Chatbot.Interfaces
 {
     public interface ILoginService
     {
-        Task<bool> CheckUser(string email);
+        Task<Int32> CheckUser(string email);
     }
 }

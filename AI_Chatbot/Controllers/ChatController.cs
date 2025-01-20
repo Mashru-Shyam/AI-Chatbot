@@ -1,9 +1,12 @@
 ﻿using AI_Chatbot.DTOs;
 using AI_Chatbot.Interfaces;
 using AI_Chatbot.Migrations;
+using AI_Chatbot.Models;
 using AI_Chatbot.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Security.Claims;
 
 namespace AI_Chatbot.Controllers
@@ -18,8 +21,9 @@ namespace AI_Chatbot.Controllers
         private readonly ILoginService loginService;
         private readonly IRegisterService registerService;
         private readonly IOtpService otpService;
+        private readonly IConversationService conversationService;
 
-        public ChatController(IIntentClassificationService service, IGeneralQueryService queryService, IEntityExtractionService extractionService, ILoginService loginService, IRegisterService registerService, IOtpService otpService)
+        public ChatController(IIntentClassificationService service, IGeneralQueryService queryService, IEntityExtractionService extractionService, ILoginService loginService, IRegisterService registerService, IOtpService otpService, IConversationService conversationService)
         {
             this.service = service;
             this.queryService = queryService;
@@ -27,6 +31,7 @@ namespace AI_Chatbot.Controllers
             this.loginService = loginService;
             this.registerService = registerService;
             this.otpService = otpService;
+            this.conversationService = conversationService;
         }
 
         [HttpPost("send-message")]
@@ -60,25 +65,55 @@ namespace AI_Chatbot.Controllers
                     var email = entities["email"].FirstOrDefault();
                     if (email == null)
                     {
-                        return Ok("Email extraction failed. Please provide a valid email.");
+                        return Ok("Email extraction failed.\nPlease provide a valid email.");
                     }
 
                     var user = await loginService.CheckUser(email);
-                    if (!user)
+                    if (user == 0)
                     {
                         await registerService.Register(email);
                     }
                     var otp = otpService.GenerateOtp();
                     await otpService.StoreOtp(email, otp);
                     await otpService.SendOtpViaMail(email, "OTP for Login", $"Your OTP is {otp}");
-                    return Ok("OTP sent to your email. \n Provide the OTP");
+                    await conversationService.AddConversationAsync(
+                            userId: user,
+                            intent: "login",
+                            entities: new List<Entity>
+                            {
+                                new Entity { EntityName = "email", EntityValue= email },
+                            },
+                            IsCompleted: true,
+                            status: "Otp Collection"
+                        );
+                    return Ok("OTP sent to your email.\nProvide the OTP");
+                }
+                else if (intent.ToString() == "7")
+                {
+                    var entities = extractionService.ExtractEntities(chatRequest);
+                    if (!entities["otp"].Any())
+                    {
+                        return Ok("Provide your valid otp...");
+                    }
+                    var otp = entities["otp"].FirstOrDefault();
+                    if (otp == null)
+                    {
+                        return Ok("Otp extraction failed.\nPlease provide a valid otp.");
+                    }
+
+                    var result = await otpService.CheckOtp(otp);
+                    if (result == null)
+                    {
+                        return Ok("Invalid OTP...");
+                    }
+                    return Ok(new { token = result });
                 }
                 else
                 {
-                    return Ok("For processing the query login is required \n Provide your email to login...");
+                    return Ok("For processing the query login is required\nProvide your email to login...");
                 }
             }
-            return Ok("Please provide the message...");
+            return Ok(userId);
         }
     }
 }

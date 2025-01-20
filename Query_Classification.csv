@@ -8,6 +8,8 @@ Show the medicines I was given,get-prescriptions
 Tell me about healthy eating habits,General
 How can I prevent flu?,General
 How can I prevent flu?,General
+My otp is 157718,otp
+175714,otp
 Can I sign in with my email?,login
 Log me in,login
 What is my policy limit?,get-insurance
@@ -19,6 +21,7 @@ Can you reserve a time slot with the doctor?,set-appointment
 I need to check my payment history,get-payment
 How to manage high blood pressure?,General
 Mujhe fever ka ilaj batao,General
+otp 751552,otp
 Mujhe login karna hai,login
 I need to see my health insurance,get-insurance
 How can I login to my account?,login
@@ -26,6 +29,7 @@ How can I prevent flu?,General
 Tell me about healthy eating habits,General
 Fetch my prescribed medicines,get-prescriptions
 Can I sign in with my email?,login
+877454,otp
 Open my account page,login
 Can you fetch my appointment details?,get-appointment
 How can I take care of my health?,General
@@ -35,6 +39,7 @@ Can you reserve a time slot with the doctor?,set-appointment
 Mujhe mere prescriptions dikhaiye,get-prescriptions
 Fetch my insurance policy details,get-insurance
 I need to check my payment history,get-payment
+784512,otp
 Open my account page,login
 General tips for good health,General
 Fetch my prescribed medicines,get-prescriptions
@@ -46,6 +51,7 @@ Can you fetch my appointment details?,get-appointment
 I need to check my payment history,get-payment
 Mujhe fever ka ilaj batao,General
 Mujhe ek appointment set karna hai kal ke liye,set-appointment
+otp is 517557,otp
 I need access to my profile,login
 Mujhe mere prescriptions dikhaiye,get-prescriptions
 Mujhe ek appointment set karna hai kal ke liye,set-appointment
@@ -92,6 +98,7 @@ Show my prescriptions,get-prescriptions
 Tell me about healthy eating habits,General
 Do I have any appointments this week?,get-appointment
 Show me my appointment details,get-appointment
+717554,otp
 Show the medicines I was given,get-prescriptions
 Fetch my prescribed medicines,get-prescriptions
 Show me my appointment details,get-appointment
@@ -146,6 +153,7 @@ How can I login to my account?,login
 General tips for good health,General
 I want to login,login
 Fetch my prescribed medicines,get-prescriptions
+454544,otp
 Set my appointment at 3 PM tomorrow,set-appointment
 Check my insurance status,get-insurance
 Book an appointment for tomorrow at 5 PM,set-appointment
@@ -196,6 +204,7 @@ I need my prescription details,get-prescriptions
 Sign me into the portal,login
 What is a balanced diet?,General
 What is my policy limit?,get-insurance
+785215,otp
 Fetch my prescribed medicines,get-prescriptions
 How can I take care of my health?,General
 I want to see my appointments,get-appointment
@@ -249,6 +258,7 @@ How to manage high blood pressure?,General
 Login to my account,login
 Do I have any appointments this week?,get-appointment
 Mere payment records kahan hain?,get-payment
+785269,otp
 How can I prevent flu?,General
 Mujhe ek appointment set karna hai kal ke liye,set-appointment
 What is my policy limit?,get-insurance
@@ -316,6 +326,7 @@ Log me in,login
 I need to fix a doctor visit,set-appointment
 Book an appointment for tomorrow at 5 PM,set-appointment
 Mujhe apna insurance dekhna hai,get-insurance
+798745,otp
 What is a balanced diet?,General
 Can you set an appointment for me next week?,set-appointment
 Book an appointment for tomorrow at 5 PM,set-appointment
@@ -365,6 +376,7 @@ What are the symptoms of diabetes?,General
 Check my health insurance,get-insurance
 I need to see my health insurance,get-insurance
 Tell me about my doctor visits,get-appointment
+787875,otp
 I need access to my profile,login
 Login to my account,login
 Tell me about my policy coverage,get-insurance
@@ -432,6 +444,7 @@ Log me in,login
 Set my appointment at 3 PM tomorrow,set-appointment
 Mujhe ek appointment set karna hai kal ke liye,set-appointment
 What are my scheduled visits?,get-appointment
+otp is 785214,otp
 Check my health insurance,get-insurance
 Can you fetch my appointment details?,get-appointment
 Show my prescriptions,get-prescriptions
@@ -494,6 +507,7 @@ Tell me about healthy eating habits,General
 Show the medicines I was given,get-prescriptions
 Can I sign in with my email?,login
 Can I sign in with my email?,login
+872133,otp
 Fetch my insurance policy details,get-insurance
 Upcoming appointments details please,get-appointment
 Can I see my medical coverage?,get-insurance
@@ -593,6 +607,7 @@ Book an appointment for tomorrow at 5 PM,set-appointment
 Can I see my medical coverage?,get-insurance
 Check my appointment status,get-appointment
 Show me my appointment details,get-appointment
+my otp is 785214,otp
 What medicines have been prescribed to me?,get-prescriptions
 What is the best way to treat a cold?,General
 Show my prescriptions,get-prescriptions
@@ -651,6 +666,7 @@ Schedule an appointment for next Friday,set-appointment
 Do I have any appointments this week?,get-appointment
 Show the medicines I was given,get-prescriptions
 Mujhe mere prescriptions dikhaiye,get-prescriptions
+785245,otp
 Show my payment details,get-payment
 Fetch my insurance policy details,get-insurance
 Tell me about my due payments,get-payment
@@ -792,6 +808,7 @@ What is the best way to treat a cold?,General
 How can I prevent flu?,General
 Show my insurance details,get-insurance
 I need my prescription details,get-prescriptions
+178818,otp
 Login using my credentials,login
 How can I prevent flu?,General
 Mera agla appointment kab hai?,get-appointment
@@ -816,6 +833,7 @@ Check my health insurance,get-insurance
 Show me my appointment details,get-appointment
 Check my appointment status,get-appointment
 Show the medicines I was given,get-prescriptions
+716878,otp
 Mujhe login karna hai,login
 What precautions should I take for heart health?,General
 Can you set an appointment for me next week?,set-appointment
@@ -826,6 +844,7 @@ Mujhe apna insurance dekhna hai,get-insurance
 What are my scheduled visits?,get-appointment
 What is my outstanding balance?,get-payment
 Mera agla appointment kab hai?,get-appointment
+454314,otp
 Can I sign in with my email?,login
 What medicines have been prescribed to me?,get-prescriptions
 Check my prescription records,get-prescriptions
@@ -850,6 +869,7 @@ Fetch my payment records,get-payment
 Schedule an appointment for next Friday,set-appointment
 Tell me about my due payments,get-payment
 Schedule a visit on Monday,set-appointment
+354434,otp
 General tips for good health,General
 Check my appointment status,get-appointment
 Can I see my medicine list?,get-prescriptions
@@ -858,6 +878,7 @@ Do I have any pending payments?,get-payment
 Tell me about healthy eating habits,General
 Show me my appointment details,get-appointment
 Log me in,login
+514378,otp
 Can I sign in with my email?,login
 Mera agla appointment kab hai?,get-appointment
 How can I prevent flu?,General
@@ -866,11 +887,13 @@ I need to check my payment history,get-payment
 Mujhe apna insurance dekhna hai,get-insurance
 What is my outstanding balance?,get-payment
 Login to my account,login
+414646,otp
 Login to my account,login
 Schedule a visit on Monday,set-appointment
 Fetch my insurance policy details,get-insurance
 Mujhe mere prescriptions dikhaiye,get-prescriptions
 Show my payment details,get-payment
+354514,otp
 Log me in,login
 Mujhe apna insurance dekhna hai,get-insurance
 What are my current prescriptions?,get-prescriptions
@@ -878,6 +901,7 @@ Tell me about my due payments,get-payment
 Can I see my medicine list?,get-prescriptions
 Tell me about my doctor visits,get-appointment
 Fetch my payment records,get-payment
+125774,otp
 I need access to my profile,login
 What precautions should I take for heart health?,General
 Can I see my medicine list?,get-prescriptions
@@ -891,6 +915,7 @@ What is the best way to treat a cold?,General
 Show me my appointment details,get-appointment
 Mujhe apna insurance dekhna hai,get-insurance
 Do I have any appointments this week?,get-appointment
+454343,otp
 Open my account page,login
 I want to check my prescriptions,get-prescriptions
 I need to fix a doctor visit,set-appointment
@@ -901,6 +926,7 @@ I need to fix a doctor visit,set-appointment
 Mujhe apna insurance dekhna hai,get-insurance
 Check my prescription records,get-prescriptions
 Fetch my prescribed medicines,get-prescriptions
+otp is 424343,otp
 How to manage high blood pressure?,General
 Check my insurance status,get-insurance
 How can I take care of my health?,General
@@ -919,12 +945,14 @@ Schedule an appointment for next Friday,set-appointment
 Show my insurance details,get-insurance
 Sign me into the portal,login
 What are the symptoms of diabetes?,General
+133545,otp
 Login using my credentials,login
 Show my prescriptions,get-prescriptions
 Tell me about my policy coverage,get-insurance
 Mera agla appointment kab hai?,get-appointment
 Tell me about my due payments,get-payment
 What medicines have been prescribed to me?,get-prescriptions
+The required otp is 231154,otp
 Mujhe login karna hai,login
 Do I have any appointments this week?,get-appointment
 Tell me about my doctor visits,get-appointment
@@ -934,6 +962,7 @@ Check my appointment status,get-appointment
 Do I have any pending payments?,get-payment
 Book my doctor consultation,set-appointment
 Schedule an appointment for next Friday,set-appointment
+otp is 424343,otp
 I want to login,login
 I need to fix a doctor visit,set-appointment
 General tips for good health,General
@@ -949,6 +978,7 @@ Tell me about my policy coverage,get-insurance
 Show the medicines I was given,get-prescriptions
 Can I sign in with my email?,login
 Check my appointment status,get-appointment
+454343,otp
 How can I login to my account?,login
 Show me all my paid bills,get-payment
 Check my health insurance,get-insurance
@@ -957,6 +987,7 @@ Tell me about my due payments,get-payment
 Show my payment details,get-payment
 General tips for good health,General
 What is my policy limit?,get-insurance
+otp hai 121353,otp
 I need access to my profile,login
 Mujhe login karna hai,login
 Book my doctor consultation,set-appointment
@@ -968,6 +999,7 @@ I need my prescription details,get-prescriptions
 Check my health insurance,get-insurance
 Check my appointment status,get-appointment
 Can I see my medical coverage?,get-insurance
+278124,otp
 Login using my credentials,login
 Can you fetch my policy information?,get-insurance
 Can I see my medical bills?,get-payment
@@ -996,6 +1028,8 @@ What precautions should I take for heart health?,General
 How can I login to my account?,login
 Show me all my paid bills,get-payment
 I need my prescription details,get-prescriptions
+Maru OTP 131345 che,otp
 Check my insurance status,get-insurance
 Do I have any appointments this week?,get-appointment
 How can I take care of my health?,General
+My OTP is 123456,otp
