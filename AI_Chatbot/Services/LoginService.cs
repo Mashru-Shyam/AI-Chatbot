@@ -13,9 +13,9 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
-        public async Task<bool> CheckUser(LoginDto login)
+        public async Task<bool> CheckUser(string email)
         {
-            var user = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == login.Email);
+            var user = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == email);
             if (user == null)
             {
                 return false;

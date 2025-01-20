@@ -90,7 +90,7 @@ builder.Services.AddScoped<IInsuranceService, InsuranceService>();
 
 builder.Services.AddScoped<IPrescriptionService, PrescriptionService>();
 
-builder.Services.AddScoped<IChatService, ChatService>();
+builder.Services.AddScoped<IIntentClassificationService, IntentClassificationService>();
 
 builder.Services.AddScoped<ISmtpClient, SmtpClient>();
 

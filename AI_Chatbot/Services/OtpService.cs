@@ -54,17 +54,17 @@ namespace AI_Chatbot.Services
             smtpClient.Disconnect(true);
         }
 
-        public async Task StoreOtp(LoginDto login, string otp)
+        public async Task StoreOtp(string email, string otp)
         {
             var userId = await context.Users
-                .Where(u => u.UserEmail == login.Email)
+                .Where(u => u.UserEmail == email)
                 .Select(u => u.UserId)
                 .FirstOrDefaultAsync();
 
             var otpEntity = new Otp
             {
                 UserId = userId,
-                OtpEmail = login.Email,
+                OtpEmail = email,
                 OtpCode = otp,
                 OtpExpirationTime = DateTime.UtcNow.AddMinutes(5)
             };

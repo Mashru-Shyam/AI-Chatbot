@@ -2,7 +2,7 @@
 
 namespace AI_Chatbot.Interfaces
 {
-    public interface IChatService
+    public interface IIntentClassificationService
     {
         Task<string> Chatting (ChatRequestDto chatRequest);
     }

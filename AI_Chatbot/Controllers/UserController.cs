@@ -29,17 +29,17 @@ namespace AI_Chatbot.Controllers
         //}
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] LoginDto login)
+        public async Task<IActionResult> Login([FromBody] string email)
         {
-            var user = await loginService.CheckUser(login);
+            var user = await loginService.CheckUser(email);
             if (!user)
             {
-                await registerService.Register(login);
+                await registerService.Register(email);
                 await Task.Delay(1000);
             }
             var otp = otpService.GenerateOtp();
-            await otpService.StoreOtp(login, otp);
-            await otpService.SendOtpViaMail(login.Email, "OTP for Login", $"Your OTP is {otp}");
+            await otpService.StoreOtp(email, otp);
+            await otpService.SendOtpViaMail(email, "OTP for Login", $"Your OTP is {otp}");
             return Ok("OTP sent to your email...");
         }
 
@@ -52,7 +52,7 @@ namespace AI_Chatbot.Controllers
                 return BadRequest("Invalid OTP...");
             }
 
-            return Ok(result);
+            return Ok(new { token = result });
 
             //    Response.Cookies.Append("AuthToken", result, new CookieOptions
             //    {

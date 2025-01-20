@@ -14,16 +14,11 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
-        public async Task Register(LoginDto login)
+        public async Task Register(string email)
         {
-            //var existUser = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == login.Email);
-            //if (existUser != null)
-            //{
-            //    return "User already exists...";
-            //}
             var user = new User
             {
-                UserEmail = login.Email,
+                UserEmail = email,
             };
             await context.Users.AddAsync(user);
             await context.SaveChangesAsync();

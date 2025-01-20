@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "L5FpyokdUTZQmzzz4xkzAOb8D8De47P/cPSWsC9r12I=",
+  "Hash": "SvkKpBgqN5QiR8ACT6PgV3xR3VXM8twPA6UiR1rVKf8=",
   "Source": "AI_Chatbot",
   "BasePath": "_content/AI_Chatbot",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5uvo5x1jq1",
-      "Integrity": "0y+T9S+xGEyfwF4we3bokcCya7u8qJpoZvmlyTKNh9s=",
+      "Fingerprint": "izbcgbfzcj",
+      "Integrity": "rpM0fhvonsVCqY/g7B5/wkuEm7JYKKlT6HalEPsnvnw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Chat.js"
@@ -246,7 +246,7 @@
       ]
     },
     {
-      "Route": "js/Chat.5uvo5x1jq1.js",
+      "Route": "js/Chat.izbcgbfzcj.js",
       "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -256,7 +256,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1809"
+          "Value": "2217"
         },
         {
           "Name": "Content-Type",
@@ -264,11 +264,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0y+T9S+xGEyfwF4we3bokcCya7u8qJpoZvmlyTKNh9s=\""
+          "Value": "\"rpM0fhvonsVCqY/g7B5/wkuEm7JYKKlT6HalEPsnvnw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 18 Jan 2025 19:19:02 GMT"
+          "Value": "Mon, 20 Jan 2025 16:53:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -278,7 +278,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "5uvo5x1jq1"
+          "Value": "izbcgbfzcj"
         },
         {
           "Name": "label",
@@ -286,7 +286,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0y+T9S+xGEyfwF4we3bokcCya7u8qJpoZvmlyTKNh9s="
+          "Value": "sha256-rpM0fhvonsVCqY/g7B5/wkuEm7JYKKlT6HalEPsnvnw="
         }
       ]
     },
@@ -301,7 +301,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1809"
+          "Value": "2217"
         },
         {
           "Name": "Content-Type",
@@ -309,11 +309,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0y+T9S+xGEyfwF4we3bokcCya7u8qJpoZvmlyTKNh9s=\""
+          "Value": "\"rpM0fhvonsVCqY/g7B5/wkuEm7JYKKlT6HalEPsnvnw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 18 Jan 2025 19:19:02 GMT"
+          "Value": "Mon, 20 Jan 2025 16:53:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -323,7 +323,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0y+T9S+xGEyfwF4we3bokcCya7u8qJpoZvmlyTKNh9s="
+          "Value": "sha256-rpM0fhvonsVCqY/g7B5/wkuEm7JYKKlT6HalEPsnvnw="
         }
       ]
     }

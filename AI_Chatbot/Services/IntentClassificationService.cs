@@ -7,12 +7,12 @@ using System.Text.Json;
 
 namespace AI_Chatbot.Services
 {
-    public class ChatService : IChatService
+    public class IntentClassificationService : IIntentClassificationService
     {
         private readonly HttpClient httpClient;
         private const string OllamaBaseUrl = "http://localhost:11434/api/chat";
 
-        public ChatService(HttpClient httpClient)
+        public IntentClassificationService(HttpClient httpClient)
         {
             this.httpClient = httpClient;
         }

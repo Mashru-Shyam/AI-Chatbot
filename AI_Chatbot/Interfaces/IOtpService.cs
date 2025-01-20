@@ -6,7 +6,7 @@ namespace AI_Chatbot.Interfaces
     {
         string GenerateOtp(int length=6);
         Task SendOtpViaMail(string to, string subject, string body);
-        Task StoreOtp(LoginDto login, string otp);
+        Task StoreOtp(string email, string otp);
         Task<string> CheckOtp(OtpDto otp);
     }
 }

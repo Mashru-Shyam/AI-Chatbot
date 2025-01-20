@@ -173,6 +173,7 @@ D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\ref\AI_Chatbo
 D:\Shyam Mashru\My Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\appsettings.Development.json
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\appsettings.json
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.staticwebassets.runtime.json
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.staticwebassets.endpoints.json
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.exe
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.deps.json
@@ -181,7 +182,9 @@ D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.pdb
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Azure.Core.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Azure.Identity.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Humanizer.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\MailKit.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Build.Locator.dll
@@ -218,7 +221,9 @@ D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Identi
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.OpenApi.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\MimeKit.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Newtonsoft.Json.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -237,6 +242,7 @@ D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.IdentityM
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.IO.Pipelines.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Memory.Data.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Security.Permissions.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Text.Encodings.Web.dll
@@ -317,6 +323,7 @@ D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
@@ -327,6 +334,7 @@ D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.Assem
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.csproj.CoreCompileInputs.cache
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.MvcApplicationPartsAssemblyInfo.cs
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.MvcApplicationPartsAssemblyInfo.cache
+D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.sourcelink.json
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\scopedcss\bundle\AI_Chatbot.styles.css
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.build.json
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\staticwebassets.development.json
@@ -344,11 +352,3 @@ D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\refint\AI_Chatbo
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.pdb
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.genruntimeconfig.cache
 D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\ref\AI_Chatbot.dll
-D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\obj\Debug\net8.0\AI_Chatbot.sourcelink.json
-D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\AI_Chatbot.staticwebassets.runtime.json
-D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\MailKit.dll
-D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\MimeKit.dll
-D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-D:\Shyam_Mashru\Projects\AI_Chatbot\AI_Chatbot\bin\Debug\net8.0\Newtonsoft.Json.dll

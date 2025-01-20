@@ -4,6 +4,8 @@ document.getElementById('toggleChatBtn').addEventListener('click', function () {
     chatContainer.style.display = chatContainer.style.display === 'block' ? 'none' : 'block';
 });
 
+const jwtToken = ""; // Add your JWT token here
+
 // Chat input functionality (reuse existing logic from your script)
 $(document).ready(function () {
     const chatMessages = $('#chatMessages');
@@ -21,10 +23,18 @@ $(document).ready(function () {
         $.ajax({
             url: `https://localhost:7048/api/Chat/send-message`,
             method: "POST",
-            contentType: "application/json",
+            headers: {
+                'Authorization': `Bearer ${jwtToken}`,
+                'contentType': "application/json",
             data: JSON.stringify({ message: input }),
-            success: function (response) {
-                addMessage(`${response}`, 'bot');
+                success: function (response) {
+                    if (response.token) {
+                        sessionStorage.setItem('jwtToken', response.token);
+                        addMessage('Login Successful...','bot')
+                    }
+                    else {
+                        addMessage(`${response}`, 'bot');
+                    }
             },
             error: function () {
                 addMessage("There was an error processing your request. Please try again later.", 'bot');

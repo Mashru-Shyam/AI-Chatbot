@@ -80,8 +80,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "login",
-        "Type": "AI_Chatbot.DTOs.LoginDto",
+        "Name": "email",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],
