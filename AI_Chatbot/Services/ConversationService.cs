@@ -46,15 +46,22 @@ namespace AI_Chatbot.Services
 
         public async Task UpdateConversationAsync(int userId, string intent, ICollection<Entity> entities, bool IsCompleted, string status)
         {
-            var conversation = context.Conversations.FirstOrDefault(c => c.UserId == userId);
+            var conversation = await context.Conversations
+                        .Include(c => c.Entities)
+                        .FirstOrDefaultAsync(c => c.UserId == userId); 
+            
             conversation.Intent = intent;
-            conversation.Entities = entities;
             conversation.IsCompleted = IsCompleted;
             conversation.Context = status;
 
+            conversation.Entities.Clear();
+            foreach (var entity in entities)
+            {
+                conversation.Entities.Add(entity);
+            }
+
             context.Conversations.Update(conversation);
             await context.SaveChangesAsync();
-
         }
     }
 }
