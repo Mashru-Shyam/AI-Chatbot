@@ -12,6 +12,7 @@ namespace AI_Chatbot.Services
 
         public ConversationService(AiChatbotDbContext context)
         {
+            this.context = context;
         }
         public async Task AddConversationAsync(int userId, string intent, ICollection<Entity> entities, bool IsCompleted, string status)
         {
