@@ -109,15 +109,15 @@ namespace AI_Chatbot.Controllers
                 switch (intent.ToString())
                 {
                     case "0":
-                        return Ok(intent);
+                        return Ok(userId);
                     case "2":
-                        return Ok(intent);
+                        return Ok(userId);
                     case "3":
-                        return Ok(intent);
+                        return Ok(userId);
                     case "6":
-                        return Ok(intent);
+                        return Ok(userId);
                     case "7":
-                        return Ok(intent);
+                        return Ok(userId);
                     default:
                         return Ok("You are already logged in...");
                 }
