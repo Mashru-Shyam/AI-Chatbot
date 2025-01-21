@@ -4,12 +4,14 @@ Mujhe fever ka ilaj batao,General
 Check my appointment status,get-appointment
 Mujhe ek appointment set karna hai kal ke liye,set-appointment
 How can I take care of my health?,General
+Hi,General
 Show the medicines I was given,get-prescriptions
 Tell me about healthy eating habits,General
 How can I prevent flu?,General
 How can I prevent flu?,General
 My otp is 157718,otp
 175714,otp
+Hello,General
 Can I sign in with my email?,login
 Log me in,login
 What is my policy limit?,get-insurance
@@ -40,6 +42,7 @@ Mujhe mere prescriptions dikhaiye,get-prescriptions
 Fetch my insurance policy details,get-insurance
 I need to check my payment history,get-payment
 784512,otp
+Hey! there,General
 Open my account page,login
 General tips for good health,General
 Fetch my prescribed medicines,get-prescriptions
@@ -56,6 +59,7 @@ I need access to my profile,login
 Mujhe mere prescriptions dikhaiye,get-prescriptions
 Mujhe ek appointment set karna hai kal ke liye,set-appointment
 Fetch my insurance policy details,get-insurance
+Good Morning,General
 Mujhe apna insurance dekhna hai,get-insurance
 What precautions should I take for heart health?,General
 Can you reserve a time slot with the doctor?,set-appointment
@@ -123,6 +127,7 @@ Check my appointment status,get-appointment
 Can I see my medical bills?,get-payment
 What medicines have been prescribed to me?,get-prescriptions
 What precautions should I take for heart health?,General
+Good Afternoon,General
 What medicines have been prescribed to me?,get-prescriptions
 Log me in,login
 Check my health insurance,get-insurance
@@ -167,6 +172,7 @@ Check my appointment status,get-appointment
 Show my prescriptions,get-prescriptions
 I need to see my health insurance,get-insurance
 Mujhe apna insurance dekhna hai,get-insurance
+Good Night,General
 I want to login,login
 When is my next appointment?,get-appointment
 Schedule an appointment for next Friday,set-appointment
@@ -201,6 +207,7 @@ Mujhe fever ka ilaj batao,General
 What are the symptoms of diabetes?,General
 How to manage high blood pressure?,General
 I need my prescription details,get-prescriptions
+How are you?,General
 Sign me into the portal,login
 What is a balanced diet?,General
 What is my policy limit?,get-insurance
@@ -234,6 +241,7 @@ Fix an appointment on Thursday afternoon,set-appointment
 I need my prescription details,get-prescriptions
 Can I sign in with my email?,login
 Tell me about my due payments,get-payment
+Whats up,General
 Tell me about healthy eating habits,General
 Tell me about my due payments,get-payment
 Tell me about healthy eating habits,General
@@ -265,6 +273,7 @@ What is my policy limit?,get-insurance
 General tips for good health,General
 I need to fix a doctor visit,set-appointment
 Mujhe fever ka ilaj batao,General
+Hey bot,General
 I want to login,login
 Can I see my medical coverage?,get-insurance
 I want to login,login
@@ -304,6 +313,7 @@ Sign me into the portal,login
 Book my doctor consultation,set-appointment
 How can I take care of my health?,General
 What medicines have been prescribed to me?,get-prescriptions
+Hi!,General
 What is a balanced diet?,General
 Can you reserve a time slot with the doctor?,set-appointment
 Check my insurance status,get-insurance
@@ -336,6 +346,7 @@ What is the best way to treat a cold?,General
 Tell me about my doctor visits,get-appointment
 What precautions should I take for heart health?,General
 Show me my appointment details,get-appointment
+Hello,General
 Tell me about my doctor visits,get-appointment
 I need to see my health insurance,get-insurance
 I need my prescription details,get-prescriptions
@@ -381,6 +392,7 @@ I need access to my profile,login
 Login to my account,login
 Tell me about my policy coverage,get-insurance
 Mujhe fever ka ilaj batao,General
+What can you do?,General
 Open my account page,login
 Tell me about my policy coverage,get-insurance
 Can I see my medicine list?,get-prescriptions
@@ -405,11 +417,13 @@ When is my next appointment?,get-appointment
 Do I have any pending payments?,get-payment
 Check my financial transactions,get-payment
 I need to fix a doctor visit,set-appointment
+What can you do?,General
 What are my scheduled visits?,get-appointment
 I need to check my payment history,get-payment
 Tell me about healthy eating habits,General
 Tell me about my doctor visits,get-appointment
 Tell me about healthy eating habits,General
+Kem cho?,General
 General tips for good health,General
 What is the best way to treat a cold?,General
 Show the medicines I was given,get-prescriptions
@@ -417,6 +431,7 @@ Mujhe ek appointment set karna hai kal ke liye,set-appointment
 Check my financial transactions,get-payment
 Can you fetch my policy information?,get-insurance
 General tips for good health,General
+Suprabhat,General
 Mere payment records kahan hain?,get-payment
 I want to check my prescriptions,get-prescriptions
 I need to see my health insurance,get-insurance
@@ -457,6 +472,7 @@ I need my prescription details,get-prescriptions
 Mujhe apna insurance dekhna hai,get-insurance
 Fix an appointment on Thursday afternoon,set-appointment
 Open my account page,login
+How an you help me?,General
 How can I take care of my health?,General
 Can I sign in with my email?,login
 General tips for good health,General
@@ -504,6 +520,7 @@ Fetch my insurance policy details,get-insurance
 Do I have any appointments this week?,get-appointment
 How to manage high blood pressure?,General
 Tell me about healthy eating habits,General
+Hello,General
 Show the medicines I was given,get-prescriptions
 Can I sign in with my email?,login
 Can I sign in with my email?,login
@@ -583,16 +600,19 @@ Can you set an appointment for me next week?,set-appointment
 Mere payment records kahan hain?,get-payment
 What are my current prescriptions?,get-prescriptions
 Check my financial transactions,get-payment
+What is your name?,General
 Login using my credentials,login
 I want to see my appointments,get-appointment
 Do I have any pending payments?,get-payment
 What is a balanced diet?,General
+Thanks,General
 Set my appointment at 3 PM tomorrow,set-appointment
 I want to see my appointments,get-appointment
 I need to see my health insurance,get-insurance
 Can I see my medical bills?,get-payment
 I want to check my prescriptions,get-prescriptions
 Do I have any pending payments?,get-payment
+Thank you,Genral
 How to manage high blood pressure?,General
 Show my payment details,get-payment
 Tell me about my policy coverage,get-insurance
@@ -608,8 +628,10 @@ Can I see my medical coverage?,get-insurance
 Check my appointment status,get-appointment
 Show me my appointment details,get-appointment
 my otp is 785214,otp
+You are great,General
 What medicines have been prescribed to me?,get-prescriptions
 What is the best way to treat a cold?,General
+Namaste,Genral
 Show my prescriptions,get-prescriptions
 What is a balanced diet?,General
 Book an appointment for tomorrow at 5 PM,set-appointment
@@ -624,10 +646,12 @@ General tips for good health,General
 What precautions should I take for heart health?,General
 Check my health insurance,get-insurance
 Show my payment details,get-payment
+Hola,General
 Check my health insurance,get-insurance
 Mujhe apna insurance dekhna hai,get-insurance
 Log me in,login
 Mujhe apna insurance dekhna hai,get-insurance
+helllloooo,General
 Tell me about my doctor visits,get-appointment
 Open my account page,login
 Log me in,login
@@ -653,6 +677,7 @@ Mera agla appointment kab hai?,get-appointment
 Fetch my payment records,get-payment
 Check my health insurance,get-insurance
 Mera agla appointment kab hai?,get-appointment
+Hiiiii,General
 How can I take care of my health?,General
 Tell me about my doctor visits,get-appointment
 What precautions should I take for heart health?,General
@@ -686,6 +711,7 @@ Tell me about my doctor visits,get-appointment
 What precautions should I take for heart health?,General
 Tell me about healthy eating habits,General
 Check my insurance status,get-insurance
+gud morning?,General
 Set my appointment at 3 PM tomorrow,set-appointment
 Can I sign in with my email?,login
 Login to my account,login
@@ -745,6 +771,7 @@ Do I have any pending payments?,get-payment
 I need access to my profile,login
 Set my appointment at 3 PM tomorrow,set-appointment
 Show my prescriptions,get-prescriptions
+Keeem choo,General
 I want to see my appointments,get-appointment
 Login to my account,login
 What are the symptoms of diabetes?,General
@@ -797,6 +824,7 @@ Tell me about my doctor visits,get-appointment
 What medicines have been prescribed to me?,get-prescriptions
 Check my health insurance,get-insurance
 I want to check my prescriptions,get-prescriptions
+hellloo,Genral
 Tell me about my doctor visits,get-appointment
 Can I see my medicine list?,get-prescriptions
 What is my outstanding balance?,get-payment
@@ -865,6 +893,7 @@ Set my appointment at 3 PM tomorrow,set-appointment
 What is my policy limit?,get-insurance
 Mujhe ek appointment set karna hai kal ke liye,set-appointment
 What is my policy limit?,get-insurance
+Hi,General
 Fetch my payment records,get-payment
 Schedule an appointment for next Friday,set-appointment
 Tell me about my due payments,get-payment
@@ -963,6 +992,7 @@ Do I have any pending payments?,get-payment
 Book my doctor consultation,set-appointment
 Schedule an appointment for next Friday,set-appointment
 otp is 424343,otp
+Hello,General
 I want to login,login
 I need to fix a doctor visit,set-appointment
 General tips for good health,General
@@ -1022,6 +1052,7 @@ General tips for good health,General
 Tell me about my doctor visits,get-appointment
 Can you fetch my appointment details?,get-appointment
 Mera agla appointment kab hai?,get-appointment
+Hi,General
 Schedule an appointment for next Friday,set-appointment
 Can you fetch my policy information?,get-insurance
 What precautions should I take for heart health?,General

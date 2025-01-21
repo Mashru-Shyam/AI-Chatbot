@@ -97,7 +97,7 @@
     "Parameters": [
       {
         "Name": "otp",
-        "Type": "AI_Chatbot.DTOs.OtpDto",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

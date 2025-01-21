@@ -155,17 +155,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/OtpDto"
+                "type": "string"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/OtpDto"
+                "type": "string"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/OtpDto"
+                "type": "string"
               }
             }
           }
@@ -198,16 +198,6 @@
         "type": "object",
         "properties": {
           "message": {
-            "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "OtpDto": {
-        "type": "object",
-        "properties": {
-          "code": {
             "type": "string",
             "nullable": true
           }

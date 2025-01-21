@@ -73,10 +73,10 @@ namespace AI_Chatbot.Services
             await context.SaveChangesAsync();
         }
 
-        public async Task<string> CheckOtp(OtpDto otp)
+        public async Task<string> CheckOtp(string otp)
         {
             var validotp = await context.Otps
-                .Where(o=>o.OtpCode == otp.Code && o.OtpExpirationTime > DateTime.UtcNow)
+                .Where(o=>o.OtpCode == otp && o.OtpExpirationTime > DateTime.UtcNow)
                 .OrderByDescending(o => o.OtpExpirationTime)
                 .FirstOrDefaultAsync();
 
