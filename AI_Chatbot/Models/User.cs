@@ -12,6 +12,5 @@ namespace AI_Chatbot.Models
         public ICollection<Prescription> Prescriptions { get; set; }
         public ICollection<Insurance> Insurances { get; set; }
         public ICollection<Otp> Otps { get; set; }
-        public ICollection<Conversation> Conversations { get; set; }
     }
 }

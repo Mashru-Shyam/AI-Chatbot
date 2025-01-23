@@ -14,11 +14,11 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
-        public async Task AddConversationAsync(int userId, string intent, ICollection<Entity> entities, bool IsCompleted, string status)
+        public async Task AddConversationAsync(int sessionId, string intent, ICollection<Entity> entities, bool IsCompleted, string status)
         {
             var conversation = new Conversation
             {
-                UserId = userId,
+                SessionId = sessionId,
                 Intent = intent,
                 Entities = entities,
                 IsCompleted = IsCompleted,
@@ -29,40 +29,58 @@ namespace AI_Chatbot.Services
             await context.SaveChangesAsync();
         }
 
-        public async Task DeleteConversationAsync(int userId)
+        public async Task DeleteConversationAsync(int sessionId)
         {
-            var conversation = await context.Conversations.FirstOrDefaultAsync(c => c.UserId == userId);
+            var conversation = await context.Conversations.FirstOrDefaultAsync(c => c.SessionId == sessionId);
             context.Conversations.Remove(conversation);
             await context.SaveChangesAsync();
         }
 
-        public async Task<Conversation> GetConversationAsync(int userId)
+        public async Task<Conversation> GetConversationAsync(int sessionId)
         {
             var conversation = await context.Conversations
                 .Include(c => c.Entities)
-                .FirstOrDefaultAsync(c => c.UserId == userId);
+                .FirstOrDefaultAsync(c => c.SessionId == sessionId);
 
             return conversation;
         }
 
-        public async Task UpdateConversationAsync(int userId, string intent, ICollection<Entity> entities, bool IsCompleted, string status)
+        public async Task UpdateConversationAsync(int sessionId, string? intent = null, ICollection<Entity>? entities = null, bool? IsCompleted = null, string? status = null)
         {
-            var conversation = await context.Conversations
-                        .Include(c => c.Entities)
-                        .FirstOrDefaultAsync(c => c.UserId == userId); 
-            
-            conversation.Intent = intent;
-            conversation.IsCompleted = IsCompleted;
-            conversation.Context = status;
-
-            conversation.Entities.Clear();
-            foreach (var entity in entities)
+            var conversation = await GetConversationAsync(sessionId);
+            if (conversation != null)
             {
-                conversation.Entities.Add(entity);
+                if (intent != null)
+                {
+                    conversation.Intent = intent;
+                }
+
+                if (entities != null)
+                {
+                    conversation.Entities.Clear();
+                    foreach (var entity in entities)
+                    {
+                        conversation.Entities.Add(entity);
+                    }
+                }
+
+                if (IsCompleted != null)
+                {
+                    conversation.IsCompleted = IsCompleted.Value;
+                }
+
+                if (status != null)
+                {
+                    conversation.Context = status;
+                }
+
+                context.Conversations.Update(conversation);
+                await context.SaveChangesAsync();
+                return;
             }
 
-            context.Conversations.Update(conversation);
-            await context.SaveChangesAsync();
+            await AddConversationAsync(sessionId, intent, entities, IsCompleted.Value, status);
+            return;
         }
     }
 }

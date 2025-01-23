@@ -4,6 +4,7 @@ using AI_Chatbot.Datas;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AI_Chatbot.Migrations
 {
     [DbContext(typeof(AiChatbotDbContext))]
-    partial class AiChatbotDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250123154231_UpdateDatabase")]
+    partial class UpdateDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -65,10 +68,12 @@ namespace AI_Chatbot.Migrations
                     b.Property<bool>("IsCompleted")
                         .HasColumnType("bit");
 
-                    b.Property<int>("SessionId")
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("ConversationId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Conversations");
                 });
@@ -246,6 +251,17 @@ namespace AI_Chatbot.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AI_Chatbot.Models.Conversation", b =>
+                {
+                    b.HasOne("AI_Chatbot.Models.User", "User")
+                        .WithMany("Conversations")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("AI_Chatbot.Models.Entity", b =>
                 {
                     b.HasOne("AI_Chatbot.Models.Conversation", "Conversation")
@@ -309,6 +325,8 @@ namespace AI_Chatbot.Migrations
             modelBuilder.Entity("AI_Chatbot.Models.User", b =>
                 {
                     b.Navigation("Appointments");
+
+                    b.Navigation("Conversations");
 
                     b.Navigation("Insurances");
 

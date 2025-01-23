@@ -4,6 +4,7 @@ using AI_Chatbot.Datas;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AI_Chatbot.Migrations
 {
     [DbContext(typeof(AiChatbotDbContext))]
-    partial class AiChatbotDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250123180717_DatabaseChanged")]
+    partial class DatabaseChanged
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
