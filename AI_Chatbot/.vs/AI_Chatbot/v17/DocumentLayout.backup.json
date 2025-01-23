@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\migrations\\20250121183017_updatedconversationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:migrations\\20250121183017_updatedconversationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:models\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\interfaces\\ientityextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:interfaces\\ientityextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\entityextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\entityextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\generalqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\generalqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\interfaces\\igeneralqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:interfaces\\igeneralqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\intentclassificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\intentclassificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\interfaces\\iintentclassificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:interfaces\\iintentclassificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\migrations\\20250121183017_updatedconversationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:migrations\\20250121183017_updatedconversationmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\models\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,32 +55,8 @@
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:interfaces\\iconversationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\interfaces\\ientityextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:interfaces\\ientityextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\generalqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\generalqueryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\intentclassificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\intentclassificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:wwwroot\\js\\chat.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\otpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -57,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\services\\entityextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:services\\entityextractionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\interfaces\\iotpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,10 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\dtos\\chatresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:dtos\\chatresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\dtos\\chatrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:dtos\\chatrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\dtos\\chatmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -167,8 +167,12 @@
       "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:migrations\\20250120124208_conversationdatabasecreated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|d:\\shyam_mashru\\projects\\ai_chatbot\\ai_chatbot\\interfaces\\iintentclassificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D07B2BB3-D728-478F-84FE-354307C1BD09}|AI_Chatbot.csproj|solutionrelative:interfaces\\iintentclassificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Models\\Entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\ChatRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DTOs\\ChatRequestDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -178,7 +182,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -186,7 +190,124 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EntityExtractionService.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\EntityExtractionService.cs",
+              "RelativeDocumentMoniker": "Services\\EntityExtractionService.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\EntityExtractionService.cs",
+              "RelativeToolTip": "Services\\EntityExtractionService.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T17:12:47.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEntityExtractionService.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IEntityExtractionService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IEntityExtractionService.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IEntityExtractionService.cs",
+              "RelativeToolTip": "Interfaces\\IEntityExtractionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T17:11:37.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IIntentClassificationService.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IIntentClassificationService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IIntentClassificationService.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IIntentClassificationService.cs",
+              "RelativeToolTip": "Interfaces\\IIntentClassificationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:18:27.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-21T16:48:52.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Chat.js",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\Chat.js",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
+              "RelativeToolTip": "wwwroot\\js\\Chat.js",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwDYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-01-20T15:42:21.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GeneralQueryService.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\GeneralQueryService.cs",
+              "RelativeDocumentMoniker": "Services\\GeneralQueryService.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\GeneralQueryService.cs",
+              "RelativeToolTip": "Services\\GeneralQueryService.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAABsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:18:33.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ChatController.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Controllers\\ChatController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAzwCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:18:03.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IGeneralQueryService.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IGeneralQueryService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IGeneralQueryService.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IGeneralQueryService.cs",
+              "RelativeToolTip": "Interfaces\\IGeneralQueryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T14:56:28.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IntentClassificationService.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\IntentClassificationService.cs",
+              "RelativeDocumentMoniker": "Services\\IntentClassificationService.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\IntentClassificationService.cs",
+              "RelativeToolTip": "Services\\IntentClassificationService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBUAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T14:18:30.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "20250121183017_UpdatedConversationModel.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Migrations\\20250121183017_UpdatedConversationModel.cs",
               "RelativeDocumentMoniker": "Migrations\\20250121183017_UpdatedConversationModel.cs",
@@ -194,12 +315,11 @@
               "RelativeToolTip": "Migrations\\20250121183017_UpdatedConversationModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T18:30:18.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T18:30:18.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "IConversationService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IConversationService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IConversationService.cs",
@@ -211,31 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConversationService.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\ConversationService.cs",
-              "RelativeDocumentMoniker": "Services\\ConversationService.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\ConversationService.cs",
-              "RelativeToolTip": "Services\\ConversationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T20:54:45.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Conversation.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Conversation.cs",
-              "RelativeDocumentMoniker": "Models\\Conversation.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Conversation.cs",
-              "RelativeToolTip": "Models\\Conversation.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwAsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T12:26:55.383Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 41,
               "Title": "Entity.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Entity.cs",
               "RelativeDocumentMoniker": "Models\\Entity.cs",
@@ -247,31 +343,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IEntityExtractionService.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IEntityExtractionService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IEntityExtractionService.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IEntityExtractionService.cs",
-              "RelativeToolTip": "Interfaces\\IEntityExtractionService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 10,
+              "Title": "Conversation.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Conversation.cs",
+              "RelativeDocumentMoniker": "Models\\Conversation.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Conversation.cs",
+              "RelativeToolTip": "Models\\Conversation.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwAsAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:11:37.525Z"
+              "WhenOpened": "2025-01-20T12:26:55.383Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ChatController.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "Controllers\\ChatController.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAGsAAAANAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "ConversationService.cs",
+              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\ConversationService.cs",
+              "RelativeDocumentMoniker": "Services\\ConversationService.cs",
+              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\ConversationService.cs",
+              "RelativeToolTip": "Services\\ConversationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:18:03.626Z"
+              "WhenOpened": "2025-01-20T20:54:45.527Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "JwtService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\JwtService.cs",
               "RelativeDocumentMoniker": "Services\\JwtService.cs",
@@ -283,55 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-21T16:48:52.149Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IntentClassificationService.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\IntentClassificationService.cs",
-              "RelativeDocumentMoniker": "Services\\IntentClassificationService.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\IntentClassificationService.cs",
-              "RelativeToolTip": "Services\\IntentClassificationService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:18:30.142Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GeneralQueryService.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\GeneralQueryService.cs",
-              "RelativeDocumentMoniker": "Services\\GeneralQueryService.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\GeneralQueryService.cs",
-              "RelativeToolTip": "Services\\GeneralQueryService.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACAAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:18:33.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Chat.js",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
-              "RelativeDocumentMoniker": "wwwroot\\js\\Chat.js",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
-              "RelativeToolTip": "wwwroot\\js\\Chat.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-20T15:42:21.474Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Otp.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Models\\Otp.cs",
               "RelativeDocumentMoniker": "Models\\Otp.cs",
@@ -343,7 +391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "OtpService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\OtpService.cs",
               "RelativeDocumentMoniker": "Services\\OtpService.cs",
@@ -355,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -367,19 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "EntityExtractionService.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\EntityExtractionService.cs",
-              "RelativeDocumentMoniker": "Services\\EntityExtractionService.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\EntityExtractionService.cs",
-              "RelativeToolTip": "Services\\EntityExtractionService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAABjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T17:12:47.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "LoginService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\LoginService.cs",
               "RelativeDocumentMoniker": "Services\\LoginService.cs",
@@ -391,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserController.cs",
@@ -403,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IOtpService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IOtpService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IOtpService.cs",
@@ -415,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "RegisterService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Services\\RegisterService.cs",
               "RelativeDocumentMoniker": "Services\\RegisterService.cs",
@@ -427,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "IRegisterService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IRegisterService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IRegisterService.cs",
@@ -439,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ILoginService.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\ILoginService.cs",
               "RelativeDocumentMoniker": "Interfaces\\ILoginService.cs",
@@ -451,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "PrescriptionDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\PrescriptionDto.cs",
               "RelativeDocumentMoniker": "DTOs\\PrescriptionDto.cs",
@@ -463,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\EmailSettings.cs",
               "RelativeDocumentMoniker": "DTOs\\EmailSettings.cs",
@@ -475,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "ChatResponseDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\ChatResponseDto.cs",
               "RelativeDocumentMoniker": "DTOs\\ChatResponseDto.cs",
@@ -487,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 42,
               "Title": "ChatRequestDto.cs",
               "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\DTOs\\ChatRequestDto.cs",
               "RelativeDocumentMoniker": "DTOs\\ChatRequestDto.cs",
@@ -676,18 +712,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-01-20T09:31:55.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "IIntentClassificationService.cs",
-              "DocumentMoniker": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IIntentClassificationService.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IIntentClassificationService.cs",
-              "ToolTip": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\Interfaces\\IIntentClassificationService.cs",
-              "RelativeToolTip": "Interfaces\\IIntentClassificationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:18:27.409Z"
             }
           ]
         }

@@ -7,7 +7,7 @@ namespace AI_Chatbot.Services
 {
     public class EntityExtractionService : IEntityExtractionService
     {
-        public Dictionary<string, List<string>> ExtractEntities(ChatRequestDto chatRequest)
+        public Dictionary<string, List<string>> ExtractEntities(string query)
         {
             string emailPattern = @"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+"; // Email regex
             string otpPattern = @"\b\d{6}\b";
@@ -22,10 +22,10 @@ namespace AI_Chatbot.Services
                 { "time", new List<string>() }
             };
 
-            entities["email"].AddRange(Regex.Matches(chatRequest.Message, emailPattern, RegexOptions.IgnoreCase).Select(m => m.Value));
-            entities["otp"].AddRange(Regex.Matches(chatRequest.Message, otpPattern).Select(m => m.Value));
-            entities["date"].AddRange(Regex.Matches(chatRequest.Message, datePattern, RegexOptions.IgnoreCase).Select(m => m.Value));
-            entities["time"].AddRange(Regex.Matches(chatRequest.Message, timePattern, RegexOptions.IgnoreCase).Select(m => m.Value));
+            entities["email"].AddRange(Regex.Matches(query, emailPattern, RegexOptions.IgnoreCase).Select(m => m.Value));
+            entities["otp"].AddRange(Regex.Matches(query, otpPattern).Select(m => m.Value));
+            entities["date"].AddRange(Regex.Matches(query, datePattern, RegexOptions.IgnoreCase).Select(m => m.Value));
+            entities["time"].AddRange(Regex.Matches(query, timePattern, RegexOptions.IgnoreCase).Select(m => m.Value));
 
             return entities;
         }

@@ -21,11 +21,11 @@ namespace AI_Chatbot.Services
             this.configuration = configuration;
         }
 
-        public async Task<string> GeneralQuery(ChatRequestDto chatRequest)
+        public async Task<string> GeneralQuery(string query)
         {
             var prompt = $"""
                 Please provide a short and precise answer to the following:
-                Query: {chatRequest.Message}
+                Query: {query}
                 """;
 
             var requestBody = new

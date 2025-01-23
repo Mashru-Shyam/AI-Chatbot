@@ -53,7 +53,7 @@ $(document).ready(function () {
                 'Authorization': `Bearer ${jwtToken}`,
             },
             contentType: "application/json",
-            data: JSON.stringify({ message: input }),
+            data: JSON.stringify(input),
             success: function (response) {
                 if (response.token) {
                     sessionStorage.setItem('jwtToken', response.token);
@@ -61,14 +61,14 @@ $(document).ready(function () {
                     addMessage('Login Successful...', 'bot');
                 } else {
                     const formattedResponse = response
-                    .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')   // Bold (**text**)
-                    .replace(/_(.*?)_/g, '<i>$1</i>')        // Italics (_text_)
-                    .replace(/~~(.*?)~~/g, '<s>$1</s>')      // Strikethrough (~~text~~)
-                    .replace(/`([^`]+)`/g, '<code>$1</code>') // Inline Code (`text`)
-                    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>') // Links [text](url)
-                    .replace(/\n/g, '<br>');                 // Newline (\n)
+                    .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')   
+                    .replace(/_(.*?)_/g, '<i>$1</i>')        
+                    .replace(/~~(.*?)~~/g, '<s>$1</s>')      
+                    .replace(/`([^`]+)`/g, '<code>$1</code>') 
+                    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>')
+                    .replace(/\n/g, '<br>');                 
                     removeTypingIndicator();
-                    addMessage(formattedResponse, 'bot'); // Display bot's response
+                    addMessage(formattedResponse, 'bot'); 
                 }
             },
             error: function (xhr) {

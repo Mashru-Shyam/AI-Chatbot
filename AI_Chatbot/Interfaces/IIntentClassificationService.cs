@@ -4,6 +4,6 @@ namespace AI_Chatbot.Interfaces
 {
     public interface IIntentClassificationService
     {
-        Task<string> Chatting (ChatRequestDto chatRequest);
+        Task<string> Chatting (string query);
     }
 }

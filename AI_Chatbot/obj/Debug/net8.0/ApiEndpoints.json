@@ -34,8 +34,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "chatRequest",
-        "Type": "AI_Chatbot.DTOs.ChatRequestDto",
+        "Name": "query",
+        "Type": "System.String",
         "IsRequired": true
       }
     ],

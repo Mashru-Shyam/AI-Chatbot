@@ -57,17 +57,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ChatRequestDto"
+                "type": "string"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ChatRequestDto"
+                "type": "string"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ChatRequestDto"
+                "type": "string"
               }
             }
           }
@@ -190,16 +190,6 @@
           "appointmentTime": {
             "type": "string",
             "format": "time"
-          }
-        },
-        "additionalProperties": false
-      },
-      "ChatRequestDto": {
-        "type": "object",
-        "properties": {
-          "message": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false

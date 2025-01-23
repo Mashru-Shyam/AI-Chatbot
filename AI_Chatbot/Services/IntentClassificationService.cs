@@ -17,9 +17,9 @@ namespace AI_Chatbot.Services
             this.httpClient = httpClient;
         }
 
-        public async Task<string> Chatting(ChatRequestDto chatRequest)
+        public async Task<string> Chatting(string query)
         {
-            var requestContent = new StringContent(JsonConvert.SerializeObject(new { text = chatRequest.Message }), Encoding.UTF8, "application/json");
+            var requestContent = new StringContent(JsonConvert.SerializeObject(new { text = query }), Encoding.UTF8, "application/json");
             var response = await httpClient.PostAsync("http://localhost:5000/classify", requestContent);
             var responseString = await response.Content.ReadAsStringAsync();
             return responseString;

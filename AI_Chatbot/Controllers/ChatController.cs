@@ -35,9 +35,9 @@ namespace AI_Chatbot.Controllers
         }
 
         [HttpPost("send-message")]
-        public async Task<IActionResult> SendMessage([FromBody] ChatRequestDto chatRequest)
+        public async Task<IActionResult> SendMessage([FromBody] string query)
         {
-            if (chatRequest == null || string.IsNullOrEmpty(chatRequest.Message))
+            if (query == null || string.IsNullOrEmpty(query))
             {
                 return Ok("Please provide the message...");
             }
@@ -45,11 +45,11 @@ namespace AI_Chatbot.Controllers
             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
             int.TryParse(userIdClaim, out var userId);
 
-            var intent = await service.Chatting(chatRequest);
+            var intent = await service.Chatting(query);
 
             if (intent.ToString() == "1")
             {
-                var answer = await queryService.GeneralQuery(chatRequest);
+                var answer = await queryService.GeneralQuery(query);
                 return Ok(answer);
             }
 
@@ -57,7 +57,7 @@ namespace AI_Chatbot.Controllers
             {
                 if (intent.ToString() == "5")
                 {
-                    var entities = extractionService.ExtractEntities(chatRequest);
+                    var entities = extractionService.ExtractEntities(query);
                     if (!entities["email"].Any())
                     {
                         return Ok("Provide your email to login...");
@@ -81,7 +81,7 @@ namespace AI_Chatbot.Controllers
                 }
                 else if (intent.ToString() == "4")
                 {
-                    var entities = extractionService.ExtractEntities(chatRequest);
+                    var entities = extractionService.ExtractEntities(query);
                     if (!entities["otp"].Any())
                     {
                         return Ok("Provide your valid otp...");
