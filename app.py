@@ -1,12 +1,11 @@
 from flask import Flask, request, jsonify
-from transformers import BertTokenizer, BertForSequenceClassification
+from transformers import DistilBertTokenizer, DistilBertForSequenceClassification
 import torch
 
 app = Flask(__name__)
 
-# Load model and tokenizer
-tokenizer = BertTokenizer.from_pretrained("fine_tuned_bert")
-model = BertForSequenceClassification.from_pretrained("fine_tuned_bert")
+tokenizer = DistilBertTokenizer.from_pretrained("fine_tuned_distilbert")
+model = DistilBertForSequenceClassification.from_pretrained("fine_tuned_distilbert")
 
 @app.route("/classify", methods=["POST"])
 def classify_query():

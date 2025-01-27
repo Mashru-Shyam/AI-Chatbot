@@ -194,19 +194,6 @@
         },
         "additionalProperties": false
       }
-    },
-    "securitySchemes": {
-      "Bearer": {
-        "type": "http",
-        "description": "Enter 'Bearer' [space] and your JWT token in the text input below.\nExample: \"Bearer abc123\"",
-        "scheme": "Bearer",
-        "bearerFormat": "JWT"
-      }
     }
-  },
-  "security": [
-    {
-      "Bearer": [ ]
-    }
-  ]
+  }
 }

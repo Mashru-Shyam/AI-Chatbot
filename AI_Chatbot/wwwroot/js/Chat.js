@@ -9,6 +9,8 @@ $(document).ready(function () {
     const chatMessages = $('#chatMessages');
     const userMessageInput = $('#userMessage');
 
+    addMessage("Hello! Welcome to Chatbot.  Please let me know how I can assist you today.","bot");
+
     function addMessage(message, sender) {
         const messageClass = sender === 'user' ? 'user' : 'bot';
         const formattedMessage = message
@@ -42,7 +44,7 @@ $(document).ready(function () {
 
 
     function processUserInput(input) {
-        const jwtToken = sessionStorage.getItem('jwtToken') || ''; // Retrieve token from sessionStorage
+        const jwtToken = sessionStorage.getItem('jwtToken') || '';
 
         showTypingIndicator();
 
@@ -50,7 +52,7 @@ $(document).ready(function () {
             url: `https://localhost:7048/api/Chat/send-message`,
             method: "POST",
             headers: {
-                'Authorization': `Bearer ${jwtToken}`,
+                'Authorization': `Bearer ${jwtToken}`,   
             },
             contentType: "application/json",
             data: JSON.stringify(input),
@@ -90,7 +92,7 @@ $(document).ready(function () {
             userMessageInput.val('');
             processUserInput(message);
         } else {
-            addMessage("Please type a message before sending.", 'bot');
+            addMessage("Please enter your message and press 'Send' to proceed.", 'bot');
         }
     });
 

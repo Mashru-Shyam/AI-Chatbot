@@ -10,13 +10,11 @@ namespace AI_Chatbot.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IRegisterService registerService;
         private readonly IOtpService otpService;
         private readonly ILoginService loginService;
 
-        public UserController(IRegisterService registerService,IOtpService otpService, ILoginService loginService)
+        public UserController(IOtpService otpService, ILoginService loginService)
         {
-            this.registerService = registerService;
             this.otpService = otpService;
             this.loginService = loginService;
         }
@@ -24,10 +22,10 @@ namespace AI_Chatbot.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] string email)
         {
-            var user = await loginService.CheckUser(email);
-            if (user == 0)
+            var user = await loginService.GetUser(email);
+            if (!user)
             {
-                await registerService.Register(email);
+                await loginService.AddUser(email);
                 await Task.Delay(1000);
             }
             var otp = otpService.GenerateOtp();

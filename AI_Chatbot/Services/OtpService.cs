@@ -40,7 +40,7 @@ namespace AI_Chatbot.Services
         public async Task SendOtpViaMail(string to, string subject, string body)
         {
             var mail = new MimeMessage();
-            mail.From.Add(new MailboxAddress("AI Chatbot", options.Value.Username));
+            mail.From.Add(new MailboxAddress("Chatbot", options.Value.Username));
             mail.To.Add(new MailboxAddress("", to));
             mail.Subject = subject;
             mail.Body = new TextPart("plain")

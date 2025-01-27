@@ -23,9 +23,32 @@ namespace AI_Chatbot.Services
 
         public async Task<string> GeneralQuery(string query)
         {
-            var prompt = $"""
-                Please provide a short and precise answer to the following:
-                Query: {query}
+            var prompt = $$"""
+                Classify the user query into one of the following intents:  
+                1. Login: For authentication or login-related queries, may include an email.  
+                2. Otp: Query contains a digit OTP.  
+                3. gAppointment: To view appointment details.  
+                4. sAppointment: To set an appointment.  
+                5. Prescriptions: To view prescriptions.  
+                6. Payment: To view payment details.  
+                7. Insurance: To view insurance details.  
+                8. General: Queries that do not match any of the above.  
+
+                If the intent is "General," provide a concise response to the query.  
+                Output format:  
+                {  
+                  "intent": "<classified_intent>",  
+                  "response": "<answer_to_query_if_general_or_null>"  
+                }  
+
+                Example:  
+                Input: "How do I log in to my account?"  
+                Output: {"intent": "Login", "response": null}  
+
+                Input: "What is the weather today?"  
+                Output: {"intent": "General", "response": "The weather is sunny with a high of 28°C."}  
+
+                Query: {{query}}
                 """;
 
             var requestBody = new

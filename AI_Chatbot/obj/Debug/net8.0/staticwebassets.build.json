@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZjombgZhQEi1I5bdlzTmBljqy4yTHoostjOho7jYxcA=",
+  "Hash": "Extv12uKk48LOH3iis22c+dpW3hXVjcT3GVHh0C15aA=",
   "Source": "AI_Chatbot",
   "BasePath": "_content/AI_Chatbot",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sabpsjf4gm",
-      "Integrity": "jEKD9T1MYCO2nt5yGzWxjtdRyr+V0bqRQa5Pkm/ayaQ=",
+      "Fingerprint": "9ysgm9qkxr",
+      "Integrity": "kTCRxoug6Al/zSFI+PnwgRMUQfp91BDNgZmdlQ0iNfw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Chat.js"
@@ -246,6 +246,51 @@
       ]
     },
     {
+      "Route": "js/Chat.9ysgm9qkxr.js",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4281"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kTCRxoug6Al/zSFI+PnwgRMUQfp91BDNgZmdlQ0iNfw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 14:01:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9ysgm9qkxr"
+        },
+        {
+          "Name": "label",
+          "Value": "js/Chat.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kTCRxoug6Al/zSFI+PnwgRMUQfp91BDNgZmdlQ0iNfw="
+        }
+      ]
+    },
+    {
       "Route": "js/Chat.js",
       "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
       "Selectors": [],
@@ -256,7 +301,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4196"
+          "Value": "4281"
         },
         {
           "Name": "Content-Type",
@@ -264,11 +309,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jEKD9T1MYCO2nt5yGzWxjtdRyr+V0bqRQa5Pkm/ayaQ=\""
+          "Value": "\"kTCRxoug6Al/zSFI+PnwgRMUQfp91BDNgZmdlQ0iNfw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 15:23:19 GMT"
+          "Value": "Mon, 27 Jan 2025 14:01:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -278,52 +323,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jEKD9T1MYCO2nt5yGzWxjtdRyr+V0bqRQa5Pkm/ayaQ="
-        }
-      ]
-    },
-    {
-      "Route": "js/Chat.sabpsjf4gm.js",
-      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4196"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jEKD9T1MYCO2nt5yGzWxjtdRyr+V0bqRQa5Pkm/ayaQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 23 Jan 2025 15:23:19 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "sabpsjf4gm"
-        },
-        {
-          "Name": "label",
-          "Value": "js/Chat.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jEKD9T1MYCO2nt5yGzWxjtdRyr+V0bqRQa5Pkm/ayaQ="
+          "Value": "sha256-kTCRxoug6Al/zSFI+PnwgRMUQfp91BDNgZmdlQ0iNfw="
         }
       ]
     }

@@ -15,41 +15,16 @@ var  provider = builder.Services.BuildServiceProvider();
 var congig = provider.GetRequiredService<IConfiguration>();
 builder.Services.AddDbContext<AiChatbotDbContext>(options => options.UseSqlServer(congig.GetConnectionString("dbcs")));
 
-// Add services to the container.
-
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options =>
+builder.Services.AddSwaggerGen();
+builder.Services.AddAuthentication(options =>
 {
-    options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Name = "Authorization",
-        Type = SecuritySchemeType.Http,
-        Scheme = "Bearer",
-        BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Description = "Enter 'Bearer' [space] and your JWT token in the text input below.\nExample: \"Bearer abc123\""
-    });
-
-    options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            new string[] {}
-        }
-    });
-});
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
     .AddJwtBearer(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
@@ -70,14 +45,15 @@ builder.Services.AddCors(options =>
     {
         policy.AllowAnyOrigin()
               .AllowAnyHeader()
-              .AllowAnyMethod();
+              .AllowAnyMethod()
+              .WithExposedHeaders("Set-Cookie");
+
     });
 });
 
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddScoped<IJwtService, JwtService>();
 
-builder.Services.AddScoped<IRegisterService, RegisterService>();
 builder.Services.AddScoped<ILoginService, LoginService>();
 
 builder.Services.AddScoped<IOtpService, OtpService>();
@@ -90,13 +66,10 @@ builder.Services.AddScoped<IInsuranceService, InsuranceService>();
 
 builder.Services.AddScoped<IPrescriptionService, PrescriptionService>();
 
-builder.Services.AddScoped<IIntentClassificationService, IntentClassificationService>();
-
 builder.Services.AddScoped<ISmtpClient, SmtpClient>();
 
 builder.Services.AddScoped<IGeneralQueryService, GeneralQueryService>();
 
-builder.Services.AddScoped<IEntityExtractionService, EntityExtractionService>();
 
 builder.Services.AddScoped<IConversationService, ConversationService>();
 
@@ -114,8 +87,13 @@ app.UseStaticFiles();
 
 app.UseHttpsRedirection();
 
+app.UseCors("AllowAll");
+
+
+app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapDefaultControllerRoute();
 app.MapControllers();
 
 app.Run();
