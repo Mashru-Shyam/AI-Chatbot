@@ -116,6 +116,20 @@ namespace AI_Chatbot.Controllers
                 case "login":
                     var response = await HandleLogin(sessionId, query);
                     return response;
+                case "date-time":
+                    string datePattern = @"\b(?:\d{1,2}(?:st|nd|rd|th)?(?:\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December)\s?\d{0,4})|\b(?:\d{4}-\d{2}-\d{2})\b"; // Date regex
+                    string timePattern = @"\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?(?:AM|PM|am|pm))?\b|\b(?:[01]?\d|2[0-3])(?:\s?(?:AM|PM|am|pm))\b"; // Time regex
+                    date = Regex.Match(query, datePattern).Value;
+                    time = Regex.Match(query, timePattern).Value;
+                    var entities = new List<Entity>
+                    {
+                            new Entity { EntityName = "date", EntityValue = date },
+                            new Entity { EntityName = "time", EntityValue = time }
+                    };
+                    await conversationService.UpdateConversationAsync(sessionId, entities: entities);
+                    var conv = await conversationService.GetConversationAsync(sessionId);
+                    Request.Cookies.TryGetValue("Token", out var token);
+                    return await HandleIntent(sessionId, conv.Intent, entities, token);
                 default:
                     return ".";
             }
@@ -183,8 +197,26 @@ namespace AI_Chatbot.Controllers
                         $"**Date**: {a.AppointmentDate} \n **Time**: {a.AppointmentTime}"));
                     await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
                     return appointment;
-                case "setAppointment":
-                    return "setAppointment";
+                case "sAppointment":
+                    var conversation = await conversationService.GetConversationAsync(sessionId);
+                    var dateEntity = conversation.Entities?.FirstOrDefault(e => e.EntityName == "date");
+                    var timeEntity = conversation.Entities?.FirstOrDefault(e => e.EntityName == "time");
+
+                    date = dateEntity?.EntityValue ?? string.Empty;
+                    time = timeEntity?.EntityValue ?? string.Empty;
+                    if (date == string.Empty || time == string.Empty)
+                    {
+                        await conversationService.UpdateConversationAsync(sessionId, status: "date-time", IsCompleted: false);
+                        return "Provide the of Appointment as \n **Date** : **YYYY-MM-DD**) and **Time** : **HH:MM am/pm**)";
+                    }
+                    var appointmentDto = new AppointmentDto
+                    {
+                        AppointmentDate = DateOnly.Parse(date),
+                        AppointmentTime = TimeOnly.Parse(time)
+                    };
+                    var app = await appointmentService.AddAppointment(userId, appointmentDto);
+                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
+                    return app;
                 case "Prescriptions":
                     var prescriptions = await prescriptionService.GetPrescriptions(userId);
                     string prescription = string.Join("\n\n", prescriptions.Select(p =>

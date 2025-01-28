@@ -69,10 +69,7 @@ namespace AI_Chatbot.Services
                     conversation.Entities.Add(entity);
                 }
             }
-            if (IsCompleted)
-            {
-                conversation.IsCompleted = IsCompleted;
-            }
+            conversation.IsCompleted = IsCompleted;            
             if (status != null)
             {
                 conversation.Context = status;
