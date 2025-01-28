@@ -7,7 +7,7 @@ namespace AI_Chatbot.Interfaces
     {
         Task<Conversation> GetConversationAsync(int sessionId);
         Task AddConversationAsync(int sessionId, string intent, ICollection<Entity> entities, bool IsCompleted, string status);
-        Task UpdateConversationAsync(int sessionId, string? intent=null, ICollection<Entity>? entities = null, bool? IsCompleted = null, string? status=null);
+        Task UpdateConversationAsync(int sessionId, string intent = null, ICollection<Entity> entities = null, bool IsCompleted = false, string status = null);
         Task DeleteConversationAsync(int sessionId);
     }
 }

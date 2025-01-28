@@ -6,8 +6,12 @@ using AI_Chatbot.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Identity.Client;
+using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IdentityModel.Tokens.Jwt;
+using System.Reflection.Metadata;
+using System.Runtime.ExceptionServices;
 using System.Security.Claims;
 using System.Text.Json;
 using System.Text.RegularExpressions;
@@ -27,16 +31,18 @@ namespace AI_Chatbot.Controllers
         private readonly IInsuranceService insuranceService;
         private readonly IPrescriptionService prescriptionService;
         private readonly IAppointmentService appointmentService;
-        private string intent;
-        private ICollection<Entity> entities;
+        private string date;
+        private string otp;
+        private string email;
+        private string time;
 
         public ChatController(
-            IGeneralQueryService queryService, 
-            ILoginService loginService, 
-            IOtpService otpService, 
-            IConversationService conversationService, 
-            IPaymentService paymentService, 
-            IInsuranceService insuranceService, 
+            IGeneralQueryService queryService,
+            ILoginService loginService,
+            IOtpService otpService,
+            IConversationService conversationService,
+            IPaymentService paymentService,
+            IInsuranceService insuranceService,
             IPrescriptionService prescriptionService,
             IAppointmentService appointmentService
             )
@@ -54,6 +60,69 @@ namespace AI_Chatbot.Controllers
         [HttpPost("send-message")]
         public async Task<IActionResult> SendMessage([FromBody] string query)
         {
+            Request.Cookies.TryGetValue("SessionId", out var session);
+            if (session == null)
+            {
+                session = Guid.NewGuid().ToString();
+                Response.Cookies.Append("SessionId", session, new CookieOptions
+                {
+                    Secure = true,
+                    HttpOnly = true,
+                    SameSite = SameSiteMode.None
+                });
+                var sessionI = session.GetHashCode();
+                var result = await HandleClassification(sessionI, query);
+                return Ok(result);
+            }
+            var sessionId = session.GetHashCode();
+            var conversation = await conversationService.GetConversationAsync(sessionId);
+            if (conversation == null || conversation.IsCompleted)
+            {
+                var result = await HandleClassification(sessionId, query);
+                return Ok(result);
+            }
+            else
+            {
+                var result = await HandleFragmentation(sessionId, conversation.Context, query);
+                return Ok(result);
+            }
+        }
+        private async Task<string> HandleFragmentation(int sessionId, string context, string query)
+        {
+            switch(context)
+            {
+                case "otp":
+                    var result = await otpService.CheckOtp(query);
+                    if (result == null)
+                    {
+                        return "null";
+                    }
+                    Response.Cookies.Append("Token", result, new CookieOptions
+                    {
+                        HttpOnly = true,
+                        Secure = true,
+                        SameSite = SameSiteMode.None
+                    });
+                    var conversation = await conversationService.GetConversationAsync(sessionId);
+                    if (conversation.Intent != null) {
+                        var res = await HandleIntent(sessionId,conversation.Intent, conversation.Entities.ToList());
+                        return res;
+                    }
+                    else
+                    {
+                        await conversationService.UpdateConversationAsync(sessionId,IsCompleted:true, status:"end");
+                        return "Login Sucessfull. Provide the query.";
+                    }
+                case "login":
+                    var response = await HandleLogin(sessionId, query);
+                    return response;
+                default:
+                    return ".";
+            }
+        }
+
+        private async Task<string> HandleClassification(int sessionId, string query)
+        {
             var answer = await queryService.GeneralQuery(query);
             var resp = JsonDocument.Parse(answer);
             var intent = resp.RootElement.GetProperty("intent").GetString();
@@ -61,26 +130,98 @@ namespace AI_Chatbot.Controllers
             switch (intent)
             {
                 case "General":
-                    return Ok(resp.RootElement.GetProperty("response").GetString());
+                    var response = resp.RootElement.GetProperty("response").GetString();
+                    if (response != null)
+                    {
+                        return response;
+                    }
+                    return "Unable to process the query";
                 case "Login":
-                    var loginResult = await HandleLogin(query);
-                    return Ok(loginResult);
-                case "Otp":
-                    var otpResult = await HandleOtp(query);
-                    return Ok(otpResult);
+                    var loginResult = await HandleLogin(sessionId, query);
+                    if (loginResult != null)
+                    {
+                        return loginResult;
+                    }
+                    return "Unable to process the query";
                 default:
-                    return Ok("Invalid query...");
+                    string datePattern = @"\b(?:\d{1,2}(?:st|nd|rd|th)?(?:\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December)\s?\d{0,4})|\b(?:\d{4}-\d{2}-\d{2})\b"; // Date regex
+                    string timePattern = @"\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?(?:AM|PM|am|pm))?\b|\b(?:[01]?\d|2[0-3])(?:\s?(?:AM|PM|am|pm))\b"; // Time regex
+                    date = Regex.Match(query, datePattern).Value;
+                    time = Regex.Match(query, timePattern).Value;
+                    var entities = new List<Entity>
+                    {
+                            new Entity { EntityName = "date", EntityValue = date },
+                            new Entity { EntityName = "time", EntityValue = time }
+                    };
+                    await conversationService.UpdateConversationAsync(sessionId, intent: intent, entities: entities);
+                    if (Request.Cookies.TryGetValue("Token", out var token))
+                    {
+                        var result = await HandleIntent(sessionId, intent, entities);
+                        return result;
+                    }
+                    else
+                    {
+                        var result = await HandleLogin(sessionId, query);
+                        return result;
+                    }
             }
         }
 
-        private async Task<string> HandleLogin(string query)
+        private async Task<string> HandleIntent(int sessionId, string intent, List<Entity> entities)
+        {
+            Request.Cookies.TryGetValue("Token", out var token);
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            var userId = int.Parse(userIdClaim ?? throw new ArgumentNullException(nameof(userIdClaim)));
+
+            switch (intent)
+            {
+                case "gAppointment":
+                    var appointments = await appointmentService.GetAppointments(userId);
+                    string appointment = string.Join("\n\n", appointments.Select(a =>
+                        $"**Date**: {a.AppointmentDate} \n **Time**: {a.AppointmentTime}"));
+                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
+                    return appointment;
+                case "setAppointment":
+                    return "setAppointment";
+                case "Prescriptions":
+                    var prescriptions = await prescriptionService.GetPrescriptions(userId);
+                    string prescription = string.Join("\n\n", prescriptions.Select(p =>
+                        $"**Medicine Name**: {p.MedicineName} \n **Medicine Dosage**: {p.MedicineDosage} \n **Medicine Direction**: {p.MedicineDirection}"));
+                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
+                    return prescription;
+                case "Insurance":
+                    var insuranceDetails = await insuranceService.GetInsuranceDetails(userId);
+                    string insurance = string.Join("\n\n", insuranceDetails.Select(i =>
+                        $"**Insurance Name **: {i.InsuranceName} \n **Start Date**: {i.InsuranceStart} \n **End Date**: {i.InsuranceEnd}, \n **Status**: {i.InsuranceStatus}"));
+                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
+                    return insurance;
+                case "Payment":
+                    var payments = await paymentService.GetDuePayments(userId);
+                    string payment = string.Join("\n\n", payments.Select(p =>
+                        $"**Payment Due**: {p.PaymentDue} \n **Amount**: {p.PaymentAmount} \n **Status**: {p.PaymentStatus}"));
+                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
+                    return payment;
+                default:
+                    return intent;
+            }
+        }
+
+        private async Task<string> HandleLogin(int sessionId, string query)
         {
             string emailPattern = @"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+";
-            var email = Regex.Match(query, emailPattern).Value;
+            email = Regex.Match(query, emailPattern).Value;
             if (email == "")
             {
+                await conversationService.UpdateConversationAsync(sessionId, status: "login");
                 return "Please provide your email address...";
             }
+            var entities = new List<Entity>
+            {
+                new Entity { EntityName = "email", EntityValue = email}
+            };
+            await conversationService.UpdateConversationAsync(sessionId, entities: entities);
             var user = await loginService.GetUser(email);
             if (!user)
             {
@@ -89,132 +230,8 @@ namespace AI_Chatbot.Controllers
             var otp = otpService.GenerateOtp();
             await otpService.SendOtpViaMail(email, "Your OTP Code", $"Thank you for using our service. Your one-time password (OTP) to access your account is:\r\n\r\n{otp}\r\n\r\n Please note that this OTP is valid for a limited time (e.g., 5 minutes). Do not share this code with anyone. If you did not request this OTP, please ignore this message.\r\n");
             await otpService.StoreOtp(email, otp);
-            return "Your OTP has been sent to your registered email address.";
+            await conversationService.UpdateConversationAsync(sessionId, status: "otp");
+            return "Your OTP has been sent to your registered email address. Enter the Otp";
         }
-
-        private async Task<string> HandleOtp(string query)
-        {
-            string otpPattern = @"\b\d{6}\b";
-            var otp = Regex.Match(query, otpPattern).Value;
-            if (otp == "")
-            {
-                return "Please provide a valid OTP...";
-            }
-            var result = await otpService.CheckOtp(otp);
-            if (result==null)
-            {
-                return "Please provide a valid OTP...";
-            }
-
-            var cookieOptions = new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = true,
-                Expires = DateTime.Now.AddMinutes(30),
-                SameSite = SameSiteMode.Strict
-            };
-            Response.Cookies.Append("Token", result, cookieOptions);
-            return "Login successful. Please provide your query.";
-        }
-
-        //    var sessionId = GetSessionId();
-
-        //    var con = await conversationService.GetConversationAsync(sessionId);
-        //    if (con == null || con.IsCompleted == true)
-        //    {
-        //        await conversationService.UpdateConversationAsync(sessionId, intent: intent, entities: entities, false, "start");
-        //    }
-        //    else
-        //    {
-        //        intent = con.Intent;
-        //        entities = con.Entities;
-        //    }
-
-        //    var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-        //    if (!int.TryParse(userIdClaim, out var userId))
-        //    {
-        //        return Ok("For this query you need to login \n Please provide your email...");
-        //    }
-
-        //    switch (intent)
-        //    {
-        //        case "gAppointment":
-        //            var appointments = await appointmentService.GetAppointments(userId);
-        //            string appointment = string.Join("\n\n", appointments.Select(a =>
-        //                $"**Date**: {a.AppointmentDate} \n **Time**: {a.AppointmentTime}"));
-        //            await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
-        //            return Ok(appointment);
-        //        case "sAppointment":
-        //            return Ok("sAppointment");
-        //        case "prescription":
-        //            var prescriptions = await prescriptionService.GetPrescriptions(userId);
-        //            string prescription = string.Join("\n\n", prescriptions.Select(p =>
-        //                $"**Medicine Name**: {p.MedicineName} \n **Medicine Dosage**: {p.MedicineDosage} \n **Medicine Direction**: {p.MedicineDirection}"));
-        //            await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
-        //            return Ok(prescription);
-        //        case "insurance":
-        //            var insuranceDetails = await insuranceService.GetInsuranceDetails(userId);
-        //            string insurance = string.Join("\n\n", insuranceDetails.Select(i =>
-        //                $"**Insurance Name **: {i.InsuranceName} \n **Start Date**: {i.InsuranceStart} \n **End Date**: {i.InsuranceEnd}, \n **Status**: {i.InsuranceStatus}"));
-        //            await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
-        //            return Ok(insurance);
-        //        case "payment":
-        //            var payments = await paymentService.GetDuePayments(userId);
-        //            string payment = string.Join("\n\n", payments.Select(p =>
-        //                $"**Payment Due**: {p.PaymentDue} \n **Amount**: {p.PaymentAmount} \n **Status**: {p.PaymentStatus}"));
-        //            await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
-        //            return Ok(payment);
-        //    }
-        //    return Ok(".");
-        //}
-
-        //private async Task<string> HandleOtp()
-        //{
-        //    var otpEntity = entities.FirstOrDefault(e => e.EntityName == "otp");
-        //    if (otpEntity == null)
-        //    {
-        //        return "null";
-        //    }
-        //    var result = await otpService.CheckOtp(otpEntity.EntityValue);
-        //    if (result == null)
-        //    {
-        //        return "null";
-        //    }
-        //    return result;
-        //}
-
-        //private async Task<string> HandleLogin()
-        //{
-        //    var emailEntity = entities.FirstOrDefault(e => e.EntityName == "email");
-        //    if (emailEntity == null)
-        //    {
-        //        return "Please provide your email address...";
-        //    }
-
-        //    var user = await loginService.CheckUser(emailEntity.EntityValue);
-        //    if (user == 0)
-        //    {
-        //        await registerService.Register(emailEntity.EntityValue);
-        //    }
-        //    var otp = otpService.GenerateOtp();
-        //    await otpService.StoreOtp(emailEntity.EntityValue, otp);
-        //    await otpService.SendOtpViaMail(emailEntity.EntityValue, "OTP for Login", $"Your OTP is {otp}");
-        //    return "OTP sent to your email.\nProvide the OTP...";
-        //}
-
-        //private int GetSessionId()
-        //{
-        //    if (!Request.Cookies.TryGetValue("SessionId", out var sessionId))
-        //    {
-        //        sessionId = Guid.NewGuid().ToString();
-        //        Response.Cookies.Append("SessionId", sessionId, new CookieOptions
-        //        {
-        //            Expires = DateTimeOffset.UtcNow.AddDays(1),
-        //            HttpOnly = true,
-        //            Secure = true
-        //        });
-        //    }
-        //    return sessionId.GetHashCode();
-        //}
     }
 }
