@@ -105,7 +105,7 @@ namespace AI_Chatbot.Controllers
                     });
                     var conversation = await conversationService.GetConversationAsync(sessionId);
                     if (conversation.Intent != null) {
-                        var res = await HandleIntent(sessionId,conversation.Intent, conversation.Entities.ToList());
+                        var res = await HandleIntent(sessionId,conversation.Intent, conversation.Entities.ToList(),result);
                         return res;
                     }
                     else
@@ -154,9 +154,10 @@ namespace AI_Chatbot.Controllers
                             new Entity { EntityName = "time", EntityValue = time }
                     };
                     await conversationService.UpdateConversationAsync(sessionId, intent: intent, entities: entities);
-                    if (Request.Cookies.TryGetValue("Token", out var token))
+                    Request.Cookies.TryGetValue("Token", out var token);
+                    if(token!=null)
                     {
-                        var result = await HandleIntent(sessionId, intent, entities);
+                        var result = await HandleIntent(sessionId, intent, entities, token);
                         return result;
                     }
                     else
@@ -167,9 +168,8 @@ namespace AI_Chatbot.Controllers
             }
         }
 
-        private async Task<string> HandleIntent(int sessionId, string intent, List<Entity> entities)
+        private async Task<string> HandleIntent(int sessionId, string intent, List<Entity> entities ,string token)
         {
-            Request.Cookies.TryGetValue("Token", out var token);
             var handler = new JwtSecurityTokenHandler();
             var jwtToken = handler.ReadJwtToken(token);
             var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
