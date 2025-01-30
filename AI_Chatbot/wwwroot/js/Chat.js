@@ -60,8 +60,12 @@ $(document).ready(function () {
             <div class="action-buttons">
                 <button id="schedule">Schedule Appointment</button>
                 <button id="appointment">View Appointments</button>
+            </div>
+            <div class="action-buttons">
                 <button id="payment">View Payment Details</button>
                 <button id="prescription">View Prescriptions</button>
+            </div>
+            <div class="action-buttons">
                 <button id="insurance">View Insurance Details</button>
                 <button id="general">General Question</button>
             </div>`;
@@ -75,6 +79,7 @@ $(document).ready(function () {
             <div class="action-buttons">
                 <input type="text" id="datepicker" placeholder="Pick a date">
                 <select id="timepicker" placeholder="Pick a time">
+                    <option>Select Time</option>
                 </select>
             </div>
         `
