@@ -80,6 +80,10 @@ namespace AI_Chatbot.Controllers
                 {
                     return Ok(new { query = result });
                 }
+                if (result == "Invalid Otp. Try again." || result == "Your OTP has been sent to your registered email address. Enter the Otp" || result == "Provide Email.")
+                {
+                    return Ok(new { otpEmail = result });
+                }
                 return Ok(result);
             }
             else
@@ -97,6 +101,10 @@ namespace AI_Chatbot.Controllers
                     {
                         return Ok(new { query = result });
                     }
+                    if (result == "Invalid Otp. Try again." || result == "Your OTP has been sent to your registered email address. Enter the Otp" || result == "Provide Email.")
+                    {
+                        return Ok(new { otpEmail = result });
+                    }
                     return Ok(result);
                 }
                 else
@@ -109,6 +117,10 @@ namespace AI_Chatbot.Controllers
                     if (result == "Enter your query.")
                     {
                         return Ok(new { query = result });
+                    }
+                    if (result == "Invalid Otp. Try again." || result == "Your OTP has been sent to your registered email address. Enter the Otp" || result == "Provide Email.")
+                    {
+                        return Ok(new { otpEmail = result });
                     }
                     return Ok(result);
                 }
@@ -134,7 +146,7 @@ namespace AI_Chatbot.Controllers
 
         private async Task<string> HandleDateTime(int sessionId, string query)
         {
-            string datePattern = @"\b(?:\d{1,2}(?:st|nd|rd|th)?(?:\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December)\s?\d{0,4})|\b(?:\d{4}-\d{2}-\d{2})\b";
+            string datePattern = @"\b(?:0[1-9]|[12][0-9]|3[01])/(?:0[1-9]|1[0-2])/\d{4}\b";
             string timePattern = @"\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?(?:AM|PM|am|pm))?\b|\b(?:[01]?\d|2[0-3])(?:\s?(?:AM|PM|am|pm))\b";
             date = Regex.Match(query, datePattern).Value;
             time = Regex.Match(query, timePattern).Value;
@@ -160,7 +172,7 @@ namespace AI_Chatbot.Controllers
             otp = Regex.Match(query, otpPattern).Value;
             if (otp == null)
             {
-                return "Enter a valid Otp";
+                return "Invalid Otp. Try again.";
             }
             var result = await otpService.CheckOtp(otp);
             if (string.IsNullOrEmpty(result))
@@ -258,7 +270,7 @@ namespace AI_Chatbot.Controllers
                     }
                     var appointmentDto = new AppointmentDto
                     {
-                        AppointmentDate = DateTime.Parse(date),
+                        AppointmentDate = date,
                         AppointmentTime = time
                     };
                     var schedules = await appointmentService.AddAppointment(userId : userId, appointmentDto : appointmentDto);

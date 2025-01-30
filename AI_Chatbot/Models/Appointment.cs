@@ -6,7 +6,7 @@ namespace AI_Chatbot.Models
     {
         public int AppointmentId { get; set; }
         public int UserId { get; set; }
-        public DateTime AppointmentDate { get; set; } //Valid Date
+        public string? AppointmentDate { get; set; } //Valid Date
         public string AppointmentTime { get; set; } = string.Empty; //Valid Time
 
         [ForeignKey("UserId")]

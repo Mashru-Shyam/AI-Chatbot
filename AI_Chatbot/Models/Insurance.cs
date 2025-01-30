@@ -11,7 +11,7 @@ namespace AI_Chatbot.Models
         public string? InsuranceName { get; set; }
         public DateTime InsuranceStart { get; set; }
         public DateTime InsuranceEnd { get; set; }
-        public string InsuranceStatus { get; set; } = "pending"; //pending, progress, completed
+        public string InsuranceStatus { get; set; } = "pending"; //dective, active
 
         [ForeignKey("UserId")]
         public User? User { get; set; }
