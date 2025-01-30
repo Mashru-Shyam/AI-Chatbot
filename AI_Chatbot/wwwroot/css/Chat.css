@@ -268,6 +268,12 @@ body {
     }
 }
 
+/* Datepicker and Timepicker Input Styles */
+#datepicker::placeholder {
+    color: #ffffff; /* Pure white placeholder text */
+    opacity: 1; /* Ensures full opacity in some browsers */
+}
+
 #datepicker,
 #timepicker {
     width: 35%;
@@ -282,6 +288,18 @@ body {
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
     outline: none;
     transition: border-color 0.3s ease;
+    display: block;
+    cursor: pointer;
+}
+
+.ui-timepicker {
+    background: #1c2933;
+    border: 1px solid #00dfc4;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    border-radius: 8px;
+    max-height: 80%; /* Restricts dropdown height within chat-messages */
+    overflow-y: auto;
 }
 
     #datepicker:hover,
@@ -295,14 +313,16 @@ body {
         box-shadow: 0 0 5px #00dfc4;
     }
 
-
     #timepicker option {
         font-size: 1rem;
         font-family: "Poppins", sans-serif;
         padding: 10px;
-        display: inline-block; /* Allow the options to wrap within the grid */
+        background: #1c2933;
+        color: #fff;
+        white-space: nowrap;
     }
 
+/* Datepicker Styles */
 .ui-datepicker {
     background: #1c2933;
     border: 1px solid #00dfc4;
@@ -321,30 +341,7 @@ body {
             color: #223243;
         }
 
-/* Timepicker Styling */
-.ui-timepicker {
-    background: #1c2933;
-    border: 1px solid #00dfc4;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    border-radius: 8px;
-}
 
-/* List Styling for Timepicker Options */
-.ui-timepicker-list {
-    background: #1c2933;
-    border-radius: 8px;
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns */
-    gap: 5px; /* Space between options */
-    padding: 5px;
-}
-
-    /* Hover Effect for Timepicker Options */
-    .ui-timepicker-list li:hover {
-        background: #00dfc4;
-        color: #223243;
-    }
 
 
 @keyframes typing {
@@ -372,3 +369,5 @@ body {
         opacity: 1;
     }
 }
+
+

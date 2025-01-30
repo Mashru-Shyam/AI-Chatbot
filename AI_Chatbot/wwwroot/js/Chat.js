@@ -78,8 +78,15 @@ $(document).ready(function () {
         const buttonsHtml = `
             <div class="action-buttons">
                 <input type="text" id="datepicker" placeholder="Pick a date">
-                <select id="timepicker" placeholder="Pick a time">
-                    <option>Select Time</option>
+                <select id="timepicker">
+                    <option selected disabled>Pick a Time: </option>
+                    <option>09:00 AM</option>
+                    <option>11:00 AM</option>
+                    <option>01:00 PM</option>
+                    <option>03:00 PM</option>
+                    <option>05:00 PM</option>
+                    <option>07:00 PM</option>
+                    <option>10:00 PM</option>
                 </select>
             </div>
         `
@@ -102,42 +109,6 @@ $(document).ready(function () {
                 setTimePicker(); // Update time picker based on the selected date
             }
         });
-
-        // Initialize time picker
-        function setTimePicker() {
-            var selectedDate = $("#datepicker").val();
-            var minTime = "09:00"; // Default minTime to 9:00 AM
-            var timeOptions = [];
-
-            if (selectedDate === currentDate.toLocaleDateString()) {
-                // If the selected date is today, start from the current time
-                minTime = currentTime;
-            }
-
-            // Generate time options from the minTime to 11:59 PM with 30-minute intervals
-            var time = new Date("1970-01-01 " + minTime);
-            for (var i = 0; i <= 28; i++) { // 28 times for 30-minute intervals until 11:59 PM
-                var hour = time.getHours();
-                var minute = time.getMinutes();
-                var ampm = hour >= 12 ? 'PM' : 'AM';
-
-                // Convert 24-hour format to 12-hour format
-                hour = hour % 12;
-                hour = hour ? hour : 12; // The hour '0' should be '12'
-                var formattedTime = (hour < 10 ? "0" + hour : hour) + ":" + (minute < 10 ? "0" + minute : minute) + " "+ ampm;
-
-                timeOptions.push(formattedTime);
-                time.setMinutes(time.getMinutes() + 30); // Increment by 30 minutes
-            }
-
-            // Populate the time picker dropdown
-            var timepicker = $("#timepicker");
-            timepicker.empty();
-            timepicker.append('<option value="">Select Time</option>');
-            timeOptions.forEach(function (time) {
-                timepicker.append('<option value="' + time + '">' + time + '</option>');
-            });
-        }
 
         $("#datepicker, #timepicker").on('change', function () {
             let date = $("#datepicker").val();

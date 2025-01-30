@@ -183,7 +183,8 @@ namespace AI_Chatbot.Controllers
             {
                 HttpOnly = true,
                 Secure = true,
-                SameSite = SameSiteMode.None
+                SameSite = SameSiteMode.None,
+                Expires = DateTime.UtcNow.AddDays(1)
             });
             var conversation = await conversationService.GetConversationAsync(sessionId);
             if (conversation.Intent != "none")
@@ -194,6 +195,7 @@ namespace AI_Chatbot.Controllers
             else
             {
                 await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "end");
+                await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
                 return "Enter your query.";
             }
         }
@@ -275,6 +277,7 @@ namespace AI_Chatbot.Controllers
                     };
                     var schedules = await appointmentService.AddAppointment(userId : userId, appointmentDto : appointmentDto);
                     await conversationService.UpdateConversationAsync(sessionId : sessionId, IsCompleted: true, status: "end");
+                    await conversationService.DeleteEntitiesAsync(sessionId : sessionId);
                     return schedules;
                 case "prescriptions":
                     var prescriptions = await prescriptionService.GetPrescriptions(userId);
@@ -322,6 +325,7 @@ namespace AI_Chatbot.Controllers
             await otpService.SendOtpViaMail(to : email, subject : "Your OTP Code", body : $"Thank you for using our service. Your one-time password (OTP) to access your account is:\r\n\r\n{otp}\r\n\r\n Please note that this OTP is valid for a limited time (e.g., 5 minutes). Do not share this code with anyone. If you did not request this OTP, please ignore this message.\r\n");
             await otpService.StoreOtp(email : email, otp : otp);
             await conversationService.UpdateConversationAsync(sessionId : sessionId, status: "otp");
+            await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
             return "Your OTP has been sent to your registered email address. Enter the Otp";
         }
     }

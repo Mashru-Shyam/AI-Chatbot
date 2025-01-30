@@ -41,6 +41,20 @@ namespace AI_Chatbot.Services
             await context.SaveChangesAsync();
         }
 
+        public async Task DeleteEntitiesAsync(int sessionId)
+        {
+            var conversation = await context.Conversations
+                .FirstOrDefaultAsync(c => c.SessionId == sessionId);
+            if (conversation == null)
+            {
+                return;
+            }
+            var conversationId = conversation.ConversationId;
+            var entities = context.Entities.Where(e => e.ConversationId == conversationId);
+            context.Entities.RemoveRange(entities);
+            await context.SaveChangesAsync();
+        }
+
         public async Task<Conversation> GetConversationAsync(int sessionId)
         {
             var conversation = await context.Conversations
