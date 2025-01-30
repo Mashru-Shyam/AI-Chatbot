@@ -186,22 +186,59 @@ body {
     z-index: 9999;
 }
 
+.chat-messages .action-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    font-size: 1rem;
+}
+
+    .chat-messages .action-buttons button {
+        padding: 8px 16px;
+        background: #00dfc4; /* Consistent with the existing color */
+        color: #223243;
+        border: none;
+        border-radius: 15px;
+        font-size: 1rem;
+        cursor: pointer;
+        font-weight: 500;
+        transition: background 0.3s ease;
+        box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+        white-space: nowrap; /* Prevent button text from wrapping */
+    }
+
+        .chat-messages .action-buttons button:hover {
+            background: #1cbea3; /* Slightly darker shade for hover effect */
+        }
+
+        .chat-messages .action-buttons button:disabled {
+            background: #b0b0b0; /* Gray out disabled buttons */
+            cursor: not-allowed;
+        }
+
+
+/* Typing indicator styles */
 .typing-indicator {
     display: flex;
-    align-items :last baseline;
-    gap: 2px;
-    color: #333; /* Bot message color */
+    align-items: baseline;
+    gap: 5px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.35); /* Set the color to match the chatbot color scheme */
+    font-size: 0.6rem;
+    font-weight: 400;
 }
 
 .typing-indicator .dot {
-    width: 3px;
-    height: 3px;
-    background-color: #333; /* Dot color */
+    width: 6px;
+    height: 6px;
+    background-color: #00dfc4; /* Color to match existing design */
     border-radius: 50%;
-    animation: typing 1.5s infinite;
+    animation: typing 1.5s infinite ease-in-out;
 }
 
-/* Animation for each dot */
+/* Animation for the typing dots */
 .typing-indicator .dot:nth-child(1) {
     animation-delay: 0s;
 }
@@ -213,6 +250,24 @@ body {
 .typing-indicator .dot:nth-child(3) {
     animation-delay: 0.4s;
 }
+
+@keyframes typing {
+    0% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+}
+
 
 @keyframes typing {
     0% {

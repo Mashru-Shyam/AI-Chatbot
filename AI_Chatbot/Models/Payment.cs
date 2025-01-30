@@ -6,11 +6,11 @@ namespace AI_Chatbot.Models
     {
         public int PaymentId { get; set; }
         public int UserId { get; set; }
-        public DateTime PaymentDue { get; set; }
-        public double PaymentAmount { get; set; }
-        public string PaymentStatus { get; set; }
+        public DateTime PaymentDue { get; set; } 
+        public decimal PaymentAmount { get; set; }
+        public string PaymentStatus { get; set; } = "pending"; //pending, progress, completed
         
         [ForeignKey("UserId")]
-        public User User { get; set; }  
+        public User? User { get; set; }  
     }
 }

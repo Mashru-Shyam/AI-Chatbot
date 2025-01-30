@@ -15,7 +15,7 @@ namespace AI_Chatbot.Services
             this.context = context;
         }
 
-        public async Task AddConversationAsync(int sessionId, string intent, ICollection<Entity> entities, bool IsCompleted, string status)
+        public async Task AddConversationAsync(int sessionId, string intent, ICollection<Entity>? entities, bool IsCompleted, string status)
         {
             var conversation = new Conversation
             {
@@ -23,7 +23,7 @@ namespace AI_Chatbot.Services
                 Intent = intent,
                 IsCompleted = IsCompleted,
                 Context = status,
-                Entities = entities
+                Entities = entities ?? []
             };
 
             await context.Conversations.AddAsync(conversation);
@@ -46,22 +46,22 @@ namespace AI_Chatbot.Services
             var conversation = await context.Conversations
                 .Include(c => c.Entities)
                 .FirstOrDefaultAsync(c => c.SessionId == sessionId);
-            return conversation;
+            return conversation ?? new Conversation();
         }
 
-        public async Task UpdateConversationAsync(int sessionId, string intent = null, ICollection<Entity> entities = null, bool IsCompleted = false, string status = null)
+        public async Task UpdateConversationAsync(int sessionId, string intent = "none", ICollection<Entity>? entities = null, bool IsCompleted = false, string status = "start")
         {
             var conversation = await GetConversationAsync(sessionId);
-            if (conversation == null)
+            if (conversation.ConversationId == 0)
             {
                 await AddConversationAsync(sessionId, intent, entities, IsCompleted, status);
                 return;
             }
-            if (intent != null)
+            if (intent != "none")
             {
                 conversation.Intent = intent;
             }
-            if (entities != null && entities.Any())
+            if (entities != null && entities.Count > 0)
             {
                 conversation.Entities.Clear();
                 foreach (var entity in entities)
@@ -69,8 +69,8 @@ namespace AI_Chatbot.Services
                     conversation.Entities.Add(entity);
                 }
             }
-            conversation.IsCompleted = IsCompleted;            
-            if (status != null)
+            conversation.IsCompleted = IsCompleted;
+            if (status != "start")
             {
                 conversation.Context = status;
             }

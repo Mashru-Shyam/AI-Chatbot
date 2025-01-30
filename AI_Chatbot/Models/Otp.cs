@@ -8,11 +8,11 @@ namespace AI_Chatbot.Models
         [Key]
         public int OtpId { get; set; }
         public int UserId { get; set; }
-        public string OtpEmail { get; set; }
-        public string OtpCode { get; set; }
+        public string? OtpEmail { get; set; }
+        public string? OtpCode { get; set; }
         public DateTime OtpExpirationTime { get; set; }
 
         [ForeignKey("UserId")]
-        public User User { get; set; }
+        public User? User { get; set; }
     }
 }

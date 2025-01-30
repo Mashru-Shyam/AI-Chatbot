@@ -2,7 +2,7 @@
 {
     public class EntityDto
     {
-        public string EntityName { get; set; }
-        public string EntityValue { get; set; }
+        public string? EntityName { get; set; }
+        public string? EntityValue { get; set; }
     }
 }

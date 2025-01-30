@@ -25,16 +25,15 @@ namespace AI_Chatbot.Services
         {
             var prompt = $$"""
                 Classify the user query into one of the following intents:  
-                1. Login: For authentication or login-related queries, may include an email.  
-                2. Otp: Query contains a digit OTP.  
-                3. gAppointment: To view appointment details.  
-                4. sAppointment: To set an appointment.  
-                5. Prescriptions: To view prescriptions.  
-                6. Payment: To view payment details.  
-                7. Insurance: To view insurance details.  
-                8. General: Queries that do not match any of the above.  
+                1. login: For authentication or login-related queries, may include an email.  
+                3. appointment: To view appointment details or checking exsisting appointments.  
+                4. schedule: To set, book, or schedule an appointment.  
+                5. prescriptions: To view prescriptions details.  
+                6. payments: To view payment details.  
+                7. insurance: To view insurance details, coverage or status.  
+                8. general: Queries that do not match any of the above.  
 
-                If the intent is "General," provide a concise response to the query.  
+                If the intent is "general," provide a concise response to the query.  
                 Output format:  
                 {  
                   "intent": "<classified_intent>",  
@@ -43,10 +42,10 @@ namespace AI_Chatbot.Services
 
                 Example:  
                 Input: "How do I log in to my account?"  
-                Output: {"intent": "Login", "response": null}  
+                Output: {"intent": "login", "response": null}  
 
                 Input: "What is the weather today?"  
-                Output: {"intent": "General", "response": "The weather is sunny with a high of 28°C."}  
+                Output: {"intent": "general", "response": "The weather is sunny with a high of 28°C."}  
 
                 Query: {{query}}
                 """;

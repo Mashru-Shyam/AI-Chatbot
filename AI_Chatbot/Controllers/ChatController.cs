@@ -31,10 +31,10 @@ namespace AI_Chatbot.Controllers
         private readonly IInsuranceService insuranceService;
         private readonly IPrescriptionService prescriptionService;
         private readonly IAppointmentService appointmentService;
-        private string date;
-        private string otp;
-        private string email;
-        private string time;
+        private string? date;
+        private string? otp;
+        private string? email;
+        private string? time;
 
         public ChatController(
             IGeneralQueryService queryService,
@@ -70,21 +70,48 @@ namespace AI_Chatbot.Controllers
                     HttpOnly = true,
                     SameSite = SameSiteMode.None
                 });
-                var sessionI = session.GetHashCode();
-                var result = await HandleClassification(sessionI, query);
-                return Ok(result);
-            }
-            var sessionId = session.GetHashCode();
-            var conversation = await conversationService.GetConversationAsync(sessionId);
-            if (conversation == null || conversation.IsCompleted)
-            {
-                var result = await HandleClassification(sessionId, query);
+                var sessionId = session.GetHashCode();
+                var result = await HandleClassification(sessionId : sessionId, query : query);
+                if(result == "Provide Date and Time.")
+                {
+                    return Ok(new { dateTime = result });
+                }
+                if (result == "Enter your query.")
+                {
+                    return Ok(new { query = result });
+                }
                 return Ok(result);
             }
             else
             {
-                var result = await HandleFragmentation(sessionId, conversation.Context, query);
-                return Ok(result);
+                var sessionId = session.GetHashCode();
+                var conversation = await conversationService.GetConversationAsync(sessionId);
+                if (conversation.ConversationId == 0 || conversation.IsCompleted)
+                {
+                    var result = await HandleClassification(sessionId : sessionId, query : query);
+                    if (result == "Provide Date and Time.")
+                    {
+                        return Ok(new { dateTime = result });
+                    }
+                    if (result == "Enter your query.")
+                    {
+                        return Ok(new { query = result });
+                    }
+                    return Ok(result);
+                }
+                else
+                {
+                    var result = await HandleFragmentation(sessionId : sessionId, context : conversation?.Context ?? "start", query : query);
+                    if (result == "Provide Date and Time.")
+                    {
+                        return Ok(new { dateTime = result });
+                    }
+                    if (result == "Enter your query.")
+                    {
+                        return Ok(new { query = result });
+                    }
+                    return Ok(result);
+                }
             }
         }
         private async Task<string> HandleFragmentation(int sessionId, string context, string query)
@@ -92,46 +119,70 @@ namespace AI_Chatbot.Controllers
             switch(context)
             {
                 case "otp":
-                    var result = await otpService.CheckOtp(query);
-                    if (result == null)
-                    {
-                        return "null";
-                    }
-                    Response.Cookies.Append("Token", result, new CookieOptions
-                    {
-                        HttpOnly = true,
-                        Secure = true,
-                        SameSite = SameSiteMode.None
-                    });
-                    var conversation = await conversationService.GetConversationAsync(sessionId);
-                    if (conversation.Intent != null) {
-                        var res = await HandleIntent(sessionId,conversation.Intent, conversation.Entities.ToList(),result);
-                        return res;
-                    }
-                    else
-                    {
-                        await conversationService.UpdateConversationAsync(sessionId,IsCompleted:true, status:"end");
-                        return "Login Sucessfull. Provide the query.";
-                    }
-                case "login":
-                    var response = await HandleLogin(sessionId, query);
-                    return response;
+                    var otpResponse = await HandleOtp(sessionId: sessionId, query: query);
+                    return otpResponse;
+                case "email":
+                    var emailResponse = await HandleLogin(sessionId: sessionId, query : query);
+                    return emailResponse;
                 case "date-time":
-                    string datePattern = @"\b(?:\d{1,2}(?:st|nd|rd|th)?(?:\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December)\s?\d{0,4})|\b(?:\d{4}-\d{2}-\d{2})\b"; // Date regex
-                    string timePattern = @"\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?(?:AM|PM|am|pm))?\b|\b(?:[01]?\d|2[0-3])(?:\s?(?:AM|PM|am|pm))\b"; // Time regex
-                    date = Regex.Match(query, datePattern).Value;
-                    time = Regex.Match(query, timePattern).Value;
-                    var entities = new List<Entity>
+                    var dateTimeResponse = await HandleDateTime(sessionId: sessionId, query: query);
+                    return dateTimeResponse;
+                default:
+                    return "Enter your query.";
+            }
+        }
+
+        private async Task<string> HandleDateTime(int sessionId, string query)
+        {
+            string datePattern = @"\b(?:\d{1,2}(?:st|nd|rd|th)?(?:\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December)\s?\d{0,4})|\b(?:\d{4}-\d{2}-\d{2})\b";
+            string timePattern = @"\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?(?:AM|PM|am|pm))?\b|\b(?:[01]?\d|2[0-3])(?:\s?(?:AM|PM|am|pm))\b";
+            date = Regex.Match(query, datePattern).Value;
+            time = Regex.Match(query, timePattern).Value;
+            var entities = new List<Entity>
                     {
                             new Entity { EntityName = "date", EntityValue = date },
                             new Entity { EntityName = "time", EntityValue = time }
                     };
-                    await conversationService.UpdateConversationAsync(sessionId, entities: entities);
-                    var conv = await conversationService.GetConversationAsync(sessionId);
-                    Request.Cookies.TryGetValue("Token", out var token);
-                    return await HandleIntent(sessionId, conv.Intent, entities, token);
-                default:
-                    return ".";
+            await conversationService.UpdateConversationAsync(sessionId, entities: entities);
+            var con = await conversationService.GetConversationAsync(sessionId);
+            Request.Cookies.TryGetValue("Token", out var token);
+            if (token == null)
+            {
+                var res = await HandleLogin(sessionId: sessionId, query: query);
+                return res;
+            }
+            return await HandleIntent(sessionId: sessionId, intent: con.Intent, entities: entities, token: token);
+        }
+
+        private async Task<string> HandleOtp(int sessionId, string query)
+        {
+            string otpPattern = @"\b\d{6}\b";
+            otp = Regex.Match(query, otpPattern).Value;
+            if (otp == null)
+            {
+                return "Enter a valid Otp";
+            }
+            var result = await otpService.CheckOtp(otp);
+            if (string.IsNullOrEmpty(result))
+            {
+                return "Invalid Otp. Try again.";
+            }
+            Response.Cookies.Append("Token", result, new CookieOptions
+            {
+                HttpOnly = true,
+                Secure = true,
+                SameSite = SameSiteMode.None
+            });
+            var conversation = await conversationService.GetConversationAsync(sessionId);
+            if (conversation.Intent != "none")
+            {
+                var data = await HandleIntent(sessionId: sessionId, intent: conversation.Intent, entities: conversation.Entities.ToList(), token: result);
+                return data;
+            }
+            else
+            {
+                await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "end");
+                return "Enter your query.";
             }
         }
 
@@ -141,48 +192,44 @@ namespace AI_Chatbot.Controllers
             var resp = JsonDocument.Parse(answer);
             var intent = resp.RootElement.GetProperty("intent").GetString();
 
+            if (string.IsNullOrEmpty(intent))
+            {
+                intent = "none"; 
+            }
+
             switch (intent)
             {
-                case "General":
+                case "general":
                     var response = resp.RootElement.GetProperty("response").GetString();
                     if (response != null)
                     {
                         return response;
                     }
-                    return "Unable to process the query";
-                case "Login":
-                    var loginResult = await HandleLogin(sessionId, query);
+                    return "Unable to process the query. Enter query again.";
+                case "login":
+                    var loginResult = await HandleLogin(sessionId : sessionId, query : query);
                     if (loginResult != null)
                     {
                         return loginResult;
                     }
-                    return "Unable to process the query";
+                    return "Unable to process the query. Enter query again.";
                 default:
-                    string datePattern = @"\b(?:\d{1,2}(?:st|nd|rd|th)?(?:\s)?(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|January|February|March|April|May|June|July|August|September|October|November|December)\s?\d{0,4})|\b(?:\d{4}-\d{2}-\d{2})\b"; // Date regex
-                    string timePattern = @"\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?(?:AM|PM|am|pm))?\b|\b(?:[01]?\d|2[0-3])(?:\s?(?:AM|PM|am|pm))\b"; // Time regex
-                    date = Regex.Match(query, datePattern).Value;
-                    time = Regex.Match(query, timePattern).Value;
-                    var entities = new List<Entity>
-                    {
-                            new Entity { EntityName = "date", EntityValue = date },
-                            new Entity { EntityName = "time", EntityValue = time }
-                    };
-                    await conversationService.UpdateConversationAsync(sessionId, intent: intent, entities: entities);
+                    await conversationService.UpdateConversationAsync(sessionId, intent: intent);
                     Request.Cookies.TryGetValue("Token", out var token);
                     if(token!=null)
                     {
-                        var result = await HandleIntent(sessionId, intent, entities, token);
+                        var result = await HandleIntent(sessionId : sessionId, intent : intent, entities : null, token : token);
                         return result;
                     }
                     else
                     {
-                        var result = await HandleLogin(sessionId, query);
+                        var result = await HandleLogin(sessionId : sessionId, query : query);
                         return result;
                     }
             }
         }
 
-        private async Task<string> HandleIntent(int sessionId, string intent, List<Entity> entities ,string token)
+        private async Task<string> HandleIntent(int sessionId, string intent, List<Entity>? entities ,string token)
         {
             var handler = new JwtSecurityTokenHandler();
             var jwtToken = handler.ReadJwtToken(token);
@@ -191,13 +238,13 @@ namespace AI_Chatbot.Controllers
 
             switch (intent)
             {
-                case "gAppointment":
+                case "appointment":
                     var appointments = await appointmentService.GetAppointments(userId);
                     string appointment = string.Join("\n\n", appointments.Select(a =>
                         $"**Date**: {a.AppointmentDate} \n **Time**: {a.AppointmentTime}"));
-                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
-                    return appointment;
-                case "sAppointment":
+                    await conversationService.UpdateConversationAsync(sessionId : sessionId, IsCompleted: true, status: "end");
+                    return "Your appointments are at: \n\n" + appointment;
+                case "schedule":
                     var conversation = await conversationService.GetConversationAsync(sessionId);
                     var dateEntity = conversation.Entities?.FirstOrDefault(e => e.EntityName == "date");
                     var timeEntity = conversation.Entities?.FirstOrDefault(e => e.EntityName == "time");
@@ -206,37 +253,37 @@ namespace AI_Chatbot.Controllers
                     time = timeEntity?.EntityValue ?? string.Empty;
                     if (date == string.Empty || time == string.Empty)
                     {
-                        await conversationService.UpdateConversationAsync(sessionId, status: "date-time", IsCompleted: false);
-                        return "Provide the of Appointment as \n **Date** : **YYYY-MM-DD**) and **Time** : **HH:MM am/pm**)";
+                        await conversationService.UpdateConversationAsync(sessionId : sessionId, status: "date-time");
+                        return "Provide Date and Time.";
                     }
                     var appointmentDto = new AppointmentDto
                     {
-                        AppointmentDate = DateOnly.Parse(date),
-                        AppointmentTime = TimeOnly.Parse(time)
+                        AppointmentDate = DateTime.Parse(date),
+                        AppointmentTime = time
                     };
-                    var app = await appointmentService.AddAppointment(userId, appointmentDto);
-                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
-                    return app;
-                case "Prescriptions":
+                    var schedules = await appointmentService.AddAppointment(userId : userId, appointmentDto : appointmentDto);
+                    await conversationService.UpdateConversationAsync(sessionId : sessionId, IsCompleted: true, status: "end");
+                    return schedules;
+                case "prescriptions":
                     var prescriptions = await prescriptionService.GetPrescriptions(userId);
                     string prescription = string.Join("\n\n", prescriptions.Select(p =>
                         $"**Medicine Name**: {p.MedicineName} \n **Medicine Dosage**: {p.MedicineDosage} \n **Medicine Direction**: {p.MedicineDirection}"));
                     await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
-                    return prescription;
-                case "Insurance":
+                    return "Your prescription are: \n\n" + prescription;
+                case "insurance":
                     var insuranceDetails = await insuranceService.GetInsuranceDetails(userId);
                     string insurance = string.Join("\n\n", insuranceDetails.Select(i =>
                         $"**Insurance Name **: {i.InsuranceName} \n **Start Date**: {i.InsuranceStart} \n **End Date**: {i.InsuranceEnd}, \n **Status**: {i.InsuranceStatus}"));
                     await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
-                    return insurance;
-                case "Payment":
+                    return "Your insurance with their details are: \n\n" + insurance;
+                case "payments":
                     var payments = await paymentService.GetDuePayments(userId);
                     string payment = string.Join("\n\n", payments.Select(p =>
                         $"**Payment Due**: {p.PaymentDue} \n **Amount**: {p.PaymentAmount} \n **Status**: {p.PaymentStatus}"));
                     await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
-                    return payment;
+                    return "Your payment details are: \n\n" + payment;
                 default:
-                    return intent;
+                    return "Enter your query.";
             }
         }
 
@@ -246,23 +293,23 @@ namespace AI_Chatbot.Controllers
             email = Regex.Match(query, emailPattern).Value;
             if (email == "")
             {
-                await conversationService.UpdateConversationAsync(sessionId, status: "login");
-                return "Please provide your email address...";
+                await conversationService.UpdateConversationAsync(sessionId : sessionId, status: "email");
+                return "Provide Email.";
             }
             var entities = new List<Entity>
             {
                 new Entity { EntityName = "email", EntityValue = email}
             };
-            await conversationService.UpdateConversationAsync(sessionId, entities: entities);
+            await conversationService.UpdateConversationAsync(sessionId : sessionId, entities: entities);
             var user = await loginService.GetUser(email);
             if (!user)
             {
                 await loginService.AddUser(email);
             }
             var otp = otpService.GenerateOtp();
-            await otpService.SendOtpViaMail(email, "Your OTP Code", $"Thank you for using our service. Your one-time password (OTP) to access your account is:\r\n\r\n{otp}\r\n\r\n Please note that this OTP is valid for a limited time (e.g., 5 minutes). Do not share this code with anyone. If you did not request this OTP, please ignore this message.\r\n");
-            await otpService.StoreOtp(email, otp);
-            await conversationService.UpdateConversationAsync(sessionId, status: "otp");
+            await otpService.SendOtpViaMail(to : email, subject : "Your OTP Code", body : $"Thank you for using our service. Your one-time password (OTP) to access your account is:\r\n\r\n{otp}\r\n\r\n Please note that this OTP is valid for a limited time (e.g., 5 minutes). Do not share this code with anyone. If you did not request this OTP, please ignore this message.\r\n");
+            await otpService.StoreOtp(email : email, otp : otp);
+            await conversationService.UpdateConversationAsync(sessionId : sessionId, status: "otp");
             return "Your OTP has been sent to your registered email address. Enter the Otp";
         }
     }

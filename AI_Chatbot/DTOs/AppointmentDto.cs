@@ -4,7 +4,7 @@ namespace AI_Chatbot.DTOs
 {
     public class AppointmentDto
     {
-        public DateOnly AppointmentDate { get; set; }
-        public TimeOnly AppointmentTime { get; set; }
+        public DateTime AppointmentDate { get; set; }
+        public string? AppointmentTime { get; set; }
     }
 }

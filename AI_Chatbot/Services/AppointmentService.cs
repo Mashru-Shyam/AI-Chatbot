@@ -21,13 +21,13 @@ namespace AI_Chatbot.Services
             {
                 UserId = userId,
                 AppointmentDate = appointmentDto.AppointmentDate,
-                AppointmentTime = appointmentDto.AppointmentTime,
+                AppointmentTime = appointmentDto.AppointmentTime ?? string.Empty,
             };
 
             await context.Appointments.AddAsync(appointment);
             await context.SaveChangesAsync();
 
-            return $"Appointment added successfully at {appointmentDto.AppointmentDate} and {appointmentDto.AppointmentTime}";
+            return $"Appointment added successfully at \n\n**Date**: {appointmentDto.AppointmentDate}\n**Time**: {appointmentDto.AppointmentTime}";
         }
 
         public async Task<IEnumerable<AppointmentDto>> GetAppointments(int userId)

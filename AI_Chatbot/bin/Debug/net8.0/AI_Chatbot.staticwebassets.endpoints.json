@@ -85,6 +85,51 @@
       ]
     },
     {
+      "Route": "css/Chat.b5myu1a9kw.css",
+      "AssetFile": "css/Chat.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6739"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nwYfSwspudUHaUVKP1Bdm2Vo0bfYMGUkEUw1rAdfKiw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 00:38:07 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b5myu1a9kw"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nwYfSwspudUHaUVKP1Bdm2Vo0bfYMGUkEUw1rAdfKiw="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Chat.css"
+        }
+      ]
+    },
+    {
       "Route": "css/Chat.css",
       "AssetFile": "css/Chat.css",
       "Selectors": [],
@@ -99,7 +144,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5257"
+          "Value": "6739"
         },
         {
           "Name": "Content-Type",
@@ -107,107 +152,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hai6o1NtZQwyuDUfnGiGFBIMfp5m6uI8C2LUHyQHQFE=\""
+          "Value": "\"nwYfSwspudUHaUVKP1Bdm2Vo0bfYMGUkEUw1rAdfKiw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 18:48:39 GMT"
+          "Value": "Thu, 30 Jan 2025 00:38:07 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hai6o1NtZQwyuDUfnGiGFBIMfp5m6uI8C2LUHyQHQFE="
-        }
-      ]
-    },
-    {
-      "Route": "css/Chat.lcgb1ogqms.css",
-      "AssetFile": "css/Chat.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5257"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hai6o1NtZQwyuDUfnGiGFBIMfp5m6uI8C2LUHyQHQFE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 22 Jan 2025 18:48:39 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "lcgb1ogqms"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hai6o1NtZQwyuDUfnGiGFBIMfp5m6uI8C2LUHyQHQFE="
-        },
-        {
-          "Name": "label",
-          "Value": "css/Chat.css"
-        }
-      ]
-    },
-    {
-      "Route": "js/Chat.9ysgm9qkxr.js",
-      "AssetFile": "js/Chat.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4281"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kTCRxoug6Al/zSFI+PnwgRMUQfp91BDNgZmdlQ0iNfw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 14:01:02 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "9ysgm9qkxr"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kTCRxoug6Al/zSFI+PnwgRMUQfp91BDNgZmdlQ0iNfw="
-        },
-        {
-          "Name": "label",
-          "Value": "js/Chat.js"
+          "Value": "sha256-nwYfSwspudUHaUVKP1Bdm2Vo0bfYMGUkEUw1rAdfKiw="
         }
       ]
     },
@@ -226,7 +181,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4281"
+          "Value": "6491"
         },
         {
           "Name": "Content-Type",
@@ -234,17 +189,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kTCRxoug6Al/zSFI+PnwgRMUQfp91BDNgZmdlQ0iNfw=\""
+          "Value": "\"1tGdzxigGFvFXpFz/EgJamqB0NiTTBm2SuaO5Z3RIYk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 14:01:02 GMT"
+          "Value": "Thu, 30 Jan 2025 00:35:41 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-kTCRxoug6Al/zSFI+PnwgRMUQfp91BDNgZmdlQ0iNfw="
+          "Value": "sha256-1tGdzxigGFvFXpFz/EgJamqB0NiTTBm2SuaO5Z3RIYk="
+        }
+      ]
+    },
+    {
+      "Route": "js/Chat.qcm0lais7m.js",
+      "AssetFile": "js/Chat.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6491"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1tGdzxigGFvFXpFz/EgJamqB0NiTTBm2SuaO5Z3RIYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 30 Jan 2025 00:35:41 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qcm0lais7m"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1tGdzxigGFvFXpFz/EgJamqB0NiTTBm2SuaO5Z3RIYk="
+        },
+        {
+          "Name": "label",
+          "Value": "js/Chat.js"
         }
       ]
     }
