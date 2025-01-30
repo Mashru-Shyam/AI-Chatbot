@@ -146,7 +146,7 @@ namespace AI_Chatbot.Controllers
 
         private async Task<string> HandleDateTime(int sessionId, string query)
         {
-            string datePattern = @"\b(?:0[1-9]|[12][0-9]|3[01])/(?:0[1-9]|1[0-2])/\d{4}\b";
+            string datePattern = @"\b(?:0[1-9]|[12][0-9]|3[01])/(?:0[1-9]|1[0-2])/\d{2}\b";
             string timePattern = @"\b(?:[01]?\d|2[0-3]):[0-5]\d(?:\s?(?:AM|PM|am|pm))?\b|\b(?:[01]?\d|2[0-3])(?:\s?(?:AM|PM|am|pm))\b";
             date = Regex.Match(query, datePattern).Value;
             time = Regex.Match(query, timePattern).Value;

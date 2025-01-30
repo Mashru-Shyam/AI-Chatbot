@@ -7,6 +7,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+/*Body*/
 body {
     display: flex;
     justify-content: center;
@@ -15,26 +16,60 @@ body {
     background: #223243;
 }
 
-.chat-header h2 i {
-    color: #00dfc4; /* Change to your desired color */
-    margin-right: 10px; /* Add spacing between the icon and text */
+/*Chat Toggle Button Starting*/
+.chat-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #00dfc4;
+    color: #223243;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
+.chat-toggle-btn:hover {
+    background: #1cbea3;
+}
+
+/*Chat Container Whole*/
+.chat-container {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    display: none;
+    z-index: 9999;
+}
+
+/*Chatbot Area*/
 .container.chatbot {
     display: flex;
     flex-direction: column;
     width: 850px;
     max-width: 90%;
-    height: 500px; /* Reduced height */
+    height: 500px;
     border-radius: 15px;
     padding: 15px;
     background: #223243;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
 }
 
+/*Header Area*/
+.chat-header h2 i {
+    color: #00dfc4;
+    margin-right: 10px;
+}
+
 .chat-header {
     text-align: center;
-    margin-bottom: 7px; /* Adjusted spacing */
+    margin-bottom: 7px;
 }
 
 .chat-header h2 {
@@ -42,9 +77,10 @@ body {
     font-weight: 500;
 }
 
+/*Messageing Display Area*/
 .chat-messages {
     flex: 1;
-    overflow-y: auto; /* Enable vertical scroll */
+    overflow-y: auto;
     padding: 10px;
     background: #1c2933;
     display: flex;
@@ -81,11 +117,6 @@ body {
     animation: fadeInUp 0.5s ease-in-out forwards;
 }
 
-.chat-input.disabled {
-    pointer-events: none;
-    opacity: 0.5;
-}
-
 .chat-messages .user {
     background: #00dfc4;
     color: #223243;
@@ -93,17 +124,24 @@ body {
 }
 
 .chat-messages .bot {
-        background: #dfe6e9;
-        color: #223243;
-        align-self: flex-start;
+    background: #dfe6e9;
+    color: #223243;
+    align-self: flex-start;
+}
+
+/*Chat Container Bottom Area Whole*/
+.chat-input.disabled {
+    pointer-events: none;
+    opacity: 0.5;
 }
 
 .chat-input {
     display: flex;
     align-items: center;
-    margin-top: 10px; /* Adjusted spacing */
+    margin-top: 10px;
 }
 
+/*Typing Message Area*/
 .chat-input .inputBox {
     position: relative;
     flex: 1;
@@ -111,13 +149,13 @@ body {
 }
 
 .chat-input .inputBox input {
-    padding: 12px 16px; /* Adjusted padding */
+    padding: 12px 16px;
     border: none;
     width: 100%;
     background: #223243;
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     border-radius: 15px;
     font-size: 1em;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
@@ -126,11 +164,11 @@ body {
 
 .chat-input .inputBox span {
     position: absolute;
-    left: 45px; /* Adjusted for better alignment */
+    left: 45px;
     top: 50%;
     transform: translateY(-50%);
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .chat-input .inputBox i {
@@ -141,6 +179,7 @@ body {
     color: #00dfc4;
 }
 
+/*Sending Buttom*/
 .chat-input button {
     margin-left: 15px;
     padding: 12px 12px;
@@ -154,55 +193,26 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35), inset -5px -5px 15px rgba(255, 255, 255, 0.1), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
-    }
+}
 
 .chat-input button:hover {
     background: #1cbea3;
 }
 
-.chat-toggle-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #00dfc4;
-    color: #223243;
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    cursor: pointer;
-    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
-}
-
-.chat-toggle-btn:hover {
-    background: #1cbea3;
-    }
-
-.chat-container {
-    position: fixed;
-    bottom: 50px;
-    right: 10px;
-    display: none;
-    z-index: 9999;
-}
-
+/*Action Buttons*/
 .chat-messages .action-buttons {
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
     margin-top: 10px;
-    align-items: center;
+    align-items: flex-start;
     font-size: 1rem;
     width: 75%;
 }
 
 .chat-messages .action-buttons button {
     padding: 8px 16px;
-    background: #00dfc4; /* Consistent with the existing color */
-    color: #223243;
+    flex: 1 1 calc(50% - 10px);
     border: none;
     border-radius: 15px;
     font-size: 1rem;
@@ -210,16 +220,16 @@ body {
     font-weight: 500;
     transition: background 0.3s ease;
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
-    white-space: nowrap; /* Prevent button text from wrapping */
+    white-space: nowrap;
+    background: #00dfc4;
+    color: #223243;
 }
 
 .chat-messages .action-buttons button:hover {
-    background: #1cbea3; /* Slightly darker shade for hover effect */
+    background: #00bda6;
 }
 
-
-
-/* Typing indicator styles */
+/* Typing Indicator*/
 .typing-indicator {
     display: flex;
     align-items: baseline;
@@ -227,7 +237,7 @@ body {
     margin-top: 5px;
     color: black;
     font-size: 0.6rem;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .typing-indicator .dot {
@@ -238,7 +248,7 @@ body {
     animation: typing 1.5s infinite ease-in-out;
 }
 
-/* Animation for the typing dots */
+/*Typing Animations*/
 .typing-indicator .dot:nth-child(1) {
     animation-delay: 0s;
 }
@@ -251,99 +261,7 @@ body {
     animation-delay: 0.4s;
 }
 
-@keyframes typing {
-    0% {
-        opacity: 0.3;
-        transform: scale(0.8);
-    }
-
-    50% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    100% {
-        opacity: 0.3;
-        transform: scale(0.8);
-    }
-}
-
-/* Datepicker and Timepicker Input Styles */
-#datepicker::placeholder {
-    color: #ffffff; /* Pure white placeholder text */
-    opacity: 1; /* Ensures full opacity in some browsers */
-}
-
-#datepicker,
-#timepicker {
-    width: 35%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #00dfc4;
-    border-radius: 8px;
-    background: #223243;
-    color: #fff;
-    font-size: 1rem;
-    font-family: "Poppins", sans-serif;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
-    outline: none;
-    transition: border-color 0.3s ease;
-    display: block;
-    cursor: pointer;
-}
-
-.ui-timepicker {
-    background: #1c2933;
-    border: 1px solid #00dfc4;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    border-radius: 8px;
-    max-height: 80%; /* Restricts dropdown height within chat-messages */
-    overflow-y: auto;
-}
-
-    #datepicker:hover,
-    #timepicker:hover {
-        border-color: #dfe6e9;
-    }
-
-    #datepicker:focus,
-    #timepicker:focus {
-        border-color: #00dfc4;
-        box-shadow: 0 0 5px #00dfc4;
-    }
-
-    #timepicker option {
-        font-size: 1rem;
-        font-family: "Poppins", sans-serif;
-        padding: 10px;
-        background: #1c2933;
-        color: #fff;
-        white-space: nowrap;
-    }
-
-/* Datepicker Styles */
-.ui-datepicker {
-    background: #1c2933;
-    border: 1px solid #00dfc4;
-    color: #fff;
-    font-family: "Poppins", sans-serif;
-    border-radius: 8px;
-}
-
-    .ui-datepicker a {
-        color: #00dfc4;
-        text-decoration: none;
-    }
-
-        .ui-datepicker a:hover {
-            background: #00dfc4;
-            color: #223243;
-        }
-
-
-
-
+/*Typing Keyframes*/
 @keyframes typing {
     0% {
         opacity: 0.3;
@@ -358,7 +276,6 @@ body {
         transform: scale(0.8);
     }
 }
-
 
 @keyframes fadeInUp {
     from {
@@ -370,4 +287,35 @@ body {
     }
 }
 
+/*Date command Time*/
+input[type="date"],
+input[type="time"] {
+    padding: 10px;
+    border: 1px solid #00dfc4;
+    border-radius: 8px;
+    background: #00dfc4;
+    color: #223243;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    outline: none;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="date"]::placeholder,
+input[type="time"]::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+input[type="date"]:hover,
+input[type="time"]:hover {
+    border-color: #dfe6e9;
+}
+
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #00dfc4;
+    box-shadow: 0 0 5px #00dfc4;
+}
 

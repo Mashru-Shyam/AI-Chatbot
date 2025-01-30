@@ -1,4 +1,5 @@
-﻿document.getElementById('toggleChatBtn').addEventListener('click', function () {
+﻿//Toogle the chatbot
+document.getElementById('toggleChatBtn').addEventListener('click', function () {
     const chatContainer = document.querySelector('.chat-container');
     chatContainer.style.display = chatContainer.style.display === 'block' ? 'none' : 'block';
 });
@@ -6,10 +7,13 @@
 $(document).ready(function () {
     const chatMessages = $('#chatMessages');
     const userMessageInput = $('#userMessage');
+    let value = "General";
 
+    //Starting messgae
     addMessage("Hello! Welcome to Chatbot. Please let me know how I can assist you today.", 'bot');
     showButtons();
 
+    //Message fuction to add a user or bot message
     function addMessage(message, sender) {
         const messageClass = sender === 'user' ? 'user' : 'bot';
         const formattedMessage = message
@@ -24,14 +28,17 @@ $(document).ready(function () {
         chatMessages.animate({ scrollTop: chatMessages[0].scrollHeight }, 'slow');
     }
 
+    //Removing typing...
     function removeTypingIndicator() {
         chatMessages.find('.typing-indicator').remove();
     }
 
+    //Removing action buttons
     function removeActionButtons() {
         chatMessages.find('.action-buttons').remove();
     }
 
+    //Showing typing...
     function showTypingIndicator() {
         const typingHtml = `
             <div class="message bot typing-indicator">
@@ -44,9 +51,10 @@ $(document).ready(function () {
         chatMessages.animate({ scrollTop: chatMessages[0].scrollHeight }, 'slow');
     }
 
+    //Show user and general buttons
     function showButtons() {
         const buttonsHtml = `
-            <div class="message action-buttons">
+            <div class="action-buttons">
                 <button id="general">General Question Answer</button>
                 <button id="user">User Based Conversation</button>
             </div>`;
@@ -55,17 +63,14 @@ $(document).ready(function () {
         bindGeneralAndUserButtons();
     }
 
+    //Showing appointment, payment, insurance, prescription buttons
     function showOnLoginButtons() {
         const buttonsHtml = `
             <div class="action-buttons">
                 <button id="schedule">Schedule Appointment</button>
                 <button id="appointment">View Appointments</button>
-            </div>
-            <div class="action-buttons">
                 <button id="payment">View Payment Details</button>
                 <button id="prescription">View Prescriptions</button>
-            </div>
-            <div class="action-buttons">
                 <button id="insurance">View Insurance Details</button>
                 <button id="general">General Question</button>
             </div>`;
@@ -74,20 +79,12 @@ $(document).ready(function () {
         bindOnLoginButtons();
     }
 
+    //Date picker and time dropdownlist
     function showDateTimeButtons() {
         const buttonsHtml = `
             <div class="action-buttons">
-                <input type="text" id="datepicker" placeholder="Pick a date">
-                <select id="timepicker">
-                    <option selected disabled>Pick a Time: </option>
-                    <option>09:00 AM</option>
-                    <option>11:00 AM</option>
-                    <option>01:00 PM</option>
-                    <option>03:00 PM</option>
-                    <option>05:00 PM</option>
-                    <option>07:00 PM</option>
-                    <option>10:00 PM</option>
-                </select>
+                <input type="date" id="date" placeholder="Pick a date">
+                <input type="time" id="time" placeholder="Pick a Time">
             </div>
         `
         chatMessages.append(buttonsHtml);
@@ -95,50 +92,53 @@ $(document).ready(function () {
         bindDateTimeButtons();
     }
 
+
+    //Adding date and time functionalities
     function bindDateTimeButtons() {
-        var currentDate = new Date();
-        var currentTime = currentDate.getHours() + ":" + currentDate.getMinutes();
-        $(".chat-input").addClass("disabled"); // Disable chat input initially
+        const dateInput = document.getElementById("date");
+        const timeInput = document.getElementById("time");
 
-        $("#datepicker").datepicker({
-            dateFormat: "dd/mm/yy",
-            changeMonth: true,
-            changeYear: true,
-            minDate: currentDate, // Set the minimum date to today
-            onSelect: function () {
-                setTimePicker(); // Update time picker based on the selected date
+        dateInput.setAttribute("min", new Date().toISOString().split("T")[0]);
+
+        //Function to check if both date and time are provided
+        function checkInputs() {
+            if (dateInput.value && timeInput.value) {
+                const selectedDate = new Date(dateInput.value);
+                const formattedDate = `${selectedDate.getDate().toString().padStart(2, "0")}/${(selectedDate.getMonth() + 1).toString().padStart(2, "0")}/${selectedDate.getFullYear().toString().slice(-2)}`;
+
+                let [hours, minutes] = timeInput.value.split(":");
+                const period = hours >= 12 ? "PM" : "AM";
+                hours = hours % 12 || 12;
+                const formattedTime = `${hours}:${minutes} ${period}`;
+                $(".chat-input").removeClass("disabled");
+                removeActionButtons();
+                handleUserMessage(`Schedule appointment at Date: ${formattedDate} and Time: ${formattedTime}`);
+            } else {
+                $(".chat-input").addClass("disabled");
             }
-        });
+        }
 
-        $("#datepicker, #timepicker").on('change', function () {
-            let date = $("#datepicker").val();
-            let time = $("#timepicker").val();
-
-            // Check if both date and time are selected
-            if (date && time) {
-                removeActionButtons(); // Assuming this is a function you have defined elsewhere
-                $(".chat-input").removeClass("disabled"); // Enable the chat input
-                handleUserMessage(`Schedule appointment at Date: ${date} and Time: ${time}`); // Handle user message
-            }
-        });
+        dateInput.addEventListener("change", checkInputs);
+        timeInput.addEventListener("change", checkInputs);
     }
 
-
-
-
+    //User and general button click functionalities
     function bindGeneralAndUserButtons() {
         $('#general').click(function () {
+            value="General"
             removeActionButtons();
             addMessage("Enter your query below.", 'bot');
         });
 
         $('#user').click(function () {
+            value = "User"
             removeActionButtons();
             addMessage("How can I assist you?", 'bot');
             showOnLoginButtons();
         });
     }
 
+    //login buttons functionalities
     function bindOnLoginButtons() {
         $('#schedule').click(function () {
             handleUserMessage("Schedule an Appointment");
@@ -161,17 +161,20 @@ $(document).ready(function () {
         });
 
         $('#general').click(function () {
+            value = "General"
             removeActionButtons();
             addMessage("Enter your query below.", 'bot');
         });
     }
 
+    //Handle the message - adding message and processing input
     function handleUserMessage(message) {
         removeActionButtons();
         addMessage(message, 'user');
         processUserInput(message);
     }
 
+    //Process the input - backed integration response
     function processUserInput(input) {
         showTypingIndicator();
 
@@ -192,20 +195,16 @@ $(document).ready(function () {
                 } else if (response.otpEmail) {
                     addMessage(response.otpEmail, 'bot');
                 } else {
-                    const formattedResponse = response
-                        .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
-                        .replace(/_(.*?)_/g, '<i>$1</i>')
-                        .replace(/~~(.*?)~~/g, '<s>$1</s>')
-                        .replace(/`([^`]+)`/g, '<code>$1</code>')
-                        .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank">$1</a>')
-                        .replace(/\n/g, '<br>');
-                    addMessage(formattedResponse, 'bot');
-                    showOnLoginButtons();
+                    addMessage(response, 'bot');
+                    if (value == "General") {
+                        showButtons();
+                    } else {
+                        showOnLoginButtons();
+                    }
                 }
             },
             error: function (xhr) {
                 removeTypingIndicator();
-
                 if (xhr.status === 401) {
                     addMessage("Unauthorized access. Please log in.", 'bot');
                 } else {
@@ -215,7 +214,9 @@ $(document).ready(function () {
         });
     }
 
+    //Send button click functionality
     $('#sendMessage').click(function () {
+        removeActionButtons();
         const message = userMessageInput.val().trim();
         if (message !== '') {
             addMessage(message, 'user');
@@ -226,6 +227,7 @@ $(document).ready(function () {
         }
     });
 
+    //Enter key press functionality
     userMessageInput.keypress(function (e) {
         if (e.which === 13) {
             $('#sendMessage').click();
