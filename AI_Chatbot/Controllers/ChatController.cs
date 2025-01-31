@@ -72,7 +72,7 @@ namespace AI_Chatbot.Controllers
                 var result = await HandleClassification(sessionId : sessionId, query : query);
                 
                 //User Response
-                if(result == "Provide Date and Time.")
+                if(result == "Provide Date (dd/mm/yy) and Time (HH:MM AM/PM)")
                 {
                     return Ok(new { dateTime = result });
                 }
@@ -100,7 +100,7 @@ namespace AI_Chatbot.Controllers
                     var result = await HandleClassification(sessionId : sessionId, query : query);
 
                     //User Response
-                    if (result == "Provide Date and Time.")
+                    if (result == "Provide Date (dd/mm/yy) and Time (HH:MM AM/PM)")
                     {
                         return Ok(new { dateTime = result });
                     }
@@ -122,7 +122,7 @@ namespace AI_Chatbot.Controllers
                     var result = await HandleFragmentation(sessionId : sessionId, context : conversation?.Context ?? "start", query : query);
                     
                     //User Response
-                    if (result == "Provide Date and Time.")
+                    if (result == "Provide Date (dd/mm/yy) and Time (HH:MM AM/PM)")
                     {
                         return Ok(new { dateTime = result });
                     }
