@@ -27,8 +27,6 @@ namespace AI_Chatbot.Services
             }).ToList();
 
             return result;
-
-
         }
     }
 }

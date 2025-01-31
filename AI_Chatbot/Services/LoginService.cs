@@ -23,7 +23,6 @@ namespace AI_Chatbot.Services
             }
             return true;
         }
-
         public async Task AddUser(string email)
         {
             var user = new User

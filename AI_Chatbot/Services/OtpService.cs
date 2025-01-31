@@ -18,7 +18,6 @@ namespace AI_Chatbot.Services
         private readonly IOptions<EmailSettings> options;
         private readonly IJwtService jwtService;
         private readonly ISmtpClient smtpClient;
-        private readonly string _username;
         public OtpService(AiChatbotDbContext context, IOptions<EmailSettings> options, IJwtService jwtService, ISmtpClient smtpClient)
         {
             this.context = context;

@@ -11,9 +11,7 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var  provider = builder.Services.BuildServiceProvider();
-var congig = provider.GetRequiredService<IConfiguration>();
-builder.Services.AddDbContext<AiChatbotDbContext>(options => options.UseSqlServer(congig.GetConnectionString("dbcs")));
+builder.Services.AddDbContext<AiChatbotDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("dbcs")));
 
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
@@ -27,6 +25,11 @@ builder.Services.AddAuthentication(options =>
 })
     .AddJwtBearer(options =>
     {
+        var secretKey = builder.Configuration["Jwt:SecretKey"];
+        if (string.IsNullOrEmpty(secretKey))
+        {
+            throw new InvalidOperationException("JWT SecretKey is not configured.");
+        }
         options.TokenValidationParameters = new TokenValidationParameters
         {
             ValidateIssuer = true,
@@ -35,7 +38,7 @@ builder.Services.AddAuthentication(options =>
             ValidateIssuerSigningKey = true,
             ValidIssuer = builder.Configuration["Jwt:Issuer"],
             ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]))
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
         };
     });
 
@@ -70,12 +73,10 @@ builder.Services.AddScoped<ISmtpClient, SmtpClient>();
 
 builder.Services.AddScoped<IGeneralQueryService, GeneralQueryService>();
 
-
 builder.Services.AddScoped<IConversationService, ConversationService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -88,7 +89,6 @@ app.UseStaticFiles();
 app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
-
 
 app.UseAuthentication();
 app.UseAuthorization();

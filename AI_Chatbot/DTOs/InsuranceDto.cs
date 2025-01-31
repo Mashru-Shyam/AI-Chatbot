@@ -3,8 +3,8 @@
     public class InsuranceDto
     {
         public string? InsuranceName { get; set; }
-        public DateTime InsuranceStart { get; set; }
-        public DateTime InsuranceEnd { get; set; }
-        public string? InsuranceStatus { get; set; }
+        public string? InsuranceStart { get; set; } //Format dd/mm/yy
+        public string? InsuranceEnd { get; set; }  //Format dd/mm/yy
+        public string? InsuranceStatus { get; set; } //active or deactive
     }
 }

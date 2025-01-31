@@ -73,6 +73,7 @@ $(document).ready(function () {
                 <button id="prescription">View Prescriptions</button>
                 <button id="insurance">View Insurance Details</button>
                 <button id="general">General Question</button>
+                <button id="switch">Login / Switch Account</button>
             </div>`;
         chatMessages.append(buttonsHtml);
         chatMessages.animate({ scrollTop: chatMessages[0].scrollHeight }, 'slow');
@@ -164,6 +165,9 @@ $(document).ready(function () {
             value = "General"
             removeActionButtons();
             addMessage("Enter your query below.", 'bot');
+        });
+        $('#switch').click(function () {
+            handleUserMessage("Login / Switch Account");
         });
     }
 

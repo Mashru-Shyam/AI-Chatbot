@@ -15,7 +15,6 @@ namespace AI_Chatbot.Services
         {
             this.configuration = configuration;
         }
-
         public string GetToken(int userId)
         {
             var claims = new[]

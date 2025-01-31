@@ -2,8 +2,8 @@
 {
     public class PaymentDto
     {
-        public DateTime PaymentDue { get; set; }
+        public string? PaymentDue { get; set; } //Format dd/mm/yy
         public decimal PaymentAmount { get; set; }
-        public string PaymentStatus { get; set; }
+        public string? PaymentStatus { get; set; } //pending, paid, overdue
     }
 }
