@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TjpFfbUcxLiFNB8uiSW0k5gAwdVaN1ICpPVpZKRqHX4=",
+  "Hash": "pU/ytvqj3o+O87evC0Ro1jyq3yaFiW2BkeRADMIHIFk=",
   "Source": "AI_Chatbot",
   "BasePath": "_content/AI_Chatbot",
   "Mode": "Default",
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zo7zokhztj",
-      "Integrity": "s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA=",
+      "Fingerprint": "gll7sxzl3g",
+      "Integrity": "7GYgeWxanIynbatB2I2Ab2uVIJa8ESRDpSMHtDWEvMU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Chat.css"
@@ -182,11 +182,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA=\""
+          "Value": "\"7GYgeWxanIynbatB2I2Ab2uVIJa8ESRDpSMHtDWEvMU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 21:07:13 GMT"
+          "Value": "Fri, 31 Jan 2025 17:35:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -196,12 +196,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA="
+          "Value": "sha256-7GYgeWxanIynbatB2I2Ab2uVIJa8ESRDpSMHtDWEvMU="
         }
       ]
     },
     {
-      "Route": "css/Chat.zo7zokhztj.css",
+      "Route": "css/Chat.gll7sxzl3g.css",
       "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -219,11 +219,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA=\""
+          "Value": "\"7GYgeWxanIynbatB2I2Ab2uVIJa8ESRDpSMHtDWEvMU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 21:07:13 GMT"
+          "Value": "Fri, 31 Jan 2025 17:35:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -233,7 +233,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zo7zokhztj"
+          "Value": "gll7sxzl3g"
         },
         {
           "Name": "label",
@@ -241,7 +241,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA="
+          "Value": "sha256-7GYgeWxanIynbatB2I2Ab2uVIJa8ESRDpSMHtDWEvMU="
         }
       ]
     },

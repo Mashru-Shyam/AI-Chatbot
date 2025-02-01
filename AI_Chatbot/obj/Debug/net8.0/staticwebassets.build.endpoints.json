@@ -107,22 +107,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA=\""
+          "Value": "\"7GYgeWxanIynbatB2I2Ab2uVIJa8ESRDpSMHtDWEvMU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 21:07:13 GMT"
+          "Value": "Fri, 31 Jan 2025 17:35:10 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA="
+          "Value": "sha256-7GYgeWxanIynbatB2I2Ab2uVIJa8ESRDpSMHtDWEvMU="
         }
       ]
     },
     {
-      "Route": "css/Chat.zo7zokhztj.css",
+      "Route": "css/Chat.gll7sxzl3g.css",
       "AssetFile": "css/Chat.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -144,21 +144,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA=\""
+          "Value": "\"7GYgeWxanIynbatB2I2Ab2uVIJa8ESRDpSMHtDWEvMU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 21:07:13 GMT"
+          "Value": "Fri, 31 Jan 2025 17:35:10 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zo7zokhztj"
+          "Value": "gll7sxzl3g"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA="
+          "Value": "sha256-7GYgeWxanIynbatB2I2Ab2uVIJa8ESRDpSMHtDWEvMU="
         },
         {
           "Name": "label",

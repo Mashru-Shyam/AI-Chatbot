@@ -369,6 +369,13 @@ namespace AI_Chatbot.Controllers
                 await conversationService.UpdateConversationAsync(sessionId : sessionId, status: "email");
                 return "Provide Email.";
             }
+
+            Request.Cookies.TryGetValue("Token", out var token);
+            var handler = new JwtSecurityTokenHandler();
+            var jwtToken = handler.ReadJwtToken(token);
+            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            var userId = int.Parse(userIdClaim ?? throw new ArgumentNullException(nameof(userIdClaim)));
+
             //Create a Email Entity
             var entities = new List<Entity>
             {
@@ -377,9 +384,13 @@ namespace AI_Chatbot.Controllers
             //Update Email Entities
             await conversationService.UpdateConversationAsync(sessionId : sessionId, entities: entities);
             var user = await loginService.GetUser(email);
-            if (!user)
+            if (user == 0)
             {
                 await loginService.AddUser(email);
+            }
+            else if (user == userId)
+            {
+                return "You are already logged in.";
             }
             //Genrating and Sending OTP
             var otp = otpService.GenerateOtp();
