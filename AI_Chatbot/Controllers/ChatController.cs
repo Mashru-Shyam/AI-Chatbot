@@ -215,7 +215,7 @@ namespace AI_Chatbot.Controllers
 
             //Check for Pending Intents
             var conversation = await conversationService.GetConversationAsync(sessionId);
-            if (conversation.Intent != "none" && conversation.Context=="start")
+            if (conversation.Intent != "none")
             {
                 var data = await HandleIntent(sessionId: sessionId, intent: conversation.Intent, entities: conversation.Entities.ToList(), token: result);
                 return data;
@@ -370,11 +370,11 @@ namespace AI_Chatbot.Controllers
                 return "Provide Email.";
             }
 
-            Request.Cookies.TryGetValue("Token", out var token);
-            var handler = new JwtSecurityTokenHandler();
-            var jwtToken = handler.ReadJwtToken(token);
-            var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
-            var userId = int.Parse(userIdClaim ?? throw new ArgumentNullException(nameof(userIdClaim)));
+            //Request.Cookies.TryGetValue("Token", out var token);
+            //var handler = new JwtSecurityTokenHandler();
+            //var jwtToken = handler.ReadJwtToken(token);
+            //var userIdClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            //var userId = int.Parse(userIdClaim ?? throw new ArgumentNullException(nameof(userIdClaim)));
 
             //Create a Email Entity
             var entities = new List<Entity>
@@ -388,10 +388,10 @@ namespace AI_Chatbot.Controllers
             {
                 await loginService.AddUser(email);
             }
-            else if (user == userId)
-            {
-                return "You are already logged in.";
-            }
+            //else if (user == userId)
+            //{
+            //    return "You are already logged in.";
+            //}
             //Genrating and Sending OTP
             var otp = otpService.GenerateOtp();
             await otpService.SendOtpViaMail(to : email, subject : "Your OTP Code", body : $"Thank you for using our service. Your one-time password (OTP) to access your account is:\r\n\r\n{otp}\r\n\r\n Please note that this OTP is valid for a limited time (e.g., 5 minutes). Do not share this code with anyone. If you did not request this OTP, please ignore this message.\r\n");
