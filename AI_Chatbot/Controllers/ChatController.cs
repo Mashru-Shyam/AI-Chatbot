@@ -31,13 +31,14 @@ namespace AI_Chatbot.Controllers
         private readonly IInsuranceService insuranceService;
         private readonly IPrescriptionService prescriptionService;
         private readonly IAppointmentService appointmentService;
+        private readonly IChatHistoryService chatHistory;
         private string? date;
         private string? otp;
         private string? email;
         private string? time;
 
         public ChatController(IGeneralQueryService queryService, ILoginService loginService, IOtpService otpService, IConversationService conversationService,
-            IPaymentService paymentService, IInsuranceService insuranceService, IPrescriptionService prescriptionService, IAppointmentService appointmentService )
+            IPaymentService paymentService, IInsuranceService insuranceService, IPrescriptionService prescriptionService, IAppointmentService appointmentService, IChatHistoryService chatHistory )
         {
             this.queryService = queryService;
             this.loginService = loginService;
@@ -47,6 +48,7 @@ namespace AI_Chatbot.Controllers
             this.insuranceService = insuranceService;
             this.prescriptionService = prescriptionService;
             this.appointmentService = appointmentService;
+            this.chatHistory = chatHistory;
         }
 
         //Send-Message POST API
@@ -234,7 +236,7 @@ namespace AI_Chatbot.Controllers
         private async Task<string> HandleClassification(int sessionId, string query)
         {
             //Classify the type of query
-            var answer = await queryService.GeneralQuery(query);
+            var answer = await queryService.GeneralQuery(sessionId : sessionId, query : query);
             var resp = JsonDocument.Parse(answer);
             var intent = resp.RootElement.GetProperty("intent").GetString();
 
@@ -250,6 +252,7 @@ namespace AI_Chatbot.Controllers
                     var response = resp.RootElement.GetProperty("response").GetString();
                     if (response != null)
                     {
+                        await chatHistory.AddChatHistory(sessionId, query, response);
                         return response;
                     }
                     return "Unable to process the query. Enter query again.";

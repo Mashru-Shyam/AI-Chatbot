@@ -13,16 +13,30 @@ namespace AI_Chatbot.Services
     {
         private readonly HttpClient httpClient;
         private readonly IConfiguration configuration;
+        private readonly IChatHistoryService chatHistory;
         private const string OpenRouterBaseUrl = "https://openrouter.ai/api/v1/chat/completions";
+        private string historyText;
 
-        public GeneralQueryService(HttpClient httpClient, IConfiguration configuration)
+        public GeneralQueryService(HttpClient httpClient, IConfiguration configuration, IChatHistoryService chatHistory)
         {
             this.httpClient = httpClient;
             this.configuration = configuration;
+            this.chatHistory = chatHistory;
         }
 
-        public async Task<string> GeneralQuery(string query)
+        public async Task<string> GeneralQuery(int sessionId, string query)
         {
+            var history = await chatHistory.GetChatHistory(sessionId);
+            if (history == null || !history.Any())
+            {
+                historyText = "";
+            }
+            else
+            {
+                historyText = string.Join("\n\n", history.Select(i =>
+                     $"**User**: {i.UserMessage} \n **Bot**: {i.BotMessage}"));
+            }
+
             var prompt = $$"""
                 Classify the user query into one of the following intents:  
                 1. login: For authentication or login-related queries, may include an email.  
@@ -33,8 +47,15 @@ namespace AI_Chatbot.Services
                 7. insurance: To view insurance details, coverage or status.  
                 8. general: Queries that do not match any of the above.  
 
-                If the intent is "general," provide a concise response to the query.  
-                Output format:  
+                 ### Rules for general query:
+                - If the **intent** is **general**, analyze the user's query in relation to past conversation history.  
+                  - If the new query refers to previous questions respond accordingly.  
+                  - If there is no relevant past context, generate a suitable response based on general knowledge.  
+
+                ### Conversation History:
+                {{historyText}}
+
+                Output format follow strictly:  
                 {  
                   "intent": "<classified_intent>",  
                   "response": "<answer_to_query_if_general_or_null>"  

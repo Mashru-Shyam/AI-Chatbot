@@ -4,6 +4,7 @@ using AI_Chatbot.Datas;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AI_Chatbot.Migrations
 {
     [DbContext(typeof(AiChatbotDbContext))]
-    partial class AiChatbotDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250204204649_DatabaseAddedForGeneralConversation")]
+    partial class DatabaseAddedForGeneralConversation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,31 +48,6 @@ namespace AI_Chatbot.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Appointments");
-                });
-
-            modelBuilder.Entity("AI_Chatbot.Models.ChatHistory", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("BotMessage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("SessionId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("Timestamp")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("UserMessage")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ChatHistory");
                 });
 
             modelBuilder.Entity("AI_Chatbot.Models.Conversation", b =>

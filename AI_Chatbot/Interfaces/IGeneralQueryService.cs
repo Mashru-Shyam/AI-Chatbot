@@ -4,6 +4,6 @@ namespace AI_Chatbot.Interfaces
 {
     public interface IGeneralQueryService
     {
-        Task<string> GeneralQuery(string query);
+        Task<string> GeneralQuery(int sessionId, string query);
     }
 }

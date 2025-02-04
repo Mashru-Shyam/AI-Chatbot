@@ -74,6 +74,7 @@ builder.Services.AddScoped<ISmtpClient, SmtpClient>();
 builder.Services.AddScoped<IGeneralQueryService, GeneralQueryService>();
 
 builder.Services.AddScoped<IConversationService, ConversationService>();
+builder.Services.AddScoped<IChatHistoryService, ChatHistoryService>();
 
 var app = builder.Build();
 
