@@ -167,6 +167,51 @@
       ]
     },
     {
+      "Route": "js/Chat.9n8fsr43f3.js",
+      "AssetFile": "js/Chat.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9135"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ez7G0BRkPYrGupuKqOmxK5Xp4m12N+/aD17CzJP5/6c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Feb 2025 19:23:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9n8fsr43f3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ez7G0BRkPYrGupuKqOmxK5Xp4m12N+/aD17CzJP5/6c="
+        },
+        {
+          "Name": "label",
+          "Value": "js/Chat.js"
+        }
+      ]
+    },
+    {
       "Route": "js/Chat.js",
       "AssetFile": "js/Chat.js",
       "Selectors": [],
@@ -181,7 +226,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9116"
+          "Value": "9135"
         },
         {
           "Name": "Content-Type",
@@ -189,62 +234,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"moC5K2bfgnDYSvWh8RBr3rtxQ5s050XBmYNJZjk0MYw=\""
+          "Value": "\"ez7G0BRkPYrGupuKqOmxK5Xp4m12N+/aD17CzJP5/6c=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 17:40:08 GMT"
+          "Value": "Mon, 10 Feb 2025 19:23:52 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-moC5K2bfgnDYSvWh8RBr3rtxQ5s050XBmYNJZjk0MYw="
-        }
-      ]
-    },
-    {
-      "Route": "js/Chat.mwx7ostgj5.js",
-      "AssetFile": "js/Chat.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "9116"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"moC5K2bfgnDYSvWh8RBr3rtxQ5s050XBmYNJZjk0MYw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 17:40:08 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mwx7ostgj5"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-moC5K2bfgnDYSvWh8RBr3rtxQ5s050XBmYNJZjk0MYw="
-        },
-        {
-          "Name": "label",
-          "Value": "js/Chat.js"
+          "Value": "sha256-ez7G0BRkPYrGupuKqOmxK5Xp4m12N+/aD17CzJP5/6c="
         }
       ]
     }

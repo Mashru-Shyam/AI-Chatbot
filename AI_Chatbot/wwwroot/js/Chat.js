@@ -62,7 +62,7 @@ $(document).ready(function () {
         chatMessages.animate({ scrollTop: chatMessages[0].scrollHeight }, 'slow');
         bindGeneralAndUserButtons();
     }
-
+    
     //Showing appointment, payment, insurance, prescription buttons
     function showOnLoginButtons() {
         const buttonsHtml = `
@@ -73,8 +73,9 @@ $(document).ready(function () {
                 <button id="prescription">View Prescriptions</button>
                 <button id="insurance">View Insurance Details</button>
                 <button id="general">General Question</button>
-                <button id="switch">Login / Switch Account</button>
             </div>`;
+        //                <button id="switch">Login / Switch Account</button>
+
         chatMessages.append(buttonsHtml);
         chatMessages.animate({ scrollTop: chatMessages[0].scrollHeight }, 'slow');
         bindOnLoginButtons();
@@ -183,7 +184,7 @@ $(document).ready(function () {
         showTypingIndicator();
 
         $.ajax({
-            url: `https://localhost:7048/api/Chat/send-message`,
+            url: `https://localhost:7048/api/Chating/send-message`,
             method: "POST",
             contentType: "application/json",
             data: JSON.stringify(input),

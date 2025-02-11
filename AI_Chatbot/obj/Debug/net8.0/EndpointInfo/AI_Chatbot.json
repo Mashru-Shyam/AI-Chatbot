@@ -5,10 +5,10 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Chat/send-message": {
+    "/api/Chating/send-message": {
       "post": {
         "tags": [
-          "Chat"
+          "Chating"
         ],
         "requestBody": {
           "content": {

@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "AI_Chatbot.Controllers.ChatController",
+    "ContainingType": "AI_Chatbot.Controllers.ChatingController",
     "Method": "SendMessage",
-    "RelativePath": "api/Chat/send-message",
+    "RelativePath": "api/Chating/send-message",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
