@@ -1,42 +1,52 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbot</title>
-    <!--CSS-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="./css/Chat.css">
 
-</head>
-<body>
+    <!--CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./css/Chat.css" />
+  </head>
+  <body>
     <!-- Chatbot Floating Button -->
     <button class="chat-toggle-btn" id="toggleChatBtn">
-        <i class="fas fa-comments"></i>
+      <i class="fas fa-comments"></i>
     </button>
 
     <!-- Chatbot Container -->
     <div class="chat-container">
-        <div class="container chatbot">
-            <!--Header of Chatbot-->
-            <div class="chat-header">
-                <h2>Chatbot</h2>
-            </div>
+      <div class="container chatbot">
+        <!--Header of Chatbot-->
+        <div class="chat-header">Chatbot</div>
 
-            <div class="chat-messages" id="chatMessages">
-                <!-- Chat messages will appear here -->
-            </div>
-            <!--Typing Area and Send Button-->
-            <div class="chat-input">
-                <div class="inputBox">
-                    <input type="text" id="userMessage" placeholder="Type message here..." required="required">
-                </div>
-                <button id="sendMessage" title="Send Message">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
+        <div class="chat-messages" id="chatMessages">
+          <!-- Chat messages will appear here -->
         </div>
+
+        <!--Typing Area and Send Button-->
+        <div class="chat-input">
+          <div class="inputBox">
+            <input
+              type="text"
+              id="userMessage"
+              placeholder="Type message here..."
+              required="required"
+            />
+          </div>
+          <button id="sendMessage" title="Send Message">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
     </div>
 
     <!--JavaScripts-->
@@ -45,5 +55,5 @@
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"></script>
     <script src="./js/Chat.js"></script>
-</body>
+  </body>
 </html>

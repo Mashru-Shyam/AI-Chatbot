@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3DT8OA1Tf+2XoFeQGqUQUuD8XGz9yR1wliNlmHswfAE=",
+  "Hash": "AfAcQnOgiIMWv4co0uVI5DCHJlWEzxt7V94gI1+84TA=",
   "Source": "AI_Chatbot",
   "BasePath": "_content/AI_Chatbot",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0ef9z6pekw",
-      "Integrity": "2F6EQyKt8TvRPDRw+obh4IpDPWKAyc7RWiiXu6U6M/Y=",
+      "Fingerprint": "106ubj6uwj",
+      "Integrity": "H49kdkEchbiwaj9kzl7y8MUMVEcAOyyy9Ji3Bq/GrbI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Chat.html"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zo7zokhztj",
-      "Integrity": "s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA=",
+      "Fingerprint": "6k6le41491",
+      "Integrity": "doKFZkNE+3RE+sALdR2U22WHaCu5wVZi83JBTDxNkb8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Chat.css"
@@ -82,7 +82,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "Chat.0ef9z6pekw.html",
+      "Route": "Chat.106ubj6uwj.html",
       "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\Chat.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -92,7 +92,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1888"
+          "Value": "1931"
         },
         {
           "Name": "Content-Type",
@@ -100,11 +100,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2F6EQyKt8TvRPDRw+obh4IpDPWKAyc7RWiiXu6U6M/Y=\""
+          "Value": "\"H49kdkEchbiwaj9kzl7y8MUMVEcAOyyy9Ji3Bq/GrbI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 20:45:36 GMT"
+          "Value": "Fri, 14 Feb 2025 06:05:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -114,7 +114,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "0ef9z6pekw"
+          "Value": "106ubj6uwj"
         },
         {
           "Name": "label",
@@ -122,7 +122,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-2F6EQyKt8TvRPDRw+obh4IpDPWKAyc7RWiiXu6U6M/Y="
+          "Value": "sha256-H49kdkEchbiwaj9kzl7y8MUMVEcAOyyy9Ji3Bq/GrbI="
         }
       ]
     },
@@ -137,7 +137,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1888"
+          "Value": "1931"
         },
         {
           "Name": "Content-Type",
@@ -145,11 +145,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2F6EQyKt8TvRPDRw+obh4IpDPWKAyc7RWiiXu6U6M/Y=\""
+          "Value": "\"H49kdkEchbiwaj9kzl7y8MUMVEcAOyyy9Ji3Bq/GrbI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 20:45:36 GMT"
+          "Value": "Fri, 14 Feb 2025 06:05:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -159,7 +159,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-2F6EQyKt8TvRPDRw+obh4IpDPWKAyc7RWiiXu6U6M/Y="
+          "Value": "sha256-H49kdkEchbiwaj9kzl7y8MUMVEcAOyyy9Ji3Bq/GrbI="
+        }
+      ]
+    },
+    {
+      "Route": "css/Chat.6k6le41491.css",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"doKFZkNE+3RE+sALdR2U22WHaCu5wVZi83JBTDxNkb8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 07:41:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6k6le41491"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Chat.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-doKFZkNE+3RE+sALdR2U22WHaCu5wVZi83JBTDxNkb8="
         }
       ]
     },
@@ -174,7 +219,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6696"
+          "Value": "7137"
         },
         {
           "Name": "Content-Type",
@@ -182,11 +227,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA=\""
+          "Value": "\"doKFZkNE+3RE+sALdR2U22WHaCu5wVZi83JBTDxNkb8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 17:37:51 GMT"
+          "Value": "Fri, 14 Feb 2025 07:41:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -196,52 +241,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA="
-        }
-      ]
-    },
-    {
-      "Route": "css/Chat.zo7zokhztj.css",
-      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6696"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 31 Jan 2025 17:37:51 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zo7zokhztj"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Chat.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-s8lQm7qX1cZzXt/0QR88SzerKgCMwBolOtc/vGY8CAA="
+          "Value": "sha256-doKFZkNE+3RE+sALdR2U22WHaCu5wVZi83JBTDxNkb8="
         }
       ]
     },
