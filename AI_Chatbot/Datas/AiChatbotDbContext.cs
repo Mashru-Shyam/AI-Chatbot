@@ -15,5 +15,6 @@ namespace AI_Chatbot.Datas
         public DbSet<Prescription> Prescriptions { get; set; }
         public DbSet<Conversation> Conversations { get; set; }
         public DbSet<Entity> Entities { get; set; }
+        public DbSet<ChatHistory> ChatHistory { get; set; }
     }
 }

@@ -164,7 +164,7 @@ body {
 
 .chat-messages .action-buttons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Responsive columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
     gap: 0.5em;
     margin-top: 0.2em;
     align-items: flex-start;

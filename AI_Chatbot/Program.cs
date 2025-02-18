@@ -10,7 +10,6 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
-
 builder.Services.AddDbContext<AiChatbotDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("dbcs")));
 
 builder.Services.AddControllers();
@@ -55,25 +54,18 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+
 builder.Services.AddScoped<IJwtService, JwtService>();
-
 builder.Services.AddScoped<ILoginService, LoginService>();
-
 builder.Services.AddScoped<IOtpService, OtpService>();
-
 builder.Services.AddScoped<IAppointmentService, AppointmentService>();
-
 builder.Services.AddScoped<IPaymentService, PaymentService>();
-
 builder.Services.AddScoped<IInsuranceService, InsuranceService>();
-
 builder.Services.AddScoped<IPrescriptionService, PrescriptionService>();
-
 builder.Services.AddScoped<ISmtpClient, SmtpClient>();
-
 builder.Services.AddScoped<IGeneralQueryService, GeneralQueryService>();
-
 builder.Services.AddScoped<IConversationService, ConversationService>();
+builder.Services.AddScoped<IChatHistoryService, ChatHistoryService>();
 
 var app = builder.Build();
 

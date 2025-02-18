@@ -14,20 +14,33 @@ namespace AI_Chatbot.Services
         private readonly HttpClient httpClient;
         private readonly IHttpClientFactory httpClientFactory;
         private readonly IConfiguration configuration;
+        private readonly IChatHistoryService chatHistory;
         private const string OpenRouterBaseUrl = "https://openrouter.ai/api/v1/chat/completions";
         private string historyText;
 
-        public GeneralQueryService(IHttpClientFactory httpClientFactory, IConfiguration configuration)
+        public GeneralQueryService(IHttpClientFactory httpClientFactory, IConfiguration configuration, IChatHistoryService chatHistory)
         {
             this.httpClientFactory = httpClientFactory;
             this.configuration = configuration;
+            this.chatHistory = chatHistory;
         }
 
         public async Task<string> GeneralQuery(int sessionId, string query)
         {
             var httpClient = httpClientFactory.CreateClient();
-            var prompt = $$"""
-                You are an advanced AI model that classifies user queries and extracts relevant entities. Your task is to analyze the given query and return a JSON response in the following format:
+            var history = await chatHistory.GetChatHistory(sessionId);
+            if (history == null || !history.Any())
+            {
+                historyText = "";
+            }
+            else
+            {
+                historyText = string.Join("\n\n", history.Select(i =>
+                     $"**User**: {i.UserMessage} \n **Bot**: {i.BotMessage}"));
+            }
+
+            var data = $$"""
+                You are an advanced AI model that classifies user queries and extracts relevant entities. Your task is to analyze the given query and return response in **valid Json** format:
 
                 {
                   "intent": "<classified_intent>",
@@ -57,7 +70,9 @@ namespace AI_Chatbot.Services
                        - `"time": "HH:MM AM/PM"` (Example: `02:30 PM`)
                      - If date or time is missing, set `"date": null` and `"time": null`.
                    - `"General Query"` → If the query does not fit the above categories.
-                     - Provide a relevant `"response"` based on your knowledge.
+                        - Use past conversation history (historyText) to generate a more relavent response.
+                        - If the query is related to past messages, respond accordingly.
+                        - If there is no relavent past context, generate a general response.
 
                 2. **Extract Entities (if applicable):**
                    - `"email"` → Extract the email address if the query is a Login Query.
@@ -66,17 +81,17 @@ namespace AI_Chatbot.Services
                      - `"DD/MM/YY"` for date
                      - `"HH:MM AM/PM"` for time
                    - For the values that are not present, set them as `null`.
+
                 3. **Response Format:**
                    - Ensure that the response is always in **valid JSON format**.
                    - For non-General queries, set `"response": null`.
                    - Do not include extra explanations or text outside the JSON response.
-
+                    
                 ### Examples:
 
                 #### Example 1: Login Query with Email  
                 **User Query:** *"I forgot my password. My email is john.doe@example.com."*  
-                **Response:**
-                ```json
+                **Expected JSON Response:**
                 {
                   "intent": "Login Query",
                   "entities": {
@@ -86,12 +101,11 @@ namespace AI_Chatbot.Services
                     "time": null
                   },
                   "response": null
-                } 
+                }
                 
                 ### Example 2 : OTP Query
                 **User Query: ** *"My OTP is 456789. What should I do next?"*
-                **Response:**
-                ```json
+                **Expected JSON Response:**
                 {
                   "intent": "OTP Query",
                   "entities": {
@@ -105,8 +119,7 @@ namespace AI_Chatbot.Services
 
                 ### Examplae 3 : Book appointment query
                 **User Query: ** *"I want to book an appointment for 3rd March 2025 at 14:30."*
-                **Response:**
-                ```json
+                **Expected JSON Response:**
                 {
                   "intent": "Book Appointment Query",
                   "entities": {
@@ -118,10 +131,16 @@ namespace AI_Chatbot.Services
                   "response": null
                 }
 
-                ### Example 4 : General Query
-                **User Query: ** *"What are the symptoms of flu?"*
-                **Response:**
-                ```json
+                ### Example 4 : General Query with history
+                #### Past Chat History:
+                [
+                    {
+                        "user" : "I have a fever and cough.",
+                        "bot" : "You should take rest and drink plenty of fluids. If symptoms persist, consult a doctor."
+                    }
+                ]
+                **User Query: ** *"When will I be fine"*
+                **Expected JSON Response:**
                 {
                   "intent": "General Query",
                   "entities": {
@@ -130,27 +149,49 @@ namespace AI_Chatbot.Services
                     "date": null,
                     "time": null
                   },
-                  "response": "Common flu symptoms include fever, cough, sore throat, body aches, and fatigue."
+                  "response": "Your fever and cough will improve with proper rest, plenty of fluids, and following your doctor's advice."
                 }
 
-                Note  : provide only the json output in format as instructed. Do not include extra explanations or text outside the JSON response.
+                ### Example 4 : General Query without history
+                **User Query: ** *"I have a fever and cough."*
+                **Expected JSON Response:**
+                {
+                  "intent": "General Query",
+                  "entities": {
+                    "email": null,
+                    "otp": null,
+                    "date": null,
+                    "time": null
+                  },
+                  "response": "You should take rest and drink plenty of fluids. If symptoms persist, consult a doctor."
+                }
+
+                IMPORTANT : Return only the json output in format as instructed. Do not include extra explanations or text outside the JSON response.
                 
-                Query: {{query}}
                 """;
 
             var requestBody = new
             {
-                model = "meta-llama/llama-3.1-8b-instruct:free",
+                model = "meta-llama/llama-3.3-70b-instruct:free",
                 messages = new[]
                 {
-                    new { role = "user", content = prompt }
-                }
+                    new { role = "system", content = data },
+                    new { role = "assistent", content = historyText},
+                    new { role = "user", content = query}
+                },
+                temperature = 0,
+                max_tokens = 1000,
+                top_p = 0.9,
+                frequency_penalty = 0,
+                presence_penalty = 0,
+                stream = false
             };
 
             try
             {
                 httpClient.DefaultRequestHeaders.Authorization =
                     new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", configuration["ApiKey:Key"]);
+                httpClient.DefaultRequestHeaders.Add("Accept","application/json");
 
                 var response = await httpClient.PostAsJsonAsync(OpenRouterBaseUrl, requestBody);
 

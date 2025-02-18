@@ -4,5 +4,7 @@
     {
         public string? UserMessage { get; set; }
         public string? BotMessage { get; set; }
+        public DateTime Timestamp { get; set; }
+
     }
 }

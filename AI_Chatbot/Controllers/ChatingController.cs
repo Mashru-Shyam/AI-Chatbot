@@ -22,11 +22,12 @@ namespace AI_Chatbot.Controllers
         private readonly IInsuranceService insuranceService;
         private readonly IPrescriptionService prescriptionService;
         private readonly IAppointmentService appointmentService;
+        private readonly IChatHistoryService chatHistory;
         private string date;
         private string time;
 
         public ChatingController(IGeneralQueryService queryService, ILoginService loginService, IOtpService otpService, IConversationService conversationService,
-            IPaymentService paymentService, IInsuranceService insuranceService, IPrescriptionService prescriptionService, IAppointmentService appointmentService)
+            IPaymentService paymentService, IInsuranceService insuranceService, IPrescriptionService prescriptionService, IAppointmentService appointmentService, IChatHistoryService chatHistory)
         {
             this.queryService = queryService;
             this.loginService = loginService;
@@ -36,6 +37,7 @@ namespace AI_Chatbot.Controllers
             this.insuranceService = insuranceService;
             this.prescriptionService = prescriptionService;
             this.appointmentService = appointmentService;
+            this.chatHistory = chatHistory;
         }
 
         [HttpPost("send-message")]
@@ -124,6 +126,7 @@ namespace AI_Chatbot.Controllers
                     var response = resp.RootElement.GetProperty("response").GetString();
                     if (response != null)
                     {
+                        await chatHistory.AddChatHistory(sessionId, query, response);
                         return response;
                     }
                     return "Unable to process the query. Enter query again.";
