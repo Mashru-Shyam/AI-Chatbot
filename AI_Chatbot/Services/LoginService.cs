@@ -14,6 +14,7 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
+        //Retrive the UserId
         public async Task<Int32> GetUser(string email)
         {
             var user = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == email);
@@ -23,6 +24,8 @@ namespace AI_Chatbot.Services
             }
             return user.UserId;
         }
+
+        //Register a User
         public async Task AddUser(string email)
         {
             var user = new User

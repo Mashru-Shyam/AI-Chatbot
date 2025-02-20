@@ -13,6 +13,8 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
+
+        //Retrive Prescription
         public async Task<IEnumerable<PrescriptionDto>> GetPrescriptions(int userId)
         {
             var prescription = await context.Prescriptions

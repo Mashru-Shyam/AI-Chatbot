@@ -17,6 +17,8 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//Adding Authentication and Authorization to the application
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -41,6 +43,7 @@ builder.Services.AddAuthentication(options =>
         };
     });
 
+//Adding Cors policy to allow all origins
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -53,6 +56,7 @@ builder.Services.AddCors(options =>
     });
 });
 
+//Adding Interfaces and Services to the application
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
 builder.Services.AddScoped<IJwtService, JwtService>();
@@ -64,6 +68,7 @@ builder.Services.AddScoped<IInsuranceService, InsuranceService>();
 builder.Services.AddScoped<IPrescriptionService, PrescriptionService>();
 builder.Services.AddScoped<ISmtpClient, SmtpClient>();
 builder.Services.AddScoped<IGeneralQueryService, GeneralQueryService>();
+builder.Services.AddScoped<IQueryService, QueryService>();
 builder.Services.AddScoped<IConversationService, ConversationService>();
 builder.Services.AddScoped<IChatHistoryService, ChatHistoryService>();
 

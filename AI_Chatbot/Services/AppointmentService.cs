@@ -15,6 +15,7 @@ namespace AI_Chatbot.Services
             this.context = context;
         }
 
+        //Add Appointments To Dataset
         public async Task<string> AddAppointment(int userId, AppointmentDto appointmentDto)
         {
             var appointment = new Appointment
@@ -30,6 +31,7 @@ namespace AI_Chatbot.Services
             return $"Appointment added successfully at \n\n**Date**: {appointmentDto.AppointmentDate}\n**Time**: {appointmentDto.AppointmentTime}";
         }
 
+        //Retrive Appointment Details
         public async Task<IEnumerable<AppointmentDto>> GetAppointments(int userId)
         {
             var appointments = await context.Appointments

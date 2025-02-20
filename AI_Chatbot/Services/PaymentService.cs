@@ -13,6 +13,8 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
+
+        //Retrive Due Payments
         public async Task<IEnumerable<PaymentDto>> GetDuePayments(int userId)
         {
             var payment = await context.Payment

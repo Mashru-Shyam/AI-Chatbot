@@ -25,6 +25,8 @@ namespace AI_Chatbot.Services
             this.jwtService = jwtService;
             this.smtpClient = smtpClient;
         }
+
+        //Generate a 6 Digit Otp
         public string GenerateOtp(int length = 6)
         {
             const string chars = "0123456789";
@@ -36,6 +38,7 @@ namespace AI_Chatbot.Services
             return new string(otp);
         }
 
+        //Send Otp Via Mail
         public async Task SendOtpViaMail(string to, string subject, string body)
         {
             var mail = new MimeMessage();
@@ -53,6 +56,7 @@ namespace AI_Chatbot.Services
             smtpClient.Disconnect(true);
         }
 
+        //Store Otp in Database
         public async Task StoreOtp(string email, string otp)
         {
             var userId = await context.Users
@@ -72,6 +76,7 @@ namespace AI_Chatbot.Services
             await context.SaveChangesAsync();
         }
 
+        //Check for Valid Otp
         public async Task<string> CheckOtp(string otp)
         {
             var validotp = await context.Otps

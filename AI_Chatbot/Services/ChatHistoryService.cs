@@ -14,6 +14,8 @@ namespace AI_Chatbot.Services
         {
             this.context = context;
         }
+
+        //Adding Chat History
         public async Task AddChatHistory(int sessionId, string userMessage, string botResponse)
         {
             var chatHistory = new ChatHistory
@@ -29,13 +31,14 @@ namespace AI_Chatbot.Services
 
         }
 
+        //Retriving Chat History
         public async Task<IEnumerable<ChatHistoryDto>> GetChatHistory(int sessionId)
         {
             var chatHistory = await context.ChatHistory
                .Where(a => a.SessionId == sessionId).OrderByDescending(a => a.Timestamp)
                .ToListAsync();
 
-            var result = chatHistory.OrderByDescending(a => a.Timestamp).Take(5).Select(a => new ChatHistoryDto
+            var result = chatHistory.Take(5).Select(a => new ChatHistoryDto
             {
                 UserMessage = a.UserMessage,
                 BotMessage = a.BotMessage

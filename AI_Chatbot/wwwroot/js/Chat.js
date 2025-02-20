@@ -78,36 +78,43 @@ $(document).ready(function () {
                 <button id="insurance">View Insurance Details</button>
                 <button id="general">General Question</button>
             </div>`;
-    //                <button id="switch">Login / Switch Account</button>
 
     chatMessages.append(buttonsHtml);
     chatMessages.animate({ scrollTop: chatMessages[0].scrollHeight }, "slow");
     bindOnLoginButtons();
   }
 
-  //Date picker and time dropdownlist
-  function showDateTimeButtons() {
+  //Date and Time Picker Buttons
+  function showDateButtons() {
     const buttonsHtml = `
             <div class="action-buttons">
                 <input type="date" id="date" placeholder="Pick a date">
-                <input type="time" id="time" placeholder="Pick a Time">
             </div>
         `;
     chatMessages.append(buttonsHtml);
     chatMessages.animate({ scrollTop: chatMessages[0].scrollHeight }, "slow");
-    bindDateTimeButtons();
-  }
+    bindDateButtons();
+    }
+    function showTimeButtons() {
+        const buttonsHtml = `
+            <div class="action-buttons">
+                <input type="time" id="time" placeholder="Pick a Time">
+            </div>
+        `;
+        chatMessages.append(buttonsHtml);
+        chatMessages.animate({ scrollTop: chatMessages[0].scrollHeight }, "slow");
+        bindTimeButtons();
+    }
 
   //Adding date and time functionalities
-  function bindDateTimeButtons() {
+  function bindDateButtons() {
     const dateInput = document.getElementById("date");
-    const timeInput = document.getElementById("time");
 
     dateInput.setAttribute("min", new Date().toISOString().split("T")[0]);
 
     //Function to check if both date and time are provided
     function checkInputs() {
-      if (dateInput.value && timeInput.value) {
+      if (dateInput.value) {
         const selectedDate = new Date(dateInput.value);
         const formattedDate = `${selectedDate
           .getDate()
@@ -119,14 +126,10 @@ $(document).ready(function () {
           .toString()
           .slice(-2)}`;
 
-        let [hours, minutes] = timeInput.value.split(":");
-        const period = hours >= 12 ? "PM" : "AM";
-        hours = hours % 12 || 12;
-        const formattedTime = `${hours}:${minutes} ${period}`;
         $(".chat-input").removeClass("disabled");
         removeActionButtons();
         handleUserMessage(
-          `Schedule appointment at Date: ${formattedDate} and Time: ${formattedTime}`
+          `Date: ${formattedDate}`
         );
       } else {
         $(".chat-input").addClass("disabled");
@@ -134,8 +137,30 @@ $(document).ready(function () {
     }
 
     dateInput.addEventListener("change", checkInputs);
-    timeInput.addEventListener("change", checkInputs);
   }
+
+    function bindTimeButtons() {
+        const timeInput = document.getElementById("time");
+
+        //Function to check if both date and time are provided
+        function checkInputs() {
+            if (timeInput.value) {
+                let [hours, minutes] = timeInput.value.split(":");
+                const period = hours >= 12 ? "PM" : "AM";
+                hours = hours % 12 || 12;
+                const formattedTime = `${hours}:${minutes} ${period}`;
+                $(".chat-input").removeClass("disabled");
+                removeActionButtons();
+                handleUserMessage(
+                    `Time: ${formattedTime}`
+                );
+            } else {
+                $(".chat-input").addClass("disabled");
+            }
+        }
+
+        timeInput.addEventListener("change", checkInputs);
+    }
 
   //User and general button click functionalities
   function bindGeneralAndUserButtons() {
@@ -180,9 +205,6 @@ $(document).ready(function () {
       removeActionButtons();
       addMessage("Enter your query below.", "bot");
     });
-    $("#switch").click(function () {
-      handleUserMessage("Login / Switch Account");
-    });
   }
 
   //Handle the message - adding message and processing input
@@ -207,9 +229,12 @@ $(document).ready(function () {
         if (response.query) {
           addMessage(response.query, "bot");
           showOnLoginButtons();
-        } else if (response.dateTime) {
-          addMessage(response.dateTime, "bot");
-          showDateTimeButtons();
+        } else if (response.date) {
+          addMessage(response.date, "bot");
+          showDateButtons();
+        } else if (response.time) {
+            addMessage(response.time, "bot");
+            showTimeButtons();
         } else if (response.otpEmail) {
           addMessage(response.otpEmail, "bot");
         } else {
@@ -224,12 +249,22 @@ $(document).ready(function () {
       error: function (xhr) {
         removeTypingIndicator();
         if (xhr.status === 401) {
-          addMessage("Unauthorized access. Please log in.", "bot");
+            addMessage("Unauthorized access. Please log in.", "bot");
+            if (value == "General") {
+                showButtons();
+            } else {
+                showOnLoginButtons();
+            }
         } else {
           addMessage(
             "There was an error processing your request. Please try again later.",
             "bot"
-          );
+            );
+            if (value == "General") {
+                showButtons();
+            } else {
+                showOnLoginButtons();
+            }
         }
       },
     });
@@ -247,7 +282,12 @@ $(document).ready(function () {
       addMessage(
         "Please enter your message and press 'Send' to proceed.",
         "bot"
-      );
+        );
+      if (value == "General") {
+            showButtons();
+          } else {
+            showOnLoginButtons();
+          }
     }
   });
 

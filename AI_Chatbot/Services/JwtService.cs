@@ -15,6 +15,8 @@ namespace AI_Chatbot.Services
         {
             this.configuration = configuration;
         }
+
+        //Retrive a JWT Token
         public string GetToken(int userId)
         {
             var claims = new[]

@@ -14,6 +14,7 @@ namespace AI_Chatbot.Services
             this.context = context;
         }
 
+        //Get Insurance Details
         public async Task<IEnumerable<InsuranceDto>> GetInsuranceDetails(int userId)
         {
             var insurance = await context.Insurances

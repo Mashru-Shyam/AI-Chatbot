@@ -15,6 +15,7 @@ namespace AI_Chatbot.Services
             this.context = context;
         }
 
+        //Adding a new Conversation
         public async Task AddConversationAsync(int sessionId, string intent, ICollection<Entity>? entities, bool IsCompleted, string status)
         {
             var conversation = new Conversation
@@ -30,6 +31,7 @@ namespace AI_Chatbot.Services
             await context.SaveChangesAsync();
         }
 
+        //Delete a Conversation
         public async Task DeleteConversationAsync(int sessionId)
         {
             var conversation = await context.Conversations.FindAsync(sessionId);
@@ -41,6 +43,7 @@ namespace AI_Chatbot.Services
             await context.SaveChangesAsync();
         }
 
+        //Delete Entities
         public async Task DeleteEntitiesAsync(int sessionId)
         {
             var conversation = await context.Conversations
@@ -55,6 +58,7 @@ namespace AI_Chatbot.Services
             await context.SaveChangesAsync();
         }
 
+        //Retrive Conversation
         public async Task<Conversation> GetConversationAsync(int sessionId)
         {
             var conversation = await context.Conversations
@@ -62,7 +66,8 @@ namespace AI_Chatbot.Services
                 .FirstOrDefaultAsync(c => c.SessionId == sessionId);
             return conversation ?? new Conversation();
         }
-
+        
+        //Update a Conversation
         public async Task UpdateConversationAsync(int sessionId, string intent = "none", ICollection<Entity>? entities = null, bool IsCompleted = false, string status = "start")
         {
             var conversation = await GetConversationAsync(sessionId);
@@ -77,7 +82,7 @@ namespace AI_Chatbot.Services
             }
             if (entities != null && entities.Count > 0)
             {
-                conversation.Entities.Clear();
+                //conversation.Entities.Clear();
                 foreach (var entity in entities)
                 {
                     conversation.Entities.Add(entity);
