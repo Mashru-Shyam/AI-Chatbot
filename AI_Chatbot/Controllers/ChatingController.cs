@@ -141,6 +141,32 @@ namespace AI_Chatbot.Controllers
                 
                 //Other Queries
                 default:
+                    var values = await queryService.EntityExtraction(sessionId, query);
+                    var entityJson = JsonDocument.Parse(values);
+                    var dateEntity = entityJson.RootElement.GetProperty("entities")
+                                        .GetProperty("date");
+                    var timeEntity = entityJson.RootElement.GetProperty("entities")
+                                        .GetProperty("time");
+                    if (dateEntity.ValueKind != JsonValueKind.Null)
+                    {
+                        var date = dateEntity.GetString();
+                        var entities = new List<Entity>
+                        {
+                            new Entity { EntityName = "date", EntityValue = date},
+                        };
+                        //Update conversation with date entity
+                        await conversationService.UpdateConversationAsync(sessionId, entities: entities);
+                    }
+                    if (timeEntity.ValueKind != JsonValueKind.Null)
+                    {
+                        var time = timeEntity.GetString();
+                        var entities = new List<Entity>
+                        {
+                            new Entity { EntityName = "time", EntityValue = time},
+                        };
+                        //Update conversation with date entity
+                        await conversationService.UpdateConversationAsync(sessionId, entities: entities);
+                    }
                     //Update conversation Intent
                     await conversationService.UpdateConversationAsync(sessionId, intent: intent);
                     Request.Cookies.TryGetValue("Token", out var token);
@@ -152,8 +178,9 @@ namespace AI_Chatbot.Controllers
                         return "Please login to continue";
                     }
 
+                    var con = await conversationService.GetConversationAsync(sessionId);
                     //Handle the intents of User Query
-                    var res = await HandleIntent(sessionId: sessionId, intent: intent, entities: null, token: token);
+                    var res = await HandleIntent(sessionId: sessionId, intent: intent, entities: con.Entities.ToList(), token: token);
                     return res;
             }
         }
