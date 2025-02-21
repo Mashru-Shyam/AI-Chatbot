@@ -67,7 +67,6 @@ builder.Services.AddScoped<IPaymentService, PaymentService>();
 builder.Services.AddScoped<IInsuranceService, InsuranceService>();
 builder.Services.AddScoped<IPrescriptionService, PrescriptionService>();
 builder.Services.AddScoped<ISmtpClient, SmtpClient>();
-builder.Services.AddScoped<IGeneralQueryService, GeneralQueryService>();
 builder.Services.AddScoped<IQueryService, QueryService>();
 builder.Services.AddScoped<IConversationService, ConversationService>();
 builder.Services.AddScoped<IChatHistoryService, ChatHistoryService>();
