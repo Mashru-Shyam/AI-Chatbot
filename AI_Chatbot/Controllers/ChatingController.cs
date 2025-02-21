@@ -224,7 +224,7 @@ namespace AI_Chatbot.Controllers
                         {
                             //Update the conversation to end (Delete also if required)
                             await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "end");
-                            await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
+                            //await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
                             return "Enter your query.";
                         }
                     }
@@ -325,7 +325,7 @@ namespace AI_Chatbot.Controllers
 
             //Update conversation to get otp
             await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "otp");
-            await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
+            //await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
             return "Your OTP has been sent to your registered email address. Enter the Otp";
         }
 
