@@ -20,6 +20,7 @@ namespace AI_Chatbot.Services
         public async Task<string> EntityExtraction(int sessionId, string query)
         {
             var httpClient = httpClientFactory.CreateClient();
+            string currentDate = DateTime.Now.ToString("dd/MM/yy");
             var data = $$"""
                     You are an advanced AI model that extracts entities from user queries. Your task is to analyze the given query and return response in format:
                     {
@@ -34,7 +35,7 @@ namespace AI_Chatbot.Services
                     ### Instructions:
                     1. **Extract the following entities from the query:**
                        - `"date"` → If the query contains a date. Extract date and convert it to a standard format (dd/mm/yy) 
-                            - Example: `05/03/25`
+                            - Today’s date is: {{currentDate}}*. Use this to interpret relative dates correctly. Recognize relative dates like "yesterday", "today", "tomorrow", "next Monday", and convert them to "dd/mm/yyformat (Example: "05/03/25"). If the year is not specified, use the current year by default.
                             - Extract the date if present; otherwise, set `"date": null`.
                        - `"time"` → If the query contains a time. Extract time and convert it to a standard format (HH:mm AM/PM)
                             - Example: `10:30 AM`
