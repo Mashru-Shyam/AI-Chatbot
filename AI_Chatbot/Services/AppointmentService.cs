@@ -21,7 +21,7 @@ namespace AI_Chatbot.Services
             var appointment = new Appointment
             {
                 UserId = userId,
-                AppointmentDate = appointmentDto.AppointmentDate,
+                AppointmentDate = appointmentDto.AppointmentDate ?? string.Empty,
                 AppointmentTime = appointmentDto.AppointmentTime ?? string.Empty,
             };
 

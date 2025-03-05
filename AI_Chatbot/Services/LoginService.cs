@@ -15,14 +15,14 @@ namespace AI_Chatbot.Services
             this.context = context;
         }
         //Retrive the UserId
-        public async Task<Int32> GetUser(string email)
+        public async Task GetUser(string email)
         {
             var user = await context.Users.FirstOrDefaultAsync(u => u.UserEmail == email);
             if (user == null)
             {
-                return 0;
+                await AddUser(email);
             }
-            return user.UserId;
+            return;
         }
 
         //Register a User

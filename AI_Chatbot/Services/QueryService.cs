@@ -99,7 +99,6 @@ namespace AI_Chatbot.Services
                 top_p = 1,
                 frequency_penalty = 0,
                 presence_penalty = 0,
-                //response_format = "json",
                 stream = false
             };
 
@@ -149,13 +148,13 @@ namespace AI_Chatbot.Services
                     ### Instructions:
 
                     1. **Classify the query into one of these intents:**
-                       - `"Login Query"` → If the query is about login or email verification.
-                       - `"View Appointment Query"` → If the query is about checking a medical appointment.
-                       - `"View Prescription Query"` → If the query is about checking medical prescriptions.
-                       - `"View Payments Query"` → If the query is about viewing payments or due payments.
-                       - `"View Insurance Query"` → If the query is about insurance details.
-                       - `"Book Appointment Query"` → If the query is about booking an appointment.
-                       - `"General Query"` → If the query does not fit the above categories.
+                       - `"Login"` → If the query is about login or email verification.
+                       - `"Appointment"` → If the query is about checking a medical appointment.
+                       - `"Prescription"` → If the query is about checking medical prescriptions.
+                       - `"Payment"` → If the query is about viewing payments or due payments.
+                       - `"Insurance"` → If the query is about insurance details.
+                       - `"Schedule"` → If the query is about booking an appointment.
+                       - `"General"` → If the query does not fit the above categories.
                             - Use past conversation history (historyText) to generate a more relavent response.
                             - If the query is related to past messages, respond accordingly.
                             - If there is no relavent past context, generate a general response.
@@ -167,27 +166,27 @@ namespace AI_Chatbot.Services
                         
                     ### Examples:
 
-                    #### Example 1: Login Query.
+                    #### Example 1: Login.
                     **User Query:** *"I forgot my password."*  
                     **Expected JSON Response:**
                     {
-                      "intent": "Login Query",
+                      "intent": "Login",
                       "response": null
                     }
 
-                    ### Examplae 2 : Book appointment query
+                    ### Examplae 2 : Schedule
                     **User Query: ** *"I want to book an appointment."*
                     **Expected JSON Response:**
                     {
-                      "intent": "Book Appointment Query",
+                      "intent": "Schedule",
                       "response": null
                     }
 
-                    ### Examplae 3 : View my Prescriptions
+                    ### Examplae 3 : Prescription
                     **User Query: ** *"I want to see my medical prescriptions"*
                     **Expected JSON Response:**
                     {
-                      "intent": "View Prescription Query",
+                      "intent": "Prescription",
                       "response": null
                     }
 
@@ -202,7 +201,7 @@ namespace AI_Chatbot.Services
                     **User Query: ** *"When will I be fine"*
                     **Expected JSON Response:**
                     {
-                      "intent": "General Query",
+                      "intent": "General",
                       "response": "Your fever and cough will improve with proper rest, plenty of fluids, and following your doctor's advice."
                     }
 
@@ -210,7 +209,7 @@ namespace AI_Chatbot.Services
                     **User Query: ** *"I have a fever and cough."*
                     **Expected JSON Response:**
                     {
-                      "intent": "General Query",
+                      "intent": "General",
                       "response": "You should take rest and drink plenty of fluids. If symptoms persist, consult a doctor."
                     }                    
                     """;
@@ -229,7 +228,6 @@ namespace AI_Chatbot.Services
                 top_p = 1,
                 frequency_penalty = 0,
                 presence_penalty = 0,
-                //response_format = "json",
                 stream = false
             };
 

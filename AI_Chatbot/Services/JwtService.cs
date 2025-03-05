@@ -27,7 +27,7 @@ namespace AI_Chatbot.Services
             var secretKey = configuration["Jwt:SecretKey"];
             if (string.IsNullOrEmpty(secretKey))
             {
-                throw new ArgumentNullException(nameof(secretKey), "Secret key cannot be null or empty.");
+                return "JWT SecretKey is not configured.";
             }
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));

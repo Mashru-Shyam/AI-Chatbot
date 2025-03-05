@@ -9,9 +9,9 @@ namespace AI_Chatbot.Models
         public int InsuranceId { get; set; }
         public int UserId { get; set; }
         public string? InsuranceName { get; set; }
-        public string? InsuranceStart { get; set; }
-        public string? InsuranceEnd { get; set; }
-        public string InsuranceStatus { get; set; } = "pending"; //dective, active
+        public string? InsuranceStart { get; set; } //Format : dd/mm/yy
+        public string? InsuranceEnd { get; set; } //Format : dd/mm/yy
+        public string? InsuranceStatus { get; set; } //Active, Deactive
 
         [ForeignKey("UserId")]
         public User? User { get; set; }

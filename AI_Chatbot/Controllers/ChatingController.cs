@@ -82,7 +82,7 @@ namespace AI_Chatbot.Controllers
                 //If the conversation is not completed, handle the fragmentation
                 else
                 {
-                    var result = await HandleFragmentation(sessionId: sessionId, context: conversation?.Context ?? "start", query: query);
+                    var result = await HandleFragmentation(sessionId: sessionId, context: conversation?.Context ?? "Start", query: query);
                     return ResponseFormatter(result);
                 }
             }
@@ -97,7 +97,7 @@ namespace AI_Chatbot.Controllers
                 "Enter Time" => Ok(new { time = result }),
                 "Enter your query." => Ok(new { query = result }),
                 "Invalid Otp. Try again." or "Your OTP has been sent to your registered email address. Enter the Otp"
-                or "Provide the Email" or "Please login to continue" => Ok(new { otpEmail = result }),
+                or "Provide the Email" => Ok(new { otpEmail = result }),
                 _ => Ok(result)
             };
         }
@@ -112,7 +112,7 @@ namespace AI_Chatbot.Controllers
             switch (intent)
             {
                 //A General Query, No fragmentations, Direct response
-                case "General Query":
+                case "General":
                     var response = resp.RootElement.GetProperty("response").GetString();
                     if (response != null)
                     {
@@ -122,7 +122,7 @@ namespace AI_Chatbot.Controllers
                     return "Unable to process the query. Enter query again.";
 
                 //A Login Query, Email Fragmentation, Ask for Email or Direct Login
-                case "Login Query":
+                case "Login":
                     var entity = await queryService.EntityExtraction(sessionId, query);
                     var emailEntityJson = JsonDocument.Parse(entity);
                     var emailEntity = emailEntityJson.RootElement.GetProperty("entities")
@@ -131,12 +131,12 @@ namespace AI_Chatbot.Controllers
                     if (emailEntity.ValueKind != JsonValueKind.Null)
                     {
                         var email = emailEntity.GetString();
-                        var result = await HandleLogin(sessionId: sessionId, email: email);
+                        var result = await HandleLogin(sessionId: sessionId, email: email ?? string.Empty);
                         return result;
                     }
 
                     //Update conversation to get email
-                    await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "email");
+                    await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
                     return "Provide the Email";
                 
                 //Other Queries
@@ -152,7 +152,7 @@ namespace AI_Chatbot.Controllers
                         var date = dateEntity.GetString();
                         var entities = new List<Entity>
                         {
-                            new Entity { EntityName = "date", EntityValue = date},
+                            new Entity { EntityName = "Date", EntityValue = date},
                         };
                         //Update conversation with date entity
                         await conversationService.UpdateConversationAsync(sessionId, entities: entities);
@@ -162,29 +162,30 @@ namespace AI_Chatbot.Controllers
                         var time = timeEntity.GetString();
                         var entities = new List<Entity>
                         {
-                            new Entity { EntityName = "time", EntityValue = time},
+                            new Entity { EntityName = "Time", EntityValue = time},
                         };
                         //Update conversation with date entity
                         await conversationService.UpdateConversationAsync(sessionId, entities: entities);
                     }
                     //Update conversation Intent
-                    await conversationService.UpdateConversationAsync(sessionId, intent: intent);
+                    await conversationService.UpdateConversationAsync(sessionId, intent: intent ?? "None");
                     Request.Cookies.TryGetValue("Token", out var token);
 
                     if (token == null)
                     {
                         //Update Conversation to get email
-                        await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "email");
-                        return "Please login to continue";
+                        await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
+                        return "Provide the Email";
                     }
 
                     var con = await conversationService.GetConversationAsync(sessionId);
                     //Handle the intents of User Query
-                    var res = await HandleIntent(sessionId: sessionId, intent: intent, entities: con.Entities.ToList(), token: token);
+                    var res = await HandleIntent(sessionId: sessionId, intent: intent ?? "None", entities: con.Entities.ToList(), token: token);
                     return res;
             }
         }
 
+        //Handle the incomplete parts of the query
         private async Task<string> HandleFragmentation(int sessionId, string context, string query)
         {
             var answer = await queryService.EntityExtraction(sessionId: sessionId, query: query);
@@ -193,14 +194,14 @@ namespace AI_Chatbot.Controllers
             switch (context)
             {
                 //Otp Provide by user
-                case "otp":
+                case "Otp":
                     var otpEntityJson = resp.RootElement.GetProperty("entities")
                                                       .GetProperty("otp");
                     if (otpEntityJson.ValueKind != JsonValueKind.Null)
                     {
                         var otpEntity = otpEntityJson.GetString();
                         //Check for valid otp
-                        var result = await otpService.CheckOtp(otpEntity);
+                        var result = await otpService.CheckOtp(otpEntity ?? string.Empty);
                         if (string.IsNullOrEmpty(result))
                         {
                             return "Invalid Otp. Try again.";
@@ -215,7 +216,7 @@ namespace AI_Chatbot.Controllers
 
                         //Get the conversation before login
                         var conversation = await conversationService.GetConversationAsync(sessionId);
-                        if (conversation.Intent != "none")
+                        if (conversation.Intent != "None")
                         {
                             var data = await HandleIntent(sessionId: sessionId, intent: conversation.Intent, entities: conversation.Entities.ToList(), token: result);
                             return data;
@@ -223,29 +224,28 @@ namespace AI_Chatbot.Controllers
                         else
                         {
                             //Update the conversation to end (Delete also if required)
-                            await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "end");
-                            //await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
+                            await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "End");
                             return "Enter your query.";
                         }
                     }
                     return "Invalid Otp. Try again.";
                 //Email Provide by user
-                case "email":
+                case "Email":
                     var emailEntityJson = resp.RootElement.GetProperty("entities")
                                                       .GetProperty("email");
                     if (emailEntityJson.ValueKind != JsonValueKind.Null)
                     {
                         var emailEntity = emailEntityJson.GetString();
-                        var result = await HandleLogin(sessionId: sessionId, email: emailEntity);
+                        var result = await HandleLogin(sessionId: sessionId, email: emailEntity ?? string.Empty);
                         return result;
                     }
 
                     //Update conversation to get email
-                    await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "email");
+                    await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
                     return "Provide the Email";
 
                 //Date Provided by uaer
-                case "date":
+                case "Date":
                     var dateEntityJson = resp.RootElement.GetProperty("entities")
                                                       .GetProperty("date");
                     
@@ -255,7 +255,7 @@ namespace AI_Chatbot.Controllers
                         //Add Date Entity to Database
                         var entities = new List<Entity>
                         {
-                            new Entity { EntityName = "date", EntityValue = dateEntity },
+                            new Entity { EntityName = "Date", EntityValue = dateEntity },
                         };
                         //Update conversation with date entity
                         await conversationService.UpdateConversationAsync(sessionId, entities: entities);
@@ -264,14 +264,14 @@ namespace AI_Chatbot.Controllers
                         if (token == null)
                         {
                             //Update conversation to get email
-                            await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "email");
+                            await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
                             return "Provide your email.";
                         }
                         return await HandleIntent(sessionId: sessionId, intent: con.Intent, entities: con.Entities.ToList(), token: token);
                     }
                     return "Enter Date";
 
-                case "time":
+                case "Time":
                     var timeEntityJson = resp.RootElement.GetProperty("entities")
                                                         .GetProperty("time");
                     if (timeEntityJson.ValueKind != JsonValueKind.Null)
@@ -280,7 +280,7 @@ namespace AI_Chatbot.Controllers
                         //Add Time Entity to Database
                         var entities = new List<Entity>
                         {
-                            new Entity { EntityName = "time", EntityValue = timeEntity }
+                            new Entity { EntityName = "Time", EntityValue = timeEntity }
                         };
                         //Update conversation with time entity
                         await conversationService.UpdateConversationAsync(sessionId, entities: entities);
@@ -289,7 +289,7 @@ namespace AI_Chatbot.Controllers
                         if (token == null)
                         {
                             //Update conversation to get email
-                            await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "email");
+                            await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
                             return "Provide your email.";
                         }
                         return await HandleIntent(sessionId: sessionId, intent: con.Intent, entities: entities, token: token);
@@ -305,18 +305,14 @@ namespace AI_Chatbot.Controllers
         {
             var entities = new List<Entity>
             {
-                new Entity { EntityName = "email", EntityValue = email}
+                new Entity { EntityName = "Email", EntityValue = email}
             };
 
             //Added the email entity to database
             await conversationService.UpdateConversationAsync(sessionId: sessionId, entities: entities);
-            var user = await loginService.GetUser(email);
-            
-            //If user does not exsist than Register
-            if (user == 0)
-            {
-                await loginService.AddUser(email);
-            }
+
+            //check if the user is present in the database else add to database
+            await loginService.GetUser(email);
 
             //send Otp via email
             var otp = otpService.GenerateOtp();
@@ -324,7 +320,7 @@ namespace AI_Chatbot.Controllers
             await otpService.StoreOtp(email: email, otp: otp);
 
             //Update conversation to get otp
-            await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "otp");
+            await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Otp");
             //await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
             return "Your OTP has been sent to your registered email address. Enter the Otp";
         }
@@ -342,32 +338,32 @@ namespace AI_Chatbot.Controllers
             switch (intent)
             {
                 //View Appointment Query
-                case "View Appointment Query":
+                case "Appointment":
                     var appointments = await appointmentService.GetAppointments(userId);
                     string appointment = string.Join("\n\n", appointments.Select(a =>
                         $"**Date**: {a.AppointmentDate} \n **Time**: {a.AppointmentTime}"));
 
                     //Update the conversation to end (Delete also if required)
-                    await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "end");
+                    await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "End");
                     return "Your appointments are at: \n\n" + appointment;
 
-                case "Book Appointment Query":
+                case "Schedule":
                     var conversation = await conversationService.GetConversationAsync(sessionId);
-                    var dateEntity = conversation.Entities?.FirstOrDefault(e => e.EntityName == "date");
-                    var timeEntity = conversation.Entities?.FirstOrDefault(e => e.EntityName == "time");
+                    var dateEntity = conversation.Entities?.FirstOrDefault(e => e.EntityName == "Date");
+                    var timeEntity = conversation.Entities?.FirstOrDefault(e => e.EntityName == "Time");
 
                     date = dateEntity?.EntityValue ?? "null";
                     time = timeEntity?.EntityValue ?? "null";
                     if (date == "null" || date == string.Empty)
                     {
                         //Update conversation to get date
-                        await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "date");
+                        await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Date");
                         return "Enter Date";
                     }
                     if (time == "null" || time == string.Empty)
                     {
                         //Update conversation to get time
-                        await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "time");
+                        await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Time");
                         return "Enter Time";
                     }
                     
@@ -380,38 +376,38 @@ namespace AI_Chatbot.Controllers
                     var schedules = await appointmentService.AddAppointment(userId: userId, appointmentDto: appointmentDto);
 
                     //Update the conversation to end (Delete also if required)
-                    await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "end");
+                    await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "End");
                     await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
                     return schedules;
 
                 //View Prescription Query
-                case "View Prescription Query":
+                case "Prescription":
                     var prescriptions = await prescriptionService.GetPrescriptions(userId);
                     string prescription = string.Join("\n\n", prescriptions.Select(p =>
                         $"**Medicine Name**: {p.MedicineName} \n **Medicine Dosage**: {p.MedicineDosage} \n **Medicine Direction**: {p.MedicineDirection}"));
 
                     //Update the conversation to end (Delete also if required)
-                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
+                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "End");
                     return "Your prescription are: \n\n" + prescription;
 
                 //View Insurance Query
-                case "View Insurance Query":
+                case "Insurance":
                     var insuranceDetails = await insuranceService.GetInsuranceDetails(userId);
                     string insurance = string.Join("\n\n", insuranceDetails.Select(i =>
                         $"**Insurance Name **: {i.InsuranceName} \n **Start Date**: {i.InsuranceStart} \n **End Date**: {i.InsuranceEnd}, \n **Status**: {i.InsuranceStatus}"));
 
                     //Update the conversation to end (Delete also if required)
-                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
+                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "End");
                     return "Your insurance with their details are: \n\n" + insurance;
 
                 //View Payments Query
-                case "View Payments Query":
+                case "Payment":
                     var payments = await paymentService.GetDuePayments(userId);
                     string payment = string.Join("\n\n", payments.Select(p =>
                         $"**Payment Due**: {p.PaymentDue} \n **Amount**: Rs {p.PaymentAmount} \n **Status**: {p.PaymentStatus}"));
 
                     //Update the conversation to end (Delete also if required)
-                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "end");
+                    await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "End");
                     return "Your payment details are: \n\n" + payment;
 
                 default:

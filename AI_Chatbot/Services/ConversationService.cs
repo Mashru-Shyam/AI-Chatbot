@@ -68,7 +68,7 @@ namespace AI_Chatbot.Services
         }
         
         //Update a Conversation
-        public async Task UpdateConversationAsync(int sessionId, string intent = "none", ICollection<Entity>? entities = null, bool IsCompleted = false, string status = "start")
+        public async Task UpdateConversationAsync(int sessionId, string intent = "None", ICollection<Entity>? entities = null, bool IsCompleted = false, string status = "Start")
         {
             var conversation = await GetConversationAsync(sessionId);
             if (conversation.ConversationId == 0)
@@ -76,7 +76,7 @@ namespace AI_Chatbot.Services
                 await AddConversationAsync(sessionId, intent, entities, IsCompleted, status);
                 return;
             }
-            if (intent != "none")
+            if (intent != "None")
             {
                 conversation.Intent = intent;
             }
@@ -89,7 +89,7 @@ namespace AI_Chatbot.Services
                 }
             }
             conversation.IsCompleted = IsCompleted;
-            if (status != "start")
+            if (status != "Start")
             {
                 conversation.Context = status;
             }

@@ -4,6 +4,6 @@
     {
         public string? PaymentDue { get; set; } //Format dd/mm/yy
         public decimal PaymentAmount { get; set; }
-        public string? PaymentStatus { get; set; } //pending, paid, overdue
+        public string? PaymentStatus { get; set; } //Pending, Paid, Overdue
     }
 }
