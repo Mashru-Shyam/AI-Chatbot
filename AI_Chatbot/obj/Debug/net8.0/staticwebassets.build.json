@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ELwM9uRtxV3y7ielj4n2BOdGxv84dNP5EZNbLiuxAnk=",
+  "Hash": "HN8rMx+jRmNQH7YWtMOppZAnrK8qpm5+LYetsdElW0g=",
   "Source": "AI_Chatbot",
   "BasePath": "_content/AI_Chatbot",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\Chat.html",
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\index.css",
       "SourceId": "AI_Chatbot",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
       "BasePath": "_content/AI_Chatbot",
-      "RelativePath": "Chat#[.{fingerprint}]?.html",
+      "RelativePath": "css/index#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,19 +31,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "klc3ggybru",
-      "Integrity": "iJLWCxqMY/tTooUjGdntFXS/pGakZeRWselbotPkEb8=",
+      "Fingerprint": "d0lw3o6av1",
+      "Integrity": "XVXPZkZ73vcclfuwmk9Rsv3JIjT4M5B1TL0yNDkz4tk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Chat.html"
+      "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\bot.png",
       "SourceId": "AI_Chatbot",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
       "BasePath": "_content/AI_Chatbot",
-      "RelativePath": "css/Chat#[.{fingerprint}]?.css",
+      "RelativePath": "image/bot#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,19 +52,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "jj8gbdqbe7",
-      "Integrity": "wdFBOv/FvFzS09HcJFpkxtyQGhUmqIjelZ94BBlb+80=",
+      "Fingerprint": "pq6lsr01pe",
+      "Integrity": "YT2ruCYNKFk0tQsuFhKdM1F5n1pvll9qVVR0pX3R05Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\Chat.css"
+      "OriginalItemSpec": "wwwroot\\image\\bot.png"
     },
     {
-      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\chatbot.png",
       "SourceId": "AI_Chatbot",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
       "BasePath": "_content/AI_Chatbot",
-      "RelativePath": "js/Chat#[.{fingerprint}]?.js",
+      "RelativePath": "image/chatbot#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -73,17 +73,122 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "d6wjlgu93m",
-      "Integrity": "pb6RycP/q9lM+3sQKCZaQhtR9gm5EBVklOoNW01/FS8=",
+      "Fingerprint": "tt9p3clsh6",
+      "Integrity": "AeES9kIaLLNSE/yFbs8QWJqVkH6noOGd0/b0pbGOKoI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\Chat.js"
+      "OriginalItemSpec": "wwwroot\\image\\chatbot.png"
+    },
+    {
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\robot.png",
+      "SourceId": "AI_Chatbot",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
+      "BasePath": "_content/AI_Chatbot",
+      "RelativePath": "image/robot#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jz5dch511u",
+      "Integrity": "caCLO59v1+mqBdh9dnXVkXM0C6uKVM9DZS2D3BPuiqA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\robot.png"
+    },
+    {
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\send.png",
+      "SourceId": "AI_Chatbot",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
+      "BasePath": "_content/AI_Chatbot",
+      "RelativePath": "image/send#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lk6gca4dpa",
+      "Integrity": "uwYw7KY7cTTf4b77j1m9/l5aYw8ZUIIYiue6ZO95iJ8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\send.png"
+    },
+    {
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\user.png",
+      "SourceId": "AI_Chatbot",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
+      "BasePath": "_content/AI_Chatbot",
+      "RelativePath": "image/user#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iodv0daxv5",
+      "Integrity": "Aovwlt6SCPEZm188YbF/NM/mKE/VgBihyXZdX4LQ/DY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\user.png"
+    },
+    {
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\index.html",
+      "SourceId": "AI_Chatbot",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
+      "BasePath": "_content/AI_Chatbot",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "synrz7nbg3",
+      "Integrity": "FGFiVy4TaLclZQPtyPJ3/ruXKKodciQOyAYjEnlL6sg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\index.js",
+      "SourceId": "AI_Chatbot",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\",
+      "BasePath": "_content/AI_Chatbot",
+      "RelativePath": "js/index#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bl6nyh7faf",
+      "Integrity": "H/chbXjafCl4I1gppP1WIEsog2QhsP+ZMEHTI9NNf7Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\index.js"
     }
   ],
   "Endpoints": [
     {
-      "Route": "Chat.html",
-      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\Chat.html",
+      "Route": "css/index.css",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\index.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -92,89 +197,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2036"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iJLWCxqMY/tTooUjGdntFXS/pGakZeRWselbotPkEb8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Feb 2025 19:31:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iJLWCxqMY/tTooUjGdntFXS/pGakZeRWselbotPkEb8="
-        }
-      ]
-    },
-    {
-      "Route": "Chat.klc3ggybru.html",
-      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\Chat.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2036"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iJLWCxqMY/tTooUjGdntFXS/pGakZeRWselbotPkEb8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Feb 2025 19:31:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "klc3ggybru"
-        },
-        {
-          "Name": "label",
-          "Value": "Chat.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iJLWCxqMY/tTooUjGdntFXS/pGakZeRWselbotPkEb8="
-        }
-      ]
-    },
-    {
-      "Route": "css/Chat.css",
-      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6624"
+          "Value": "7862"
         },
         {
           "Name": "Content-Type",
@@ -182,11 +205,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wdFBOv/FvFzS09HcJFpkxtyQGhUmqIjelZ94BBlb+80=\""
+          "Value": "\"XVXPZkZ73vcclfuwmk9Rsv3JIjT4M5B1TL0yNDkz4tk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 02:57:49 GMT"
+          "Value": "Fri, 07 Mar 2025 12:28:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -196,13 +219,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-wdFBOv/FvFzS09HcJFpkxtyQGhUmqIjelZ94BBlb+80="
+          "Value": "sha256-XVXPZkZ73vcclfuwmk9Rsv3JIjT4M5B1TL0yNDkz4tk="
         }
       ]
     },
     {
-      "Route": "css/Chat.jj8gbdqbe7.css",
-      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\Chat.css",
+      "Route": "css/index.d0lw3o6av1.css",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\css\\index.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -211,7 +234,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6624"
+          "Value": "7862"
         },
         {
           "Name": "Content-Type",
@@ -219,11 +242,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"wdFBOv/FvFzS09HcJFpkxtyQGhUmqIjelZ94BBlb+80=\""
+          "Value": "\"XVXPZkZ73vcclfuwmk9Rsv3JIjT4M5B1TL0yNDkz4tk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Feb 2025 02:57:49 GMT"
+          "Value": "Fri, 07 Mar 2025 12:28:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -233,21 +256,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jj8gbdqbe7"
+          "Value": "d0lw3o6av1"
         },
         {
           "Name": "label",
-          "Value": "css/Chat.css"
+          "Value": "css/index.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-wdFBOv/FvFzS09HcJFpkxtyQGhUmqIjelZ94BBlb+80="
+          "Value": "sha256-XVXPZkZ73vcclfuwmk9Rsv3JIjT4M5B1TL0yNDkz4tk="
         }
       ]
     },
     {
-      "Route": "js/Chat.d6wjlgu93m.js",
-      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
+      "Route": "image/bot.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\bot.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -256,19 +279,56 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9562"
+          "Value": "22392"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"pb6RycP/q9lM+3sQKCZaQhtR9gm5EBVklOoNW01/FS8=\""
+          "Value": "\"YT2ruCYNKFk0tQsuFhKdM1F5n1pvll9qVVR0pX3R05Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:14:51 GMT"
+          "Value": "Fri, 07 Mar 2025 08:19:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YT2ruCYNKFk0tQsuFhKdM1F5n1pvll9qVVR0pX3R05Y="
+        }
+      ]
+    },
+    {
+      "Route": "image/bot.pq6lsr01pe.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\bot.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22392"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YT2ruCYNKFk0tQsuFhKdM1F5n1pvll9qVVR0pX3R05Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 08:19:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -278,21 +338,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "d6wjlgu93m"
+          "Value": "pq6lsr01pe"
         },
         {
           "Name": "label",
-          "Value": "js/Chat.js"
+          "Value": "image/bot.png"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pb6RycP/q9lM+3sQKCZaQhtR9gm5EBVklOoNW01/FS8="
+          "Value": "sha256-YT2ruCYNKFk0tQsuFhKdM1F5n1pvll9qVVR0pX3R05Y="
         }
       ]
     },
     {
-      "Route": "js/Chat.js",
-      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\Chat.js",
+      "Route": "image/chatbot.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\chatbot.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -301,19 +361,347 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9562"
+          "Value": "14617"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "image/png"
         },
         {
           "Name": "ETag",
-          "Value": "\"pb6RycP/q9lM+3sQKCZaQhtR9gm5EBVklOoNW01/FS8=\""
+          "Value": "\"AeES9kIaLLNSE/yFbs8QWJqVkH6noOGd0/b0pbGOKoI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 20 Feb 2025 18:14:51 GMT"
+          "Value": "Thu, 06 Mar 2025 20:11:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AeES9kIaLLNSE/yFbs8QWJqVkH6noOGd0/b0pbGOKoI="
+        }
+      ]
+    },
+    {
+      "Route": "image/chatbot.tt9p3clsh6.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\chatbot.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14617"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AeES9kIaLLNSE/yFbs8QWJqVkH6noOGd0/b0pbGOKoI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 20:11:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "tt9p3clsh6"
+        },
+        {
+          "Name": "label",
+          "Value": "image/chatbot.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AeES9kIaLLNSE/yFbs8QWJqVkH6noOGd0/b0pbGOKoI="
+        }
+      ]
+    },
+    {
+      "Route": "image/robot.jz5dch511u.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\robot.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"caCLO59v1+mqBdh9dnXVkXM0C6uKVM9DZS2D3BPuiqA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 18:38:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jz5dch511u"
+        },
+        {
+          "Name": "label",
+          "Value": "image/robot.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-caCLO59v1+mqBdh9dnXVkXM0C6uKVM9DZS2D3BPuiqA="
+        }
+      ]
+    },
+    {
+      "Route": "image/robot.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\robot.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "25708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"caCLO59v1+mqBdh9dnXVkXM0C6uKVM9DZS2D3BPuiqA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 06 Mar 2025 18:38:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-caCLO59v1+mqBdh9dnXVkXM0C6uKVM9DZS2D3BPuiqA="
+        }
+      ]
+    },
+    {
+      "Route": "image/send.lk6gca4dpa.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\send.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16969"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uwYw7KY7cTTf4b77j1m9/l5aYw8ZUIIYiue6ZO95iJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 09:17:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lk6gca4dpa"
+        },
+        {
+          "Name": "label",
+          "Value": "image/send.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uwYw7KY7cTTf4b77j1m9/l5aYw8ZUIIYiue6ZO95iJ8="
+        }
+      ]
+    },
+    {
+      "Route": "image/send.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\send.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16969"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uwYw7KY7cTTf4b77j1m9/l5aYw8ZUIIYiue6ZO95iJ8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 09:17:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uwYw7KY7cTTf4b77j1m9/l5aYw8ZUIIYiue6ZO95iJ8="
+        }
+      ]
+    },
+    {
+      "Route": "image/user.iodv0daxv5.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Aovwlt6SCPEZm188YbF/NM/mKE/VgBihyXZdX4LQ/DY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 08:16:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iodv0daxv5"
+        },
+        {
+          "Name": "label",
+          "Value": "image/user.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Aovwlt6SCPEZm188YbF/NM/mKE/VgBihyXZdX4LQ/DY="
+        }
+      ]
+    },
+    {
+      "Route": "image/user.png",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\image\\user.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "19293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Aovwlt6SCPEZm188YbF/NM/mKE/VgBihyXZdX4LQ/DY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 08:16:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Aovwlt6SCPEZm188YbF/NM/mKE/VgBihyXZdX4LQ/DY="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FGFiVy4TaLclZQPtyPJ3/ruXKKodciQOyAYjEnlL6sg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 12:06:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -323,7 +711,134 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pb6RycP/q9lM+3sQKCZaQhtR9gm5EBVklOoNW01/FS8="
+          "Value": "sha256-FGFiVy4TaLclZQPtyPJ3/ruXKKodciQOyAYjEnlL6sg="
+        }
+      ]
+    },
+    {
+      "Route": "index.synrz7nbg3.html",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4692"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FGFiVy4TaLclZQPtyPJ3/ruXKKodciQOyAYjEnlL6sg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 12:06:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "synrz7nbg3"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FGFiVy4TaLclZQPtyPJ3/ruXKKodciQOyAYjEnlL6sg="
+        }
+      ]
+    },
+    {
+      "Route": "js/index.bl6nyh7faf.js",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H/chbXjafCl4I1gppP1WIEsog2QhsP+ZMEHTI9NNf7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 12:49:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bl6nyh7faf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/index.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-H/chbXjafCl4I1gppP1WIEsog2QhsP+ZMEHTI9NNf7Y="
+        }
+      ]
+    },
+    {
+      "Route": "js/index.js",
+      "AssetFile": "D:\\Shyam_Mashru\\Projects\\AI_Chatbot\\AI_Chatbot\\wwwroot\\js\\index.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9572"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"H/chbXjafCl4I1gppP1WIEsog2QhsP+ZMEHTI9NNf7Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 07 Mar 2025 12:49:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-H/chbXjafCl4I1gppP1WIEsog2QhsP+ZMEHTI9NNf7Y="
         }
       ]
     }

@@ -2,7 +2,7 @@
 document.getElementById("toggleChatBtn").addEventListener("click", function () {
   const chatContainer = document.querySelector(".chat-container");
   chatContainer.style.display =
-    chatContainer.style.display === "block" ? "none" : "block";
+    chatContainer.style.display === "inline-block" ? "none" : "inline-block";
 });
 
 $(document).ready(function () {
@@ -12,7 +12,7 @@ $(document).ready(function () {
 
   //Starting messgae
   addMessage(
-    "Hello! Welcome to Chatbot. Please let me know how I can assist you today.",
+    "Hello! Welcome to IntelliChat. How can I assist you today? 😊",
     "bot"
   );
   showButtons();
@@ -71,12 +71,12 @@ $(document).ready(function () {
   function showOnLoginButtons() {
     const buttonsHtml = `
             <div class="action-buttons">
-                <button id="schedule">Schedule Appointment</button>
-                <button id="appointment">View Appointments</button>
-                <button id="payment">View Payment Details</button>
-                <button id="prescription">View Prescriptions</button>
-                <button id="insurance">View Insurance Details</button>
-                <button id="general">General Question</button>
+                <button id="schedule">Set Appointment 📅</button>
+                <button id="appointment">Check Appointments 📆</button>
+                <button id="payment">Payment Info 💳</button>
+                <button id="prescription">My Prescriptions 💊</button>
+                <button id="insurance">Insurance Info 🏥</button>
+                <button id="general">Ask Anything ❓</button>
             </div>`;
 
     chatMessages.append(buttonsHtml);
@@ -88,7 +88,7 @@ $(document).ready(function () {
   function showDateButtons() {
     const buttonsHtml = `
             <div class="action-buttons">
-                <input type="date" id="date" placeholder="Pick a date">
+                <input type="date" id="date" placeholder="Select a Date 📅">
             </div>
         `;
     chatMessages.append(buttonsHtml);
@@ -98,7 +98,7 @@ $(document).ready(function () {
     function showTimeButtons() {
         const buttonsHtml = `
             <div class="action-buttons">
-                <input type="time" id="time" placeholder="Pick a Time">
+                <input type="time" id="time" placeholder="Select a Time ⏰">
             </div>
         `;
         chatMessages.append(buttonsHtml);
@@ -167,13 +167,13 @@ $(document).ready(function () {
     $("#general").click(function () {
       value = "General";
       removeActionButtons();
-      addMessage("Enter your query below.", "bot");
+      addMessage("Type your query below ✍️", "bot");
     });
 
     $("#user").click(function () {
       value = "User";
       removeActionButtons();
-      addMessage("How can I assist you?", "bot");
+      addMessage("How can I help you today? 😊", "bot");
       showOnLoginButtons();
     });
   }
@@ -181,29 +181,29 @@ $(document).ready(function () {
   //login buttons functionalities
   function bindOnLoginButtons() {
     $("#schedule").click(function () {
-      handleUserMessage("Schedule an Appointment");
+      handleUserMessage("Set Appointment");
     });
 
     $("#appointment").click(function () {
-      handleUserMessage("View Appointments");
+      handleUserMessage("Check Appointments");
     });
 
     $("#payment").click(function () {
-      handleUserMessage("View Payment Details");
+      handleUserMessage("Payment Info");
     });
 
     $("#prescription").click(function () {
-      handleUserMessage("View Prescriptions");
+      handleUserMessage("My Prescriptions");
     });
 
     $("#insurance").click(function () {
-      handleUserMessage("View Insurance Details");
+      handleUserMessage("Insurance Info");
     });
 
     $("#general").click(function () {
       value = "General";
       removeActionButtons();
-      addMessage("Enter your query below.", "bot");
+      addMessage("Type your query below ✍️", "bot");
     });
   }
 
@@ -249,7 +249,7 @@ $(document).ready(function () {
       error: function (xhr) {
         removeTypingIndicator();
         if (xhr.status === 401) {
-            addMessage("Unauthorized access. Please log in.", "bot");
+            addMessage("Access denied! Please log in to continue. 🔒", "bot");
             if (value == "General") {
                 showButtons();
             } else {
@@ -257,7 +257,7 @@ $(document).ready(function () {
             }
         } else {
           addMessage(
-            "There was an error processing your request. Please try again later.",
+            "Oops! Something went wrong. Please try again later. 🔄",
             "bot"
             );
             if (value == "General") {
@@ -280,7 +280,7 @@ $(document).ready(function () {
       processUserInput(message);
     } else {
       addMessage(
-        "Please enter your message and press 'Send' to proceed.",
+        "Type your message and hit 'Send' to continue. 📩",
         "bot"
         );
       if (value == "General") {

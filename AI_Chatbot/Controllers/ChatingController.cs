@@ -93,11 +93,11 @@ namespace AI_Chatbot.Controllers
         {
             return result switch
             {
-                "Enter Date" => Ok(new { date = result }),
-                "Enter Time" => Ok(new { time = result }),
-                "Enter your query." => Ok(new { query = result }),
-                "Invalid Otp. Try again." or "Your OTP has been sent to your registered email address. Enter the Otp"
-                or "Provide the Email" => Ok(new { otpEmail = result }),
+                "Please enter the date 📅" => Ok(new { date = result }),
+                "Please enter the time ⏰" => Ok(new { time = result }),
+                "Please type your query below ✍️" => Ok(new { query = result }),
+                "Invalid OTP! Please try again. 🔄" or "OTP sent to your registered email. Please enter it below. 📩"
+                or "Please enter your email 📧" => Ok(new { otpEmail = result }),
                 _ => Ok(result)
             };
         }
@@ -119,7 +119,7 @@ namespace AI_Chatbot.Controllers
                         await chatHistory.AddChatHistory(sessionId, query, response);
                         return response;
                     }
-                    return "Unable to process the query. Enter query again.";
+                    return "Couldn't process your request. Please try again. 🔄";
 
                 //A Login Query, Email Fragmentation, Ask for Email or Direct Login
                 case "Login":
@@ -137,7 +137,7 @@ namespace AI_Chatbot.Controllers
 
                     //Update conversation to get email
                     await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
-                    return "Provide the Email";
+                    return "Please enter your email 📧";
                 
                 //Other Queries
                 default:
@@ -175,7 +175,7 @@ namespace AI_Chatbot.Controllers
                     {
                         //Update Conversation to get email
                         await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
-                        return "Provide the Email";
+                        return "Please enter your email 📧";
                     }
 
                     var con = await conversationService.GetConversationAsync(sessionId);
@@ -204,7 +204,7 @@ namespace AI_Chatbot.Controllers
                         var result = await otpService.CheckOtp(otpEntity ?? string.Empty);
                         if (string.IsNullOrEmpty(result))
                         {
-                            return "Invalid Otp. Try again.";
+                            return "Invalid OTP! Please try again. 🔄";
                         }
                         Response.Cookies.Append("Token", result, new CookieOptions
                         {
@@ -225,10 +225,10 @@ namespace AI_Chatbot.Controllers
                         {
                             //Update the conversation to end (Delete also if required)
                             await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "End");
-                            return "Enter your query.";
+                            return "Please type your query below ✍️";
                         }
                     }
-                    return "Invalid Otp. Try again.";
+                    return "Invalid OTP! Please try again. 🔄";
                 //Email Provide by user
                 case "Email":
                     var emailEntityJson = resp.RootElement.GetProperty("entities")
@@ -242,7 +242,7 @@ namespace AI_Chatbot.Controllers
 
                     //Update conversation to get email
                     await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
-                    return "Provide the Email";
+                    return "Please enter your email 📧";
 
                 //Date Provided by uaer
                 case "Date":
@@ -265,11 +265,11 @@ namespace AI_Chatbot.Controllers
                         {
                             //Update conversation to get email
                             await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
-                            return "Provide your email.";
+                            return "Please enter your email 📧";
                         }
                         return await HandleIntent(sessionId: sessionId, intent: con.Intent, entities: con.Entities.ToList(), token: token);
                     }
-                    return "Enter Date";
+                    return "Please enter the date 📅";
 
                 case "Time":
                     var timeEntityJson = resp.RootElement.GetProperty("entities")
@@ -290,13 +290,13 @@ namespace AI_Chatbot.Controllers
                         {
                             //Update conversation to get email
                             await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Email");
-                            return "Provide your email.";
+                            return "Please enter your email 📧";
                         }
                         return await HandleIntent(sessionId: sessionId, intent: con.Intent, entities: entities, token: token);
                     }
-                    return "Enter Time";
+                    return "Please enter the time ⏰";
                 default:
-                    return "Enter your query.";
+                    return "Please type your query below ✍️";
             }
         }
 
@@ -322,7 +322,7 @@ namespace AI_Chatbot.Controllers
             //Update conversation to get otp
             await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Otp");
             //await conversationService.DeleteEntitiesAsync(sessionId: sessionId);
-            return "Your OTP has been sent to your registered email address. Enter the Otp";
+            return "OTP sent to your registered email. Please enter it below. 📩";
         }
 
         //Handle the intents of User Query
@@ -345,7 +345,7 @@ namespace AI_Chatbot.Controllers
 
                     //Update the conversation to end (Delete also if required)
                     await conversationService.UpdateConversationAsync(sessionId: sessionId, IsCompleted: true, status: "End");
-                    return "Your appointments are at: \n\n" + appointment;
+                    return "Your scheduled appointments: \n\n" + appointment;
 
                 case "Schedule":
                     var conversation = await conversationService.GetConversationAsync(sessionId);
@@ -358,13 +358,13 @@ namespace AI_Chatbot.Controllers
                     {
                         //Update conversation to get date
                         await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Date");
-                        return "Enter Date";
+                        return "Please enter the date 📅";
                     }
                     if (time == "null" || time == string.Empty)
                     {
                         //Update conversation to get time
                         await conversationService.UpdateConversationAsync(sessionId: sessionId, status: "Time");
-                        return "Enter Time";
+                        return "Please enter the time ⏰";
                     }
                     
                     //Add Appointment to Database
@@ -388,7 +388,7 @@ namespace AI_Chatbot.Controllers
 
                     //Update the conversation to end (Delete also if required)
                     await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "End");
-                    return "Your prescription are: \n\n" + prescription;
+                    return "Your prescriptions: \n\n" + prescription;
 
                 //View Insurance Query
                 case "Insurance":
@@ -398,7 +398,7 @@ namespace AI_Chatbot.Controllers
 
                     //Update the conversation to end (Delete also if required)
                     await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "End");
-                    return "Your insurance with their details are: \n\n" + insurance;
+                    return "Your Insurance: \n\n" + insurance;
 
                 //View Payments Query
                 case "Payment":
@@ -408,10 +408,10 @@ namespace AI_Chatbot.Controllers
 
                     //Update the conversation to end (Delete also if required)
                     await conversationService.UpdateConversationAsync(sessionId, IsCompleted: true, status: "End");
-                    return "Your payment details are: \n\n" + payment;
+                    return "Your Payments: \n\n" + payment;
 
                 default:
-                    return "Unable to process the query. Enter query again.\r\n";
+                    return "Couldn't process your request. Please try again. 🔄";
             }
         }
     }
