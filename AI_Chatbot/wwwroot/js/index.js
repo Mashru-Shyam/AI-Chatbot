@@ -71,7 +71,7 @@ $(document).ready(function () {
   function showOnLoginButtons() {
     const buttonsHtml = `
             <div class="action-buttons">
-                <button id="schedule">Set Appointment 📅</button>
+                <button id="schedule">Schedule Appointment 📅</button>
                 <button id="appointment">Check Appointments 📆</button>
                 <button id="payment">Payment Info 💳</button>
                 <button id="prescription">My Prescriptions 💊</button>
@@ -181,7 +181,7 @@ $(document).ready(function () {
   //login buttons functionalities
   function bindOnLoginButtons() {
     $("#schedule").click(function () {
-      handleUserMessage("Set Appointment");
+      handleUserMessage("Schedule Appointment");
     });
 
     $("#appointment").click(function () {

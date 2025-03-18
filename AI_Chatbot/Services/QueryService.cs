@@ -6,15 +6,14 @@ namespace AI_Chatbot.Services
     public class QueryService : IQueryService
     {
         private readonly IHttpClientFactory httpClientFactory;
-        private readonly IConfiguration configuration;
         private readonly IChatHistoryService chatHistory;
         private const string OpenRouterBaseUrl = "https://openrouter.ai/api/v1/chat/completions";
         private string historyText = string.Empty;
+        private readonly string apiKey = Environment.GetEnvironmentVariable("OPEN_ROUTER_API_KEY") ?? throw new InvalidOperationException("API_KEY environment variable is not set.");
 
-        public QueryService(IHttpClientFactory httpClientFactory, IConfiguration configuration, IChatHistoryService chatHistory)
+        public QueryService(IHttpClientFactory httpClientFactory, IChatHistoryService chatHistory)
         {
             this.httpClientFactory = httpClientFactory;
-            this.configuration = configuration;
             this.chatHistory = chatHistory;
         }
         public async Task<string> EntityExtraction(int sessionId, string query)
@@ -103,7 +102,7 @@ namespace AI_Chatbot.Services
             };
 
             httpClient.DefaultRequestHeaders.Authorization =
-                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", configuration["ApiKey:Key"]);
+                new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", apiKey);
 
             var response = await httpClient.PostAsJsonAsync(OpenRouterBaseUrl, requestBody);
             if (response.IsSuccessStatusCode)
@@ -232,7 +231,7 @@ namespace AI_Chatbot.Services
             };
 
             httpClient.DefaultRequestHeaders.Authorization =
-                    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", configuration["ApiKey:Key"]);
+                    new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", apiKey);
 
             var response = await httpClient.PostAsJsonAsync(OpenRouterBaseUrl, requestBody);
             if (response.IsSuccessStatusCode)

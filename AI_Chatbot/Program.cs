@@ -10,7 +10,15 @@ using Microsoft.OpenApi.Models;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddDbContext<AiChatbotDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("dbcs")));
+
+//Load Environemnt Variables
+var connectionString = Environment.GetEnvironmentVariable("CONNECTION_STRING_CHATBOT");
+var key = Environment.GetEnvironmentVariable("JWT_SECRET_KEY");
+var issuer = Environment.GetEnvironmentVariable("CHATBOT_PROJECT");
+var audience = Environment.GetEnvironmentVariable("CHATBOT_PROJECT");
+
+
+builder.Services.AddDbContext<AiChatbotDbContext>(options => options.UseSqlServer(connectionString));
 
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
@@ -26,8 +34,7 @@ builder.Services.AddAuthentication(options =>
 })
     .AddJwtBearer(options =>
     {
-        var secretKey = builder.Configuration["Jwt:SecretKey"];
-        if (string.IsNullOrEmpty(secretKey))
+        if (string.IsNullOrEmpty(key))
         {
             throw new InvalidOperationException("JWT SecretKey is not configured.");
         }
@@ -37,9 +44,9 @@ builder.Services.AddAuthentication(options =>
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey))
+            ValidIssuer = issuer,
+            ValidAudience = audience,
+            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
         };
     });
 
@@ -57,7 +64,13 @@ builder.Services.AddCors(options =>
 });
 
 //Adding Interfaces and Services to the application
-builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
+builder.Services.Configure<EmailSettings>(options =>
+{
+    options.Host = "smtp.gmail.com";
+    options.Port = 587;
+    options.Username = Environment.GetEnvironmentVariable("EMAIL_USERNAME");
+    options.Password = Environment.GetEnvironmentVariable("EMAIL_PASSWORD");
+});
 
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<ILoginService, LoginService>();

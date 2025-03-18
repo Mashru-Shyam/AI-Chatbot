@@ -9,12 +9,9 @@ namespace AI_Chatbot.Services
 {
     public class JwtService : IJwtService
     {
-        private readonly IConfiguration configuration;
-
-        public JwtService(IConfiguration configuration)
-        {
-            this.configuration = configuration;
-        }
+        private readonly string secretKey = Environment.GetEnvironmentVariable("JWT_SECRET_KEY") ?? throw new InvalidOperationException("JWT_KEY environment variable is not set.");
+        private readonly string issuer = Environment.GetEnvironmentVariable("CHATBOT_PROJECT") ?? throw new InvalidOperationException("Issuervenvironment variable is not set."); 
+        private readonly string audience = Environment.GetEnvironmentVariable("CHATBOT_PROJECT") ?? throw new InvalidOperationException("Audience environment variable is not set.");
 
         //Retrive a JWT Token
         public string GetToken(int userId)
@@ -24,18 +21,17 @@ namespace AI_Chatbot.Services
                 new Claim(ClaimTypes.NameIdentifier, userId.ToString())
             };
 
-            var secretKey = configuration["Jwt:SecretKey"];
             if (string.IsNullOrEmpty(secretKey))
             {
-                return "JWT SecretKey is not configured.";
+                throw new InvalidOperationException("JWT SecretKey is not configured.");
             }
 
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(secretKey));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: configuration["Jwt:Issuer"],
-                audience: configuration["Jwt:Issuer"],
+                issuer: issuer,
+                audience: audience,
                 claims: claims,
                 expires: DateTime.Now.AddMinutes(30),
                 signingCredentials: creds
