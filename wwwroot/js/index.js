@@ -216,10 +216,14 @@ $(document).ready(function () {
 
   //Process the input - backed integration response
   function processUserInput(input) {
-    showTypingIndicator();
+      showTypingIndicator();
+
+      const apiBaseUrl = window.location.hostname === "localhost"
+          ? "https://localhost:7048"
+          : "https://intellichat-bsdec5ajd5c3gfh4.westindia-01.azurewebsites.net";
 
     $.ajax({
-      url: `https://localhost:7048/api/Chating/send-message`,
+        url: `${apiBaseUrl}/api/Chating/send-message`,
       method: "POST",
       contentType: "application/json",
       data: JSON.stringify(input),
