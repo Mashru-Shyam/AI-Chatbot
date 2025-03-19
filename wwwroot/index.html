@@ -1,103 +1,122 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <!--Head Started-->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IntelliChat</title>
-    <link rel="icon" type="image/png" href="./image/chatbot.png">
+    <head>
+        <!--Head Started-->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>IntelliChat</title>
+        <link rel="icon" type="image/png" href="./image/chatbot.png">
 
-    <!--CSS-->
-    <link rel="stylesheet" href="./css/index.css" />
+        <!--CSS-->
+        <link rel="stylesheet" href="./css/index.css" />
 
-    <!--Head Ended-->
-</head>
-<!--Body Started-->
-<body>
-    <header>
-        <h1>Welcome to IntelliChat</h1>
-        <p>An intelligent assistant designed to handle dynamic queries and provide real-time responses.</p>
-    </header>
-    
-    <main>
-        <div class="left">
-            <section class="about">
-                <h2>IntelliChat</h2>
-                <p>IntelliChat is a state-of-the-art conversational assistant powered by <b>LLaMA-3</b> for advanced <b>Natural Language Processing (NLP)</b>. It seamlessly interacts with users and retrieves real-time information from a dynamic dataset.</p>
-            </section>
-            
-            <section class="features">
-                <h2>Key Features</h2>
-                <ul>
-                    <li>✔ General Question Answering</li>
-                    <li>✔ Dynamic Data Handling</li>
-                    <li>✔ Scheduling & Viewing Appointments</li>
-                    <li>✔ Viewing Prescription & Payment Details</li>
-                    <li>✔ Insurance Information Retrieval</li>
-                    <li>✔ Secure OTP Login & Authentication</li>
-                    <li>✔ AI-Powered Intent Recognition & Entity Extraction</li>
-                </ul>
-            </section>
-            
-            <section class="how-it-works">
-                <h2>How It Works?</h2>
-                <p>IntelliChat leverages intent recognition and entity extraction to process user queries efficiently: </p>
-                <ol>
-                    <li><strong>Step 1:</strong> The user interacts with the chatnot.</li>
-                    <li><strong>Step 2:</strong> The AI model classifies the intent and extracts relevant data.</li>
-                    <li><strong>Step 3:</strong> It fetches required information from the SQL database.</li>
-                    <li><strong>Step 4:</strong> The chatbot provides an instant, accurate response.</li>
-                    <li><strong>Step 5:</strong> Users can perform actions like setting appointments, checking prescriptions, and more.</li>
-                </ol>
-            </section>
-            
-            <section class="benefits">
-                <h2>Why Choose IntelliChat?</h2>
-                <p>Designed to enhance productivity and streamline interactions, our Chatbot offers:</p>
-                <ul>
-                    <li>✔ 24/7 Availability</li>
-                    <li>✔ Instant and Accurate Responses</li>
-                    <li>✔ Secure Data Handling</li>
-                    <li>✔ Easy-to-Use Interface</li>
-                    <li>✔ AI-Powered Smart Assistance</li>
-                </ul>
-            </section>
-        </div>
-        <div class="right">
-            <!-- Chatbot Floating Button -->
-            <button class="chat-toggle-btn" id="toggleChatBtn">
-                <img src="./image/chatbot.png">
-            </button>
+        <!--Head Ended-->
+    </head>
+    <!--Body Started-->
+    <body>
+        <header>
+            <h1>Welcome to IntelliChat</h1>
+            <p>An intelligent assistant designed to handle dynamic queries and
+                provide real-time responses.</p>
+        </header>
 
-            <!-- Chatbot Container -->
-            <div class="chat-container">
-                <div class="container chatbot">
-                    <!--Header of Chatbot-->
-                    <div class="chat-header">
-                        🤖 IntelliChat
-                    </div>
+        <main>
+            <div class="left">
+                <section class="about">
+                    <h2>IntelliChat</h2>
+                    <p>IntelliChat is a state-of-the-art conversational
+                        assistant powered by <b>LLaMA-3</b> for advanced
+                        <b>Natural Language Processing (NLP)</b>. It seamlessly
+                        interacts with users and retrieves real-time information
+                        from a dynamic dataset.</p>
+                </section>
 
-                     <div class="chat-messages" id="chatMessages">
-                        <!-- Chat messages will appear here -->
-                    </div>
+                <section class="features">
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>✔ General Question Answering</li>
+                        <li>✔ Dynamic Data Handling</li>
+                        <li>✔ Scheduling & Viewing Appointments</li>
+                        <li>✔ Viewing Prescription & Payment Details</li>
+                        <li>✔ Insurance Information Retrieval</li>
+                        <li>✔ Secure OTP Login & Authentication</li>
+                        <li>✔ AI-Powered Intent Recognition & Entity
+                            Extraction</li>
+                    </ul>
+                </section>
 
-                    <!--Typing Area and Send Button-->
-                    <div class="chat-input">
-                        <div class="inputBox">
-                            <input type="text" id="userMessage" placeholder="Type message here..." required="required" />
+                <section class="how-it-works">
+                    <h2>How It Works?</h2>
+                    <p>IntelliChat leverages intent recognition and entity
+                        extraction to process user queries efficiently: </p>
+                    <ol>
+                        <li><strong>Step 1:</strong> The user interacts with the
+                            chatnot.</li>
+                        <li><strong>Step 2:</strong> The AI model classifies the
+                            intent and extracts relevant data.</li>
+                        <li><strong>Step 3:</strong> It fetches required
+                            information from the SQL database.</li>
+                        <li><strong>Step 4:</strong> The chatbot provides an
+                            instant, accurate response.</li>
+                        <li><strong>Step 5:</strong> Users can perform actions
+                            like setting appointments, checking prescriptions,
+                            and more.</li>
+                    </ol>
+                </section>
+
+                <section class="benefits">
+                    <h2>Why Choose IntelliChat?</h2>
+                    <p>Designed to enhance productivity and streamline
+                        interactions, our Chatbot offers:</p>
+                    <ul>
+                        <li>✔ 24/7 Availability</li>
+                        <li>✔ Instant and Accurate Responses</li>
+                        <li>✔ Secure Data Handling</li>
+                        <li>✔ Easy-to-Use Interface</li>
+                        <li>✔ AI-Powered Smart Assistance</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="right">
+                <!-- Chatbot Floating Button -->
+                <button class="chat-toggle-btn" id="toggleChatBtn">
+                    <img src="./image/chatbot.png" alt="Chatbot" />
+                </button>
+
+                <!-- Chatbot Container -->
+                <div class="chat-container">
+                    <div class="container chatbot">
+                        <!--Header of Chatbot-->
+                        <div class="chat-header">
+                            🤖 IntelliChat
                         </div>
-                        <button id="sendMessage" title="Send Message">
-                            <img src="./image/send.png" id="image">
-                        </button>
+
+                        <div class="chat-messages" id="chatMessages">
+                            <!-- Chat messages will appear here -->
+                        </div>
+
+                        <!--Typing Area and Send Button-->
+                        <div class="chat-input">
+                            <div class="inputBox">
+                                <input type="text" id="userMessage"
+                                    placeholder="Type message here..."
+                                    required="required" />
+                            </div>
+                            <button id="sendMessage" title="Send Message">
+                                <img src="./image/send.png" id="image"
+                                    alt="Send" />
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <!--JavaScripts-->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"></script>
-    <script src="./js/index.js"></script>
-</body>
+        </main>
+        <!--JavaScripts-->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script
+            src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
 </html>
