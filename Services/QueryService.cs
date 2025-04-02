@@ -150,9 +150,9 @@ namespace AI_Chatbot.Services
                        - `"Login"` → If the query is about login or email verification.
                        - `"Appointment"` → If the query is about checking a medical appointment.
                        - `"Prescription"` → If the query is about checking medical prescriptions.
-                       - `"Payment"` → If the query is about viewing payments or due payments.
+                       - `"Payment"` → If the query is about payments details or due payments.
                        - `"Insurance"` → If the query is about insurance details.
-                       - `"Schedule"` → If the query is about booking an appointment.
+                       - `"Schedule"` → If the query is about booking or scheduling an appointment.
                        - `"General"` → If the query does not fit the above categories.
                             - Use past conversation history (historyText) to generate a more relavent response.
                             - If the query is related to past messages, respond accordingly.
@@ -186,6 +186,22 @@ namespace AI_Chatbot.Services
                     **Expected JSON Response:**
                     {
                       "intent": "Prescription",
+                      "response": null
+                    }
+
+                    ### Examplae 3 : Payment
+                    **User Query: ** *"Shoow my payment details"*
+                    **Expected JSON Response:**
+                    {
+                      "intent": "Payment",
+                      "response": null
+                    }
+
+                    ### Examplae 3 : Insurance
+                    **User Query: ** *"Show insurance details"*
+                    **Expected JSON Response:**
+                    {
+                      "intent": "Insurance",
                       "response": null
                     }
 

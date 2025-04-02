@@ -261,7 +261,7 @@ $(document).ready(function () {
             }
         } else {
           addMessage(
-            "Oops! Something went wrong. Please try again later. 🔄",
+            "Oops! Something went wrong. Please restart the application. 🔄",
             "bot"
             );
             if (value == "General") {
