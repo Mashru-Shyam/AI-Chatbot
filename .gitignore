@@ -1,0 +1,104 @@
+# ==============================================================================
+# General
+# ==============================================================================
+*.log
+*.tlog
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================================================================
+# Visual Studio / .NET
+# ==============================================================================
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Generated files
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Publish
+publish/
+**/Properties/PublishProfiles/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Secrets and Environment
+*.env
+appsettings.Local.json
+appsettings.Development.Local.json
+secrets.json
+
+# Rider / JetBrains
+.idea/
+*.sln.iml
+*.dotCover
+
+# VS Code
+.vscode/
+
+# ==============================================================================
+# Client / Angular / Node
+# ==============================================================================
+node_modules/
+dist/
+out-tsc/
+bazel-out/
+.angular/
+
+# Yarn
+yarn-error.log
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# NPM
+npm-debug.log
+npm-debug.log*
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Cypress
+cypress/videos
+cypress/screenshots
+
+# Misc
+.sass-cache/
+connect.lock
+livereload.js
+lib/
