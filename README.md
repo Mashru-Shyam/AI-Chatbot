@@ -2,8 +2,6 @@
 
 An intelligent healthcare chatbot that leverages natural language processing to assist patients with appointment booking, prescription management, and medical inquiries.
 
-**Live Demo:** https://intellichat-bsdec5ajd5c3gfh4.westindia-01.azurewebsites.net/
-
 ## 📋 Project Overview
 
 Intellichat is a healthcare-focused chatbot application that understands user intent through natural language processing. It provides two-tier access:
@@ -78,5 +76,3 @@ This chatbot is designed to provide general health information and appointment m
 No License
 
 ---
-
-Built with ❤️ for better healthcare accessibility
